@@ -3,7 +3,7 @@ import Paragraph from '../../reusable/Paragraph/Paragraph'
 import Banner from '../../reusable/Banner/Banner'
 import {  fuelingTomorrowsInnovations, sponsorship, unlockYourBusiness } from '../../../assets/images'
 import ScaleUpJSON from "../../../data/scaleup.json"
-import { RootState } from '@reduxjs/toolkit/query'
+import { RootState } from '../../../storey'
 import { useSelector } from 'react-redux'
 
 type Props = {}

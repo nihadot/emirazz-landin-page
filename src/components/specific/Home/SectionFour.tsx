@@ -4,7 +4,7 @@ import Paragraph from '../../reusable/Paragraph/Paragraph'
 import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import HomeJSON from "../../../data/home.json"
 import { useSelector } from 'react-redux'
-import { RootState } from '@reduxjs/toolkit/query'
+import { RootState } from '../../../storey'
 import genrateColor from "randomcolor";
 import { rightArrow } from '../../../assets/svg'
 import { IconButton } from '../../reusable/Buttons'

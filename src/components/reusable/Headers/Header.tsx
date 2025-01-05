@@ -6,7 +6,8 @@ import { Link } from 'react-router'
 // import { useLanguage } from '../../../LanguageContext'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleLanguage } from '../../../languageSlice'
-import { RootState } from '@reduxjs/toolkit/query'
+import { RootState } from '../../../store'
+// import { RootState } from '../../../storey'
 
 function Header() {
     return (

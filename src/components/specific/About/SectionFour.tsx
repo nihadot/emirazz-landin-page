@@ -1,4 +1,4 @@
-import { RootState } from "@reduxjs/toolkit/query"
+import { RootState } from "../../../storey"
 import { aboutImage5 } from "../../../assets/images"
 import Image from "../../reusable/Image/Image"
 import Paragraph from "../../reusable/Paragraph/Paragraph"

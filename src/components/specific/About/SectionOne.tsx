@@ -7,7 +7,7 @@ import SectionTwo from './SectionTwo'
 import AboutJSON from "../../../data/about.json"
 // import { useLanguage } from '../../../LanguageContext'
 import { useSelector } from 'react-redux'
-import { RootState } from '@reduxjs/toolkit/query'
+import { RootState } from '../../../storey'
 
 type Props = {}
 

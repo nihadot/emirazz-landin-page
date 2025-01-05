@@ -5,7 +5,7 @@ import TextBanner from '../../reusable/TextBanner/TextBanner'
 import { artAndTechnologyCollaboration, cityCentreApartment, luxuryWaterFront, modernFamilyHome, publicArtInstallation, theEmpiorSculpture } from '../../../assets/images'
 import ArtJSON from "../../../data/art.json"
 import { useSelector } from 'react-redux'
-import { RootState } from '@reduxjs/toolkit/query'
+import { RootState } from '../../../storey'
 
 type Props = {}
 

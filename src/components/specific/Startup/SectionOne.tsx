@@ -4,7 +4,7 @@ import Banner from '../../reusable/Banner/Banner'
 import {  fuelingTomorrowsInnovations, sponsorship } from '../../../assets/images'
 import startupJSON from "../../../data/startup.json"
 import { useSelector } from 'react-redux'
-import { RootState } from '@reduxjs/toolkit/query'
+import { RootState } from '../../../storey'
 
 type Props = {}
 

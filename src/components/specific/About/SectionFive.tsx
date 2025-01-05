@@ -3,7 +3,7 @@ import Image from "../../reusable/Image/Image"
 import Paragraph from "../../reusable/Paragraph/Paragraph"
 import HeadingThree from "../../reusable/Titles/MainHeading/HeaderThree"
 import AboutJSON from "../../../data/about.json"
-import { RootState } from "@reduxjs/toolkit/query"
+import { RootState } from "../../../storey"
 import { useSelector } from "react-redux"
 
 type Props = {}

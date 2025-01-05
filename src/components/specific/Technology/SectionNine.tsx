@@ -5,7 +5,7 @@ import Paragraph from '../../reusable/Paragraph/Paragraph'
 // import { useLanguage } from '../../../LanguageContext'
 import HomeJSON from "../../../data/technology.json"
 import { useSelector } from 'react-redux'
-import { RootState } from '@reduxjs/toolkit/query'
+import { RootState } from '../../../storey'
 
 type Props = {}
 

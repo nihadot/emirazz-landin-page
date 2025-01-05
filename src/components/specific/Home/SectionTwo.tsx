@@ -4,7 +4,7 @@ import Image from '../../reusable/Image/Image'
 import HeadingTwo from '../../reusable/Titles/MainHeading/HeadingTwo'
 import HomeJSON from "../../../data/home.json"
 import { useSelector } from 'react-redux'
-import { RootState } from '@reduxjs/toolkit/query'
+import { RootState } from '../../../storey'
 
 type Props = {}
 

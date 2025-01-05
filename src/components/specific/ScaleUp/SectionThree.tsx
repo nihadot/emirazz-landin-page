@@ -4,7 +4,7 @@ import Paragraph from '../../reusable/Paragraph/Paragraph'
 import Image from '../../reusable/Image/Image'
 import { image2, image3, whatWeOffer1, whatWeOffer2, whatWeOffer3, whatWeOffer4 } from '../../../assets/images'
 import { useSelector } from 'react-redux'
-import { RootState } from '@reduxjs/toolkit/query'
+import { RootState } from '../../../storey'
 import ScaleUpJSON from "../../../data/scaleup.json"
 
 type Props = {}

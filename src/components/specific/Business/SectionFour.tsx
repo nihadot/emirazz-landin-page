@@ -2,7 +2,7 @@ import React from 'react'
 import TextBanner from '../../reusable/TextBanner/TextBanner'
 import { businessImage4 } from '../../../assets/images'
 import Image from '../../reusable/Image/Image'
-import { RootState } from '@reduxjs/toolkit/query'
+import { RootState } from '../../../storey'
 import { useSelector } from 'react-redux'
 import BusinessJSON from "../../../data/business.json"
 

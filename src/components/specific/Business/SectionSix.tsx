@@ -4,7 +4,7 @@ import Paragraph from '../../reusable/Paragraph/Paragraph'
 import Card from '../../reusable/Card/Card'
 import { IconButton } from '../../reusable/Buttons'
 import { rightArrow } from '../../../assets/svg'
-import { RootState } from '@reduxjs/toolkit/query'
+import { RootState } from '../../../storey'
 import { useSelector } from 'react-redux'
 import BusinessJSON from "../../../data/business.json"
 

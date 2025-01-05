@@ -7,7 +7,7 @@ import { IconButton } from '../../reusable/Buttons'
 import { rightArrow } from '../../../assets/svg'
 import realestateJSON from "../../../data/realestate.json"
 import { useSelector } from 'react-redux'
-import { RootState } from '@reduxjs/toolkit/query'
+import { RootState } from '../../../storey'
 
 type Props = {}
 

@@ -5,7 +5,7 @@ import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 // import { useLanguage } from '../../../LanguageContext'
 import HomeJSON from "../../../data/home"
 import { useSelector } from 'react-redux'
-import { RootState } from '@reduxjs/toolkit/query'
+import { RootState } from '../../../storey'
 
 type Props = {}
 

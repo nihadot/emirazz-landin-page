@@ -1,7 +1,7 @@
 import React from 'react'
 import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne';
 import { useSelector } from 'react-redux';
-import { RootState } from '@reduxjs/toolkit/query';
+import { RootState } from '../../../storey';
 import HomeJSON from "../../../data/home.json"
 import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree';
 import Image from '../../reusable/Image/Image';

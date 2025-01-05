@@ -3,7 +3,7 @@ import { businessImage2, businessImage4, empoweringVision, fuelingTomorrowsInnov
 import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import HomeJSON from "../../../data/home.json"
 import { useSelector } from 'react-redux'
-import { RootState } from '@reduxjs/toolkit/query'
+import { RootState } from '../../../storey'
 import Banner from '../../reusable/Banner/Banner'
 import TextBanner from '../../reusable/TextBanner/TextBanner'
 type Props = {}

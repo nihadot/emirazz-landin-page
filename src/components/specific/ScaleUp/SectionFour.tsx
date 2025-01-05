@@ -6,7 +6,7 @@ import { IconButton } from '../../reusable/Buttons'
 import { rightArrow } from '../../../assets/svg'
 import { getStarted } from '../../../assets/images'
 import { useSelector } from 'react-redux'
-import { RootState } from '@reduxjs/toolkit/query'
+import { RootState } from '../../../storey'
 import ScaleUpJSON from "../../../data/scaleup.json"
 
 type Props = {}

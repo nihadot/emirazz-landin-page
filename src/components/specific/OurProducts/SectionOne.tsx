@@ -1,4 +1,4 @@
-import { RootState } from '@reduxjs/toolkit/query';
+import { RootState } from '../../../storey';
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 import HeadingTwo from '../../reusable/Titles/MainHeading/HeadingTwo'
 import { useSelector } from 'react-redux';

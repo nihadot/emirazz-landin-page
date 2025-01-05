@@ -5,7 +5,7 @@ import HeadingTwo from '../../reusable/Titles/MainHeading/HeadingTwo'
 import Image from '../../reusable/Image/Image'
 import { visualChronicles1, visualChronicles2, visualChronicles3 } from '../../../assets/images'
 import { useSelector } from 'react-redux'
-import { RootState } from '@reduxjs/toolkit/query'
+import { RootState } from '../../../storey'
 import GalleryJSON from "../../../data/gallery.json"
 
 type Props = {}

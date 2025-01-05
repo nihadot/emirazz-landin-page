@@ -6,7 +6,7 @@ import { rightArrow } from '../../../assets/svg'
 import { IconButton } from '../../reusable/Buttons'
 import Banner from '../../reusable/Banner/Banner'
 import { deepSea, deepSeaIcon, empoweringInnovation, empoweringVision, invention, sponsorship } from '../../../assets/images'
-import { RootState } from '@reduxjs/toolkit/query'
+import { RootState } from '../../../storey'
 import { useSelector } from 'react-redux'
 import InventionJOSN from "../../../data/invention.json"
 import Image from '../../reusable/Image/Image'

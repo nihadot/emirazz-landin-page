@@ -12,7 +12,7 @@ import SectionNine from "../../components/specific/Home/SectionNine"
 import SectionTen from "../../components/specific/Home/SectionTen"
 import SectionTwelve from "../../components/specific/Home/SectionTwelve"
 import { useSelector } from 'react-redux'
-import { RootState } from '@reduxjs/toolkit/query'
+import { RootState } from '../../../storey'
 function Home() {
 
   return (

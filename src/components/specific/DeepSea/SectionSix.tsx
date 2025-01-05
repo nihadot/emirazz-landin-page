@@ -1,4 +1,4 @@
-import { RootState } from '@reduxjs/toolkit/query';
+import { RootState } from '../../../storey';
 import React from 'react'
 import { useSelector } from 'react-redux';
 import TextBanner from '../../reusable/TextBanner/TextBanner';

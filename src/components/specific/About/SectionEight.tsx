@@ -4,7 +4,7 @@ import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import Image from '../../reusable/Image/Image'
 import { aboutImage9 } from '../../../assets/images'
 import AboutJSON from "../../../data/about.json"
-import { RootState } from '@reduxjs/toolkit/query'
+import { RootState } from '../../../storey'
 import { useSelector } from 'react-redux'
 
 type Props = {}

@@ -3,7 +3,7 @@ import Paragraph from '../../reusable/Paragraph/Paragraph'
 import {  empoweringInnovation } from '../../../assets/images'
 import Image from '../../reusable/Image/Image'
 import { useSelector } from 'react-redux'
-import { RootState } from '@reduxjs/toolkit/query'
+import { RootState } from '../../../storey'
 import ContactJSON from "../../../data/contactUs.json"
 import HeadingTwo from '../../reusable/Titles/MainHeading/HeadingTwo'
 

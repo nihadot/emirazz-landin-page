@@ -2,7 +2,7 @@ import React from 'react'
 import Paragraph from '../Paragraph/Paragraph'
 import HeaderFour from '../Titles/MainHeading/HeaderFour'
 import { useSelector } from 'react-redux';
-import { RootState } from '@reduxjs/toolkit/query';
+import { RootState } from '../../../store';
 
 type Props = {
   heading: string;

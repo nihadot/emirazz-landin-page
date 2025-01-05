@@ -4,7 +4,7 @@ import { aboutImage6, ourApproachToInvention } from '../../../assets/images'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import { useSelector } from 'react-redux'
-import { RootState } from '@reduxjs/toolkit/query'
+import { RootState } from '../../../storey'
 import InventionJOSN from "../../../data/invention.json"
 import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne'
 

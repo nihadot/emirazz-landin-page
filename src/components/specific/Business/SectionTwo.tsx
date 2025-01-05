@@ -3,7 +3,7 @@ import Image from '../../reusable/Image/Image'
 import TextBanner from '../../reusable/TextBanner/TextBanner'
 import BusinessJSON from "../../../data/business.json"
 import { useSelector } from 'react-redux'
-import { RootState } from '@reduxjs/toolkit/query'
+import { RootState } from '../../../storey'
 
 type Props = {}
 

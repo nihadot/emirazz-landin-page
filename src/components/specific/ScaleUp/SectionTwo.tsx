@@ -3,7 +3,7 @@ import { ourMission } from '../../../assets/images'
 import TextBanner from '../../reusable/TextBanner/TextBanner'
 import Image from '../../reusable/Image/Image'
 import ScaleUpJSON from "../../../data/scaleup.json"
-import { RootState } from '@reduxjs/toolkit/query'
+import { RootState } from '../../../storey'
 import { useSelector } from 'react-redux'
 
 type Props = {}

@@ -4,7 +4,7 @@ import Paragraph from '../../reusable/Paragraph/Paragraph'
 import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import Banner from '../../reusable/Banner/Banner'
 import { useSelector } from 'react-redux'
-import { RootState } from '@reduxjs/toolkit/query'
+import { RootState } from '../../../storey'
 import realestateJSON from "../../../data/realestate.json"
 
 type Props = {}
