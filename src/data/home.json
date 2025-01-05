@@ -1,0 +1,144 @@
+{
+    "section1": {
+        "en": {
+            "h1": "Technology. Real Estate. Invention."
+        },
+        "ar": {
+            "h1": ["تكنولوجيا.","العقارات.","اختراع."]
+        }
+    },
+    "section2": {
+        "en": {
+            "h2": "Emiraaz - Where Innovation Meets Excellence Across Industries",
+            "p": "At Emiraaz, we are driven by innovation in Technology, Real Estate, and Invention. We unite industry leaders to collaborate across sectors, creating transformative solutions that address today's challenges and anticipate tomorrow's needs, shaping a future of progress and limitless potential."
+          
+        },
+        "ar": {
+          "h2":"أميراز - حيث يلتقي الابتكار بالتميز عبر الصناعات",
+          "p":"في أميراز، نحن مدفوعون بالابتكار في التكنولوجيا والعقارات والاختراع. نحن نوحد قادة الصناعة للتعاون عبر القطاعات، وخلق حلول تحويلية تعالج تحديات اليوم وتتوقع احتياجات الغد، وتشكيل مستقبل من التقدم والإمكانات اللامحدودة."
+            
+           
+    }
+},
+"section3": {
+    "en":{
+        "h3": "Empowering Business Opportunities",
+        "p": "At Emiraaz, we build partnerships, support innovation, and drive growth. Our Business division focuses on Partners, Sponsorship, Investment, and Startups, offering opportunities for collaboration and success.",
+        "cards": [
+           "Partnership","Sponsorship","Investment","Startup"
+        ]
+    },
+    "ar":{
+        "h3":"تمكين الفرص التجارية ",
+        "p": "في أميراز، نقوم ببناء الشراكات ودعم الابتكار ودفع عجلة النمو. يركز قسم الأعمال لدينا على الشركاء والرعاية والاستثمار والشركات الناشئة، مما يوفر فرصًا للتعاون والنجاح.",
+        "cards": [
+          "شراكة","الرعاية","استثمار","بدء"
+       ]
+    }
+   
+},
+"section4": {
+    "en":{
+        "h3": "Discover Our Innovative Products",
+        "p": "At Emiraaz, our products embody the perfect blend of innovation, quality, and craftsmanship. From cutting-edge technology solutions to groundbreaking real estate developments, each product is designed to meet the highest standards and fulfill your needs. Explore our diverse range of offerings and experience the excellence that defines Emiraaz."
+       
+    },
+    "ar":{
+        "h3": "اكتشف منتجاتنا المبتكرة",
+        "p": "في أميراز، تجسد منتجاتنا المزيج المثالي من الابتكار والجودة والحرفية. بدءًا من الحلول التقنية المتطورة وحتى التطوير العقاري الرائد، تم تصميم كل منتج لتلبية أعلى المعايير وتلبية احتياجاتك. استكشف مجموعتنا المتنوعة من العروض واستمتع بتجربة التميز الذي يميز أميراز."
+       
+    }
+   
+},
+"section5": {
+   "en":{
+    "h3": "Scale Up Your Business with Emiraaz",
+    "title":"Unlock Growth Opportunities Tailored to You",  
+    "p":"Our 'Scale Up by Emiraaz' program is designed to help businesses expand and innovate. Whether you're looking to grow your operations, enter new markets, or enhance your technological capabilities, we have the tools and expertise to make it happen."
+ 
+   },
+   "ar":{
+    "h3": "قم بتوسيع نطاق أعمالك مع Emiraaz",
+    "title":"أطلق العنان لفرص النمو المصممة خصيصًا لك",  
+    "p":"تم تصميم برنامجنا ' توسيع نطاق طيران الإمارات' لمساعدة الشركات على التوسع والابتكار. سواء كنت تتطلع إلى تنمية عملياتك، أو دخول أسواق جديدة، أو تعزيز قدراتك التكنولوجية، فلدينا الأدوات والخبرة اللازمة لتحقيق ذلك."
+ 
+   }
+},
+"section6": {
+    "en":{
+
+        "h3": "Explore the World of Art at Emiraaz",
+        "p": "At Emiraaz, we celebrate art in all its forms. From innovative installations to thought-provoking exhibitions, our Art division is committed to pushing creative boundaries and showcasing talent from around the world. Discover the latest in artistic expression and explore how art transforms our world."
+       
+    },
+    "ar":{
+       "h3":"اكتشف عالم الفن في أميراز",
+       "p":"في أميراز، نحتفل بالفن بجميع أشكاله. من المنشآت المبتكرة إلى المعارض المثيرة للتفكير، يلتزم قسم الفنون لدينا بدفع الحدود الإبداعية وعرض المواهب من جميع أنحاء العالم. اكتشف أحدث أشكال التعبير الفني واستكشف كيف يغير الفن عالمنا."
+    }
+},
+"section7": {
+    "en":{
+
+        "h3": "Emiraaz Technology Leading with Innovation",
+        "title":"Always Ahead in the New Tech Landscape",
+"p":"At Emiraaz, we are constantly advancing with the latest technology. From metaverse integration to AI and blockchain, our commitment to innovation helps us stay at the forefront of the digital age. Discover how we utilize cutting-edge solutions to transform industries and drive progress."
+    
+    },
+    "ar":{
+        "h3": "شركة أميراز للتكنولوجيا الرائدة في الابتكار",
+        "title":"دائما في المقدمة في المشهد التكنولوجي الجديد",
+ "p":"في أميراز، نحن نتقدم باستمرار بأحدث التقنيات. من التكامل Metaverse إلى الذكاء الاصطناعي و blockchain، يساعدنا التزامنا بالابتكار على البقاء في طليعة العصر الرقمي. اكتشف كيف نستخدم الحلول المتطورة لتحويل الصناعات ودفع عجلة التقدم."
+    
+    }
+},
+"section8": {
+    "ar":{
+        "h3":"اميراز العقارية – تحويل المساحات من أجل غد أفضل",
+        "p":"في أميراز، يركز قسم العقارات لدينا على إنشاء مساحات مبتكرة ومستدامة وجاهزة للمستقبل. بدءًا من التطويرات السكنية الفاخرة وحتى العقارات التجارية والصناعية المتطورة، فإننا نقدم حلولًا عقارية عالمية المستوى تلبي الاحتياجات المتطورة للشركات والمجتمعات.",
+        "title":"بناء المجتمعات، إعادة تعريف الحياة والعمل"
+    
+      },
+    "en":{
+        "title":"Building Communities, Redefining Living and Working",
+        "h3": "Emiraaz Real Estate – Transforming Spaces for a Better Tomorrow",
+        "p": "At Emiraaz, our real estate division is focused on creating innovative, sustainable, and future-ready spaces. From luxury residential developments to cutting-edge commercial and industrial properties, we provide world-class real estate solutions that meet the evolving needs of businesses and communities."
+    }
+},
+
+"section9": {
+    "ar":{
+        "h3":"الجديد في أميراز",
+        "p":"ابق على اطلاع بأحدث الأخبار من أميراز. اكتشف مشاريعنا الرائدة، وشراكاتنا الرئيسية، والتقدم التكنولوجي، الذي يقدم رؤى حول نمونا وتأثيرنا."
+        
+    },
+    "en":{
+        "h3": "What’s New @ Emiraaz",
+        "p": "Stay updated with the latest from Emiraaz. Discover our groundbreaking projects, key partnerships, and technological advancements, offering insights into our growth and impact."
+    }
+},
+
+
+"section10": {
+    "ar":{
+        "h3":"استكشف أحدث منشورات مدونتنا",
+"p":"استكشف مدونة Emiraaz للحصول على رؤى الخبراء والاتجاهات الناشئة والأفكار المثيرة للتفكير عبر صناعات مثل التكنولوجيا والعقارات والابتكار."    },
+    "en":{
+        "h3": "Explore Our Latest Blog Posts",
+        "p": "Explore the Emiraaz blog for expert insights, emerging trends, and thought-provoking ideas across industries like technology, real estate, and innovation."
+    }
+}
+,
+
+"section11": {
+    "ar":{
+        "h3":"رؤيتنا للمستقبل",
+        "p":"يعتقد أميراز أن التكنولوجيا هي المفتاح لتشكيل غد أفضل. مهمتنا هي مواصلة استكشاف التطورات الرائدة، ودمجها في استراتيجيات أعمالنا، وتمكين الانتقال السلس إلى المستقبل. ومن خلال تبني التكنولوجيا، نهدف إلى قيادة الصناعات ورفع مستوى الخبرات وخلق تأثير دائم في مشهد رقمي يتطور باستمرار."
+        
+    },
+    "en":{
+        "h3": "Visual Chronicles",
+        "p": "The Emiraaz Journey in Pictures"
+    }
+}
+
+}

@@ -1,0 +1,128 @@
+{
+    "section1": {
+        "en": {
+            "h1": "Your Gateway to Dubai’s Premier Real Estate Market",
+            "p": "Discover exclusive properties in Dubai’s vibrant real estate scene, from luxury homes to profitable investment opportunities."
+        },
+        "ar": {
+            "h1":"بوابتك إلى سوق العقارات المتميز في دبي",
+            "p":"اكتشف العقارات الحصرية في المشهد العقاري النابض بالحياة في دبي، بدءًا من المنازل الفاخرة وحتى فرص الاستثمار المربحة."
+        }
+    },
+
+    "section2": {
+        "en": {
+            "h2": "⁠About Us",
+            "p": "EMIRAAZ Real Estate is your trusted partner in Dubai’s primary property market. With exclusive access to new developments, we provide a seamless experience for property buyers, investors, and short-term rental seekers. As part of the EMIRAAZ group, we leverage our strong local and international networks to deliver high-quality service and market insights."
+        },
+        "ar": {
+            "h2":"⁠نبذة عنا",
+            "p":"إميراز العقارية هي شريكك الموثوق به في سوق العقارات الرئيسي في دبي. ومن خلال الوصول الحصري إلى التطورات الجديدة، فإننا نقدم تجربة سلسة لمشتري العقارات والمستثمرين والباحثين عن الإيجار على المدى القصير. باعتبارنا جزءًا من مجموعة إميراز، فإننا نستفيد من شبكاتنا المحلية والدولية القوية لتقديم خدمات عالية الجودة ورؤى السوق."
+        }
+    },
+
+    "section3": {
+        "en": {
+            "h3": "Our Services",
+            "p": "Our commercial real estate offerings are designed to meet the needs of businesses in various sectors. From innovative office spaces to retail hubs, we create environments where businesses can thrive.",
+            "cards": [
+                {
+                    "h3": "Dubai Real Estate – Primary Market",
+                    "p": "Explore Dubai’s primary market with exclusive off-plan projects from top developers like Emaar and Nakheel, offering expert guidance, direct pricing, and high investment potential."
+                },
+                {
+                    "h3": "Retail Spaces",
+                    "p": "Experience luxury short-term stays with fully furnished apartments and villas, offering concierge services, prime locations, and flexible rental durations for your convenience."
+                }
+            ]
+        },
+        "ar": {
+            "h3": "خدماتنا",
+            "p": "تم تصميم عروضنا العقارية التجارية لتلبية احتياجات الشركات في مختلف القطاعات. بدءًا من المساحات المكتبية المبتكرة وحتى مراكز البيع بالتجزئة، نقوم بإنشاء بيئات يمكن للشركات أن تزدهر فيها.",
+            "cards": [
+                {
+                    "h3": "عقارات دبي – السوق الرئيسي",
+                    "p": "استكشف سوق دبي الرئيسي من خلال مشاريع حصرية تحت الإنشاء من كبار المطورين مثل إعمار ونخيل، حيث تقدم إرشادات الخبراء والأسعار المباشرة وإمكانات الاستثمار العالية."
+                },
+                {
+                    "h3": "مساحات البيع بالتجزئة",
+                    "p": "استمتع بإقامات فاخرة قصيرة الأمد مع الشقق والفيلات المفروشة بالكامل، والتي تقدم خدمات الكونسيرج والمواقع الرئيسية وفترات الإيجار المرنة لراحتك."
+                }
+            ]
+        }
+    },
+
+
+
+    "section4": {
+        "ar": {
+            "h3": "عقارات حصرية في دبي",
+            "p": "اكتشف أرقى العقارات في دبي، بدءًا من الشقق الفاخرة وحتى الفيلات الفسيحة. ابحث عن منزلك المثالي في المواقع الرئيسية اليوم.",
+            "cards": [
+                {
+                    "h3": "فلل فاخرة على الواجهة البحرية",
+                    "p": "فلل فاخرة على الواجهة البحرية مع حمامات سباحة خاصة، وتصميمات حديثة، وإطلالات على المحيط، ووسائل راحة حصرية للخصوصية المطلقة."
+                },
+                {
+                    "h3": "شقق سيتي سنتر",
+                    "p": "شقق مفروشة تتمتع بإطلالات على الأفق ووسائل راحة وإمكانية الوصول إلى أماكن التسوق وتناول الطعام."
+                },
+                {
+                    "h3": "منازل الأسرة الحديثة",
+                    "p": "منازل فسيحة وحديثة في مجتمعات نابضة بالحياة بها حدائق ومطابخ حديثة ومدارس قريبة من الدرجة الأولى."
+                }
+            ]
+        },
+        "en": {
+            "h3": "Exclusive Properties in Dubai",
+            "p": "Explore Dubai’s finest properties, from luxurious apartments to spacious villas. Find your perfect home in prime locations today.",
+            "cards":[
+                {
+                    "h3":"Luxury Waterfront Villas",
+                    "p":"Luxury waterfront villas with private pools, modern designs, ocean views, and exclusive amenities for ultimate privacy."
+                },
+                {
+                    "h3":"City Center Apartments",
+                    "p":"Furnished apartments with skyline views, amenities, and access to shopping and dining."
+                },
+                {
+                    "h3":"Modern Family Homes",
+                    "p":"Spacious, modern homes in vibrant communities with gardens, modern kitchens, and nearby top-tier schools."
+                }
+            ]
+        }
+    },
+
+
+    "section5": {
+        "en": {
+            "h3": "Boundless Potential",
+            "p": "The ocean’s depths are limitless, just like the potential for new ideas and innovations. For us, the deep sea represents infinite possibilities—a reminder that no matter how much we’ve achieved, there’s always more to discover. We are committed to leading the way in developing forward-thinking solutions that not only meet today’s needs but also shape the future."
+        },
+        "ar": {
+"h3":"آفاق جديدة في كل مجال",
+            "p":"من العقارات إلى الإيجارات قصيرة الأجل وما إلى ذلك، نستلهم الإلهام من المساحات اللامتناهية للمحيط لإعادة تعريف الصناعات وتقديم وجهات نظر جديدة. وكما تكشف كل رحلة استكشافية في أعماق البحار عن آفاق جديدة، فإن مهمتنا هي الاستمرار في استكشاف أسواق وتقنيات واستراتيجيات جديدة، وتحديد مسار دائمًا لآفاق غير مستكشفة."        }
+    },
+
+    "section6": {
+        "en": {
+            "h3": "A New Frontier in Every Field",
+            "p": "From real estate to short-term rentals and beyond, we take inspiration from the ocean’s endless expanses to redefine industries and bring fresh perspectives. Just as each deep-sea expedition unveils new frontiers, our mission is to continue exploring new markets, technologies, and strategies, always setting a course for unexplored horizons."
+        },
+        "ar": {
+          "h3":"آفاق جديدة في كل مجال",
+          "p":"من العقارات إلى الإيجارات قصيرة الأجل وما إلى ذلك، نستلهم الإلهام من المساحات اللامتناهية للمحيط لإعادة تعريف الصناعات وتقديم وجهات نظر جديدة. وكما تكشف كل رحلة استكشافية في أعماق البحار عن آفاق جديدة، فإن مهمتنا هي الاستمرار في استكشاف أسواق وتقنيات واستراتيجيات جديدة، وتحديد مسار دائمًا لآفاق غير مستكشفة."
+        }
+    },
+
+    "section7": {
+        "en": {
+            "h3": "Dive Deep with Us",
+            "p": "Join us on this journey of discovery and innovation, where we delve beneath the surface to bring you the extraordinary. At EMIRAAZ, we’re not just following trends; we’re creating new depths in every venture we pursue."
+        },
+        "ar": {
+          "h3":"انغمس معنا في أعماقنا",
+          "p":"انضم إلينا في رحلة الاكتشاف والابتكار، حيث نتعمق في أعماق الأشياء لنقدم لك ما هو غير عادي. في EMIRAAZ، لا نتبع الاتجاهات فحسب؛ بل نبتكر أعماقًا جديدة في كل مشروع نسعى إليه."
+        }
+    }
+}

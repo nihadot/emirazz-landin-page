@@ -1,0 +1,14 @@
+{
+    "section1": {
+        "en": {
+            "title": "Let Us Know We Can Help",
+            "h1": "Contact Our Friendly Team",
+            "p":"Get in Touch"
+        },
+        "ar": {
+           "title":"أخبرنا أننا نستطيع مساعدتك",
+           "h1":"اتصل بفريقنا الودود",
+           "p":"تواصل معنا"
+        }
+    }
+}
