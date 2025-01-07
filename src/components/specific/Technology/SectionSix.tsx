@@ -22,14 +22,14 @@ function SectionSix({ }: Props) {
 
                     <HeadingThree
                         className='max-w-max mb-4'
-                        content={HomeJSON.section5[language].h3}
+                        content={HomeJSON.section5[language as 'en' | 'ar'].h3}
 
                     />
 
                     <Paragraph
                         className='!font-light !max-w-6xl '
 
-                        content={HomeJSON.section5[language].p}
+                        content={HomeJSON.section5[language as 'en' | 'ar'].p}
                     />
                 </div>
 
@@ -51,7 +51,7 @@ function SectionSix({ }: Props) {
                     <Image
                         className='w-[526px] h-[400px] rounded-2xl sm:h-[499px] object-cover'
                         src={image10}
-                        alt={HomeJSON.section5[language].cards[0].h3}
+                        alt={HomeJSON.section5[language as 'en' | 'ar'].cards[0].h3}
                     />
                 </div>
 
@@ -60,12 +60,12 @@ function SectionSix({ }: Props) {
                 <div className="flex flex-col sm:pb-0 pb-4 flex-1">
                     <HeadingThree
                         className=' mb-4'
-                        content={HomeJSON.section5[language].cards[0].h3}
+                        content={HomeJSON.section5[language as 'en' | 'ar'].cards[0].h3}
 
                     />
 
                     <Paragraph
-                        content={HomeJSON.section5[language].cards[0].p}
+                        content={HomeJSON.section5[language as 'en' | 'ar'].cards[0].p}
 
                         className='!font-light ' />
                 </div>
@@ -90,12 +90,12 @@ function SectionSix({ }: Props) {
                 <div className="flex flex-col  sm:pb-0 pb-4 flex-1">
                     <HeadingThree
                         className=' mb-4'
-                        content={HomeJSON.section5[language].cards[1].h3}
+                        content={HomeJSON.section5[language as 'en' | 'ar'].cards[1].h3}
 
                     />
 
                     <Paragraph
-                        content={HomeJSON.section5[language].cards[1].p}
+                        content={HomeJSON.section5[language as 'en' | 'ar'].cards[1].p}
 
                         className='!font-light'
                     />
@@ -107,7 +107,7 @@ function SectionSix({ }: Props) {
                     <Image
                         className='w-[526px] h-[400px] rounded-2xl sm:h-[499px] object-cover'
                         src={image11}
-                        alt={HomeJSON.section5[language].cards[1].h3}
+                        alt={HomeJSON.section5[language as 'en' | 'ar'].cards[1].h3}
                     />
                 </div>
 
@@ -130,7 +130,7 @@ function SectionSix({ }: Props) {
                     <Image
                         className='w-[526px] h-[400px] rounded-2xl sm:h-[499px] object-cover'
                         src={image12}
-                        alt={HomeJSON.section5[language].cards[2].h3}
+                        alt={HomeJSON.section5[language as 'en' | 'ar'].cards[2].h3}
                     />
                 </div>
 
@@ -139,13 +139,13 @@ function SectionSix({ }: Props) {
                 <div className="flex flex-col sm:pb-0 pb-8 flex-1">
                     <HeadingThree
                         className=' mb-4'
-                        content={HomeJSON.section5[language].cards[2].h3}
+                        content={HomeJSON.section5[language as 'en' | 'ar'].cards[2].h3}
 
 
                     />
 
                     <Paragraph
-                        content={HomeJSON.section5[language].cards[2].p}
+                        content={HomeJSON.section5[language as 'en' | 'ar'].cards[2].p}
 
                         className='!font-light' />
                 </div>

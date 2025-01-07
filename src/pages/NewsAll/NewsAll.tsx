@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import  { useEffect } from 'react'
 import Footer from '../../components/reusable/Footer/Footer';
 import { Header } from '../../components/reusable/Headers';
 import SectionOne from "../../components/specific/NewsAll/SectionOne";

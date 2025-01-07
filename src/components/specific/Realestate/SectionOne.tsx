@@ -1,4 +1,3 @@
-import React from 'react'
 import Banner from '../../reusable/Banner/Banner'
 import { yourGateWayToDubai } from '../../../assets/images'
 import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne'
@@ -16,12 +15,12 @@ function SectionOne({}: Props) {
     const children = <div className="px-4 md:px-10 lg:px-20 absolute top-0 left-0 flex flex-col justify-center w-full h-full">
     <HeadingOne
         className='md:mb-6 mb-3 pt-8 !max-w-[700px] !leading-snug sm:pt-0'
-        content={realestateJSON.section1[language].h1}
+        content={realestateJSON.section1[language as 'en' | 'ar'].h1}
 
    />
     <Paragraph
         className='text-white/80'
-        content={realestateJSON.section1[language].p}
+        content={realestateJSON.section1[language as 'en' | 'ar'].p}
     />
 </div>
 
@@ -29,7 +28,7 @@ return (
     <div className="">
         <Banner
             // containerClassName=''
-            alt={realestateJSON.section1[language].h1}
+            alt={realestateJSON.section1[language as 'en' | 'ar'].h1}
             imageUrl={yourGateWayToDubai}
             // containerClassName=''
             home

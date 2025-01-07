@@ -12,7 +12,7 @@ const blogSlice = createSlice({
   name: 'blogs',
   initialState,
   reducers: {
-    fetchBlogsAction(state, action: PayloadAction<string>) {
+    fetchBlogsAction(state, action: PayloadAction<[]>) {
       state.data = action.payload;
     },
   },

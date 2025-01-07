@@ -17,13 +17,13 @@ function SectionOne({ }: Props) {
 
       <HeadingTwo
         className='text-[45px] max-w-max mb-6'
-        content={OurProducts.section1[language].h1}
+        content={OurProducts.section1[language as 'en' | 'ar'].h1}
 
       />
 
       <Paragraph
         className='!font-light !max-w-[900px] text-center !text-lg'
-        content={OurProducts.section1[language].p}
+        content={OurProducts.section1[language as 'en' | 'ar'].p}
       />
     </div>
 

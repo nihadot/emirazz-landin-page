@@ -20,23 +20,23 @@ function SectionFour({ }: Props) {
           <Image
             className='w-[374px] rounded-2xl h-[420px] object-cover'
             src={aboutImage5}
-            alt={AboutJSON.section4[language].h3}
+            alt={AboutJSON.section4[language as 'en' | 'ar'].h3}
           />
         </div>
         {/* images */}
         <div className="flex flex-col sm:pb-0 pb-0 md:pb-8 flex-1">
           <Paragraph
             className='mb-2'
-            content={AboutJSON.section4[language].p1}
+            content={AboutJSON.section4[language as 'en' | 'ar'].p1}
           />
           <HeadingThree
             className='text-[45px] mb-4 '
-            content={AboutJSON.section4[language].h3}
+            content={AboutJSON.section4[language as 'en' | 'ar'].h3}
 
           />
           <Paragraph
             className='!font-light !text-lg'
-            content={AboutJSON.section4[language].p}
+            content={AboutJSON.section4[language as 'en' | 'ar'].p}
           />
         </div>
       </div>

@@ -1,7 +1,5 @@
-import React from 'react'
 import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
-import Card from '../../reusable/Card/Card'
 import Banner from '../../reusable/Banner/Banner'
 import {  invention } from '../../../assets/images'
 import { RootState } from '../../../store'
@@ -18,11 +16,11 @@ function SectionOne({}: Props) {
     <HeadingOne
 
         className='md:mb-6 mb-3 pt-8 sm:pt-0 !max-w-[800px]'
-        content={InventionJOSN.section1[language].h1}
+        content={InventionJOSN.section1[language as 'en' | 'ar'].h1}
     />
     <Paragraph
         className='text-white/80'
-        content={InventionJOSN.section1[language].p}
+        content={InventionJOSN.section1[language as 'en' | 'ar'].p}
     />
 </div>
 
@@ -33,7 +31,7 @@ function SectionOne({}: Props) {
 
     <Banner
                 // containerClassName='pt-8'
-                alt={InventionJOSN.section1[language].h1}
+                alt={InventionJOSN.section1[language as 'en' | 'ar'].h1}
                 imageUrl={invention}
                 containerClassName='!h-[760px]'
                 home

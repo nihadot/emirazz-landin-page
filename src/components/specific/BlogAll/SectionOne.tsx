@@ -18,12 +18,12 @@ function SectionOne({}: Props) {
 
     <Paragraph
     className='!text-center '
-    content={BlogJSON.section1[language].h1}
+    content={BlogJSON.section1[language as 'en' | 'ar'].h1}
     />
 
     <HeadingOne
     className='!text-center max-w-[400]'
-    content={BlogJSON.section1[language].p}
+    content={BlogJSON.section1[language as 'en' | 'ar'].p}
     />
 
 </div>

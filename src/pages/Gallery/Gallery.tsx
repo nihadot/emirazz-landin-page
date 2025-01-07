@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import  { useEffect } from 'react'
 import { Header } from '../../components/reusable/Headers'
 import Footer from '../../components/reusable/Footer/Footer'
 import SectionOne from "../../components/specific/Gallery/SectionOne"
@@ -20,8 +20,6 @@ function Gallery({}: Props) {
 
    <SectionOne />
      <SectionTwo/>
-  {/*<SectionThree/>
-<SectionFour/> */}
     <Footer />
 </div>
 </div>

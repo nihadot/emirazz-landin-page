@@ -1,4 +1,3 @@
-import React from 'react'
 import { ourMission } from '../../../assets/images'
 import TextBanner from '../../reusable/TextBanner/TextBanner'
 import Image from '../../reusable/Image/Image'
@@ -23,8 +22,8 @@ function SectionTwo({}: Props) {
             containerClassName='sm:!ps-8'
             headingClassName='!p-0 !m-0'
             paragraphClassName='!pb-2'
-                heading={ScaleUpJSON.section2[language].h2}
-                paragraph={ScaleUpJSON.section2[language].p}
+                heading={ScaleUpJSON.section2[language as 'en' | 'ar'].h2}
+                paragraph={ScaleUpJSON.section2[language as 'en' | 'ar'].p}
             />
         </div>
     

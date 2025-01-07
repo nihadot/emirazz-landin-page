@@ -1,4 +1,3 @@
-import React from 'react'
 import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 import Banner from '../../reusable/Banner/Banner'
@@ -15,21 +14,20 @@ function SectionFour({}: Props) {
 
     
     const language = useSelector((state: RootState) => state.language.language);
-    console.log(ScaleUpJSON.section4[language].title,language,'ScaleUpJSON.section4[language].title')
 
 
     const children = <div className="px-4 md:px-10 lg:px-20 absolute top-0 left-0 flex flex-col justify-center w-full h-full">
         <Paragraph
-        content={ScaleUpJSON.section4[language].title}
+        content={ScaleUpJSON.section4[language as 'en' | 'ar'].title}
 
         />
     <HeadingOne
         className='md:mb-6 mb-3   !text-center sm:!text-start pt-8 !max-w-[700px] !leading-snug sm:pt-0'
-        content={ScaleUpJSON.section4[language].h3}
+        content={ScaleUpJSON.section4[language as 'en' | 'ar'].h3}
     />
     <Paragraph
         className='text-white/80 sm:!text-start !text-center'
-        content={ScaleUpJSON.section4[language].p}
+        content={ScaleUpJSON.section4[language as 'en' | 'ar'].p}
     />
     <div className="pt-3">
 

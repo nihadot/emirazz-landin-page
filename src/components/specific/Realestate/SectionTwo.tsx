@@ -1,4 +1,3 @@
-import React from 'react'
 import TextBanner from '../../reusable/TextBanner/TextBanner'
 import Image from '../../reusable/Image/Image'
 import { realsEstateAbout } from '../../../assets/images'
@@ -21,8 +20,8 @@ function SectionTwo({}: Props) {
         <TextBanner
                 containerClassName='!pr-8'
 
-            heading={realestateJSON.section2[language].h2}
-            paragraph={realestateJSON.section2[language].p}
+            heading={realestateJSON.section2[language as 'en' | 'ar'].h2}
+            paragraph={realestateJSON.section2[language as 'en' | 'ar'].p}
         />
     </div>
 
@@ -30,7 +29,7 @@ function SectionTwo({}: Props) {
 
         <Image
             src={realsEstateAbout}
-            alt={realestateJSON.section2[language].h2}
+            alt={realestateJSON.section2[language as 'en' | 'ar'].h2}
             className='w-[780px]  rounded-2xl h-[400px] object-cover'
         />
     </div>

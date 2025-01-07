@@ -13,7 +13,7 @@ export const newsApi = createApi({
     }),
     getNews: builder.query({
       query: (id) => `/${id}`,
-      providesTags: (result, error, id) => [{ type: 'News', id }],
+      providesTags: (id) => [{ type: 'News', id }],
     }),    
 
   }),

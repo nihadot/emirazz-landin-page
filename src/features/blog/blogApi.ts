@@ -54,16 +54,16 @@ export const blogApi = createApi({
   tagTypes: ['Blog'],
   endpoints: (builder) => ({
     // Get blogs with pagination support
-    getBlogs: builder.query<Blog[], { page: number; limit: number }>({
+    getBlogs: builder.query<any[], { page: number; limit: number }>({
       query: ({ page, limit }) => {
         // Send page and limit as query parameters
         return `/?page=${page}&limit=${limit}`;
       },
       providesTags: ['Blog'],
     }),
-    getBlog: builder.query<Blog, string>({
+    getBlog: builder.query<any, string>({
       query: (id) => `/${id}`,
-      providesTags: (result, error, id) => [{ type: 'Blog', id }],
+      providesTags: (id) => [{ type: 'Blog', id }],
     }),
   }),
 });

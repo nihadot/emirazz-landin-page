@@ -1,7 +1,4 @@
-import React from 'react'
 import Image from '../Image/Image'
-import { getStarted } from '../../../assets/images'
-import Paragraph from '../Paragraph/Paragraph'
 import HeaderFour from '../Titles/MainHeading/HeaderFour'
 import { IconButton } from '../Buttons'
 import { rightArrow } from '../../../assets/svg'

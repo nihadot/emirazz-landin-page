@@ -1,4 +1,3 @@
-import React from 'react'
 import realestateJSON from "../../../data/realestate.json"
 import TextBanner from '../../reusable/TextBanner/TextBanner'
 import Image from '../../reusable/Image/Image'
@@ -20,8 +19,8 @@ function SectionFive({}: Props) {
             <TextBanner
                     containerClassName='!pr-8 !max-h-[350px]'
     
-                heading={realestateJSON.section5[language].h3}
-                paragraph={realestateJSON.section5[language].p}
+                heading={realestateJSON.section5[language as 'en' | 'ar'].h3}
+                paragraph={realestateJSON.section5[language as 'en' | 'ar'].p}
             />
         </div>
     
@@ -29,7 +28,7 @@ function SectionFive({}: Props) {
     
             <Image
                 src={bundlessPotential}
-                alt={realestateJSON.section5[language].h3}
+                alt={realestateJSON.section5[language as 'en' | 'ar'].h3}
                 className='w-[780px]  rounded-2xl h-[400px] object-cover'
             />
         </div>

@@ -1,11 +1,6 @@
-import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
-import Banner from '../../reusable/Banner/Banner'
-import { fuelingTomorrowsInnovations } from '../../../assets/images'
 import HeadingTwo from '../../reusable/Titles/MainHeading/HeadingTwo'
-import { useLocation, useParams } from 'react-router'
-import { useGetAllNewsQuery } from '../../../features/news/newsApi'
-import { useEffect, useState } from 'react'
+
 
 type Props = {}
 

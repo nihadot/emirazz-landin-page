@@ -1,4 +1,3 @@
-import React from 'react'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import Image from '../../reusable/Image/Image'
@@ -25,7 +24,7 @@ function SectionEight({}: Props) {
                       <div className="bg-[#BC13FE]  absolute right-3 -bottom-24 w-32 h-32 rounded-full blur-xl opacity-30"></div>
     
                       <Image
-                      alt={AboutJSON.section8[language].h3}
+                      alt={AboutJSON.section8[language as 'en' | 'ar'].h3}
                           className='w-[544px] h-[400px] rounded-2xl md:h-[574px] object-cover'
                           src={aboutImage9}
 
@@ -37,12 +36,12 @@ function SectionEight({}: Props) {
                   <div className="flex flex-col sm:pb-0 pb-8 flex-1">
                     <Paragraph
                     className='mb-2'
-                    content={AboutJSON.section8[language].p1}
+                    content={AboutJSON.section8[language as 'en' | 'ar'].p1}
 
                     />
                       <HeadingThree
                           className='text-[45px] mb-4 '
-                          content={AboutJSON.section8[language].h3}
+                          content={AboutJSON.section8[language as 'en' | 'ar'].h3}
 
                           // content='Strategic Procurement for Lasting Value'
     
@@ -51,7 +50,7 @@ function SectionEight({}: Props) {
                       <Paragraph
                           className='!font-light !text-lg !max-w-[700px]'
     
-                          content={AboutJSON.section8[language].p}
+                          content={AboutJSON.section8[language as 'en' | 'ar'].p}
 
                       />
     

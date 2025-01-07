@@ -1,4 +1,3 @@
-import React from 'react'
 import Paragraph from '../reusable/Paragraph/Paragraph'
 import HeadingOne from '../reusable/Titles/MainHeading/HeadingOne'
 

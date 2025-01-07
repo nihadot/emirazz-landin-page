@@ -1,4 +1,3 @@
-import React from 'react'
 import TextBanner from '../../reusable/TextBanner/TextBanner'
 import Image from '../../reusable/Image/Image'
 import { businessImage3 } from '../../../assets/images'
@@ -18,8 +17,8 @@ function SectionThree({}: Props) {
     <div className="sm:absolute relative right-0">
         <TextBanner
         containerClassName='sm:!ps-8'
-        heading={BusinessJSON.section3[language].h3}
-        paragraph={BusinessJSON.section3[language].p}
+        heading={BusinessJSON.section3[language as 'en' | 'ar'].h3}
+        paragraph={BusinessJSON.section3[language as 'en' | 'ar'].p}
         />
     </div>
 
@@ -27,7 +26,7 @@ function SectionThree({}: Props) {
 
         <Image
             src={businessImage3}
-            alt={BusinessJSON.section3[language].h3}
+            alt={BusinessJSON.section3[language as 'en' | 'ar'].h3}
             className='w-[780px]  rounded-2xl h-[400px] object-cover'
         />
     </div>

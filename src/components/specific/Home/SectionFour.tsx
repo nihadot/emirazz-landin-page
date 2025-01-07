@@ -38,7 +38,7 @@ function SectionFour() {
     const language = useSelector((state: RootState) => state?.language?.language);
 
     const [page] = useState(1);
-    const [products, setProducts] = useState([]); // State to hold all blogs
+    const [products, setProducts] = useState<any[]>([]); // State to hold all blogs
     const { data } = useGetAllProductsQuery({ page, limit: 20 });
 
 
@@ -62,14 +62,14 @@ function SectionFour() {
 
                     <HeadingThree
                         className='max-w-[500px] mb-4'
-                        content={HomeJSON?.section4[language]?.h3}
+                        content={HomeJSON?.section4[language as 'en' | 'ar']?.h3}
 
                     />
 
                     <Paragraph
                         className='!font-light !max-w-5xl '
 
-                        content={HomeJSON?.section4[language]?.p}
+                        content={HomeJSON?.section4[language as 'en' | 'ar']?.p}
                     />
                 </div>
 

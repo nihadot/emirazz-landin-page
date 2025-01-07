@@ -22,14 +22,14 @@ function SectionFour() {
 
                     <HeadingThree
                         className='max-w-max mb-4'
-                        content={HomeJSON.section3[language].h3}
+                        content={HomeJSON.section3[language as 'en' | 'ar'].h3}
 
                     />
 
                     <Paragraph
                         className='!font-light !max-w-5xl '
 
-                        content={HomeJSON.section3[language].p}
+                        content={HomeJSON.section3[language as 'en' | 'ar'].p}
                     />
                 </div>
 
@@ -47,7 +47,7 @@ function SectionFour() {
                     <Image
                         className='w-[526px] h-[400px] rounded-2xl sm:h-[499px] object-cover'
                         src={image6}
-                        alt={HomeJSON.section3[language].cards[0].h3}
+                        alt={HomeJSON.section3[language as 'en' | 'ar'].cards[0].h3}
                     />
                 </div>
 
@@ -56,12 +56,12 @@ function SectionFour() {
                 <div className="flex flex-col sm:pb-0 pb-8 flex-1">
                     <HeadingThree
                         className=' mb-4'
-                        content={HomeJSON.section3[language].cards[0].h3}
+                        content={HomeJSON.section3[language as 'en' | 'ar'].cards[0].h3}
 
                     />
 
                     <Paragraph
-                        content={HomeJSON.section3[language].cards[0].p}
+                        content={HomeJSON.section3[language as 'en' | 'ar'].cards[0].p}
 
                         className='!font-light ' />
                 </div>
@@ -80,14 +80,14 @@ function SectionFour() {
                 <div className="flex flex-col  sm:pt-0 pt-8 flex-1">
                     <HeadingThree
                         className='mb-4'
-                        content={HomeJSON.section3[language].cards[1].h3}
+                        content={HomeJSON.section3[language as 'en' | 'ar'].cards[1].h3}
 
 
                     />
 
                     <Paragraph
 
-content={HomeJSON.section3[language].cards[1].p}
+content={HomeJSON.section3[language as 'en' | 'ar'].cards[1].p}
 className='!font-light'
                     />
                 </div>
@@ -98,7 +98,7 @@ className='!font-light'
                     <Image
                         className='w-[526px] h-[400px] rounded-2xl sm:h-[499px] object-cover'
                         src={image7}
-                        alt={HomeJSON.section3[language].cards[1].h3}
+                        alt={HomeJSON.section3[language as 'en' | 'ar'].cards[1].h3}
                     />
                 </div>
 

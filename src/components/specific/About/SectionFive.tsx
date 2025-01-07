@@ -25,7 +25,7 @@ function SectionFive({ }: Props) {
           <Image
             className='w-[500px] h-[400px] rounded-2xl md:h-[574px] object-cover'
             src={aboutImage6}
-            alt={AboutJSON.section5[language].p1}
+            alt={AboutJSON.section5[language as 'en' | 'ar'].p1}
           />
         </div>
 
@@ -34,19 +34,19 @@ function SectionFive({ }: Props) {
         <div className="flex flex-col sm:pb-0 pb-8 flex-1">
           <Paragraph
             className='mb-2  '
-            content={AboutJSON.section5[language].p1}
+            content={AboutJSON.section5[language as 'en' | 'ar'].p1}
 
           />
           <HeadingThree
             className='text-[45px] mb-4 '
-            content={AboutJSON.section5[language].h3}
+            content={AboutJSON.section5[language as 'en' | 'ar'].h3}
 
           />
 
           <Paragraph
             className='!font-light !max-w-[800px] !text-lg'
 
-            content={AboutJSON.section5[language].p}
+            content={AboutJSON.section5[language as 'en' | 'ar'].p}
 
           />
 

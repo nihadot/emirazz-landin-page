@@ -1,4 +1,3 @@
-import React from 'react'
 import TextBanner from '../../reusable/TextBanner/TextBanner'
 import Image from '../../reusable/Image/Image'
 import { businessImage3 } from '../../../assets/images'

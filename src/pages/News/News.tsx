@@ -1,14 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Header } from '../../components/reusable/Headers'
 import Footer from '../../components/reusable/Footer/Footer'
 import Image from '../../components/reusable/Image/Image'
-import { empoweringInnovation } from '../../assets/images'
 import HeadingTwo from '../../components/reusable/Titles/MainHeading/HeadingTwo'
 import Paragraph from '../../components/reusable/Paragraph/Paragraph'
-import BlogCard from '../../components/reusable/BlogCard/BlogCard'
 import { useGetAllNewsQuery, useGetNewsQuery } from '../../features/news/newsApi'
 import { useLocation, useParams } from 'react-router'
-import NewCard from '../../components/reusable/BlogCard/BlogCard'
+import BlogCard from '../../components/reusable/BlogCard/BlogCard'
 
 type Props = {}
 
@@ -100,9 +98,9 @@ useEffect(()=>{
         
 
          {
-                    allNews.length > 0 && allNews.map((item: NewsFormValues,index:number) => {
+                    allNews.length > 0 && allNews.map((item: any,index:number) => {
                         return (
-                          <NewCard item={item} />
+                          <BlogCard  item={item} key={index} />
 
                         )
                     })
@@ -124,7 +122,7 @@ export default News
 
 
 
-export function formatToDayMonthYear(isoDate: string): string {
+export function formatToDayMonthYear(isoDate: string | Date): string {
   if (!isoDate) return "Invalid date";
 
   const dateObject = new Date(isoDate);
@@ -138,7 +136,7 @@ export function formatToDayMonthYear(isoDate: string): string {
 }
 
 
-function BlogBody({ item }: { item: NewsFormValues }) {
+function BlogBody({ item }: { item: NewsFormValues | undefined }) {
 
   return (
     <div className='max-w-[772px] w-full'>
@@ -158,7 +156,7 @@ function BlogBody({ item }: { item: NewsFormValues }) {
 
       <Paragraph
         className='!text-sm'
-        content={formatToDayMonthYear(item?.newsDate)}
+        content={formatToDayMonthYear(item?.newsDate ?? '')}
       />
 
       <Paragraph

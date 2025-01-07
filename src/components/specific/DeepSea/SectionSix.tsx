@@ -1,8 +1,7 @@
 import { RootState } from '../../../store';
-import React from 'react'
 import { useSelector } from 'react-redux';
 import TextBanner from '../../reusable/TextBanner/TextBanner';
-import { ANewFrontier, treeFour, treeOne, treeThree, treeTwo } from '../../../assets/images';
+import { ANewFrontier, treeThree, treeTwo } from '../../../assets/images';
 import Image from '../../reusable/Image/Image';
 import realestateJSON from "../../../data/realestate.json"
 
@@ -23,8 +22,8 @@ function SectionSix({}: Props) {
             <TextBanner
                     containerClassName='!pr-8 ps-8 !max-h-[350px]'
     
-                heading={realestateJSON.section6[language].h3}
-                paragraph={realestateJSON.section6[language].p}
+                heading={realestateJSON.section6[language as 'en' | 'ar'].h3}
+                paragraph={realestateJSON.section6[language as 'en' | 'ar'].p}
             />
         </div>
     
@@ -32,7 +31,7 @@ function SectionSix({}: Props) {
     
             <Image
                 src={ANewFrontier}
-                alt={realestateJSON.section6[language].h3}
+                alt={realestateJSON.section6[language as 'en' | 'ar'].h3}
                 className='w-[780px]  rounded-2xl h-[400px] object-cover'
             />
         </div>
@@ -41,12 +40,12 @@ function SectionSix({}: Props) {
     </div>
 
     <Image
-    alt={realestateJSON.section6[language].h3}
+    alt={realestateJSON.section6[language as 'en' | 'ar'].h3}
         src={treeThree}
         className='w-[280px] brightness-50 h-[500px] absolute -bottom-40 left-10 md:left-24 object-contain'
         />
             <Image
-            alt={realestateJSON.section6[language].h3}
+            alt={realestateJSON.section6[language as 'en' | 'ar'].h3}
         src={treeTwo}
         className='w-[240px] md:block hidden z-40 absolute -right-8 bottom-0 brightness-50 h-[360px] object-contain'
         />

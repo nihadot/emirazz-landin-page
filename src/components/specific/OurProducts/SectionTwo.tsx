@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import ProductCard from '../../reusable/Card/ProductCard'
 import { useGetAllProductsQuery } from '../../../features/product/productsApi';
-import { useLocation } from 'react-router';
 
 type Props = {}
 
@@ -30,11 +29,10 @@ interface ProductFormValues {
 
 function SectionTwo({ }: Props) {
   const [page, setPage] = useState(1);
-  const [allBlogs, setAllProducts] = useState([]); // State to hold all allBlogs
+  const [allBlogs, setAllProducts] = useState<any[]>([]); // State to hold all allBlogs
   const [loading, setLoading] = useState(true); // Track loading state
   const [hasMore, setHasMore] = useState(true); // Track if there are more blogs to load
-  const { state } = useLocation();
-  const { data, isError, error, isLoading, refetch } = useGetAllProductsQuery({ page, limit: 10 },{skip:false});
+  const { data } = useGetAllProductsQuery({ page, limit: 10 },{skip:false});
 
 
 

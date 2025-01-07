@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import HeadingTwo from '../../reusable/Titles/MainHeading/HeadingTwo'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 import { useLocation, useParams } from 'react-router';

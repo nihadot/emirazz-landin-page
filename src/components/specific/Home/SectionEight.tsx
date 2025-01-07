@@ -27,7 +27,7 @@ function SectionEight() {
                     <Image
                         className='w-[526px] h-[400px] rounded-2xl sm:h-[499px] object-cover'
                         src={emirazzRealEstateTransformin}
-                        alt={HomeJSON?.section8[language]?.h3}
+                        alt={HomeJSON?.section8[language as 'en' | 'ar']?.h3}
                     />
                 </div>
 
@@ -36,16 +36,16 @@ function SectionEight() {
                 <div className="flex flex-col sm:pt-0 pt-4 flex-1">
                     <HeadingThree
                         className=' mb-4'
-                        content={HomeJSON?.section8[language]?.h3}
+                        content={HomeJSON?.section8[language as 'en' | 'ar']?.h3}
                     />
 
                     <HeaderSix
                         className='pb-4'
-                        content={HomeJSON?.section8[language]?.title}
+                        content={HomeJSON?.section8[language as 'en' | 'ar']?.title}
                     />
 
                     <Paragraph
-                        content={HomeJSON?.section8[language]?.p}
+                        content={HomeJSON?.section8[language as 'en' | 'ar']?.p}
 
                         className='!font-light' />
 

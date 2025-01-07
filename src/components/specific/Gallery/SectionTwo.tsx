@@ -53,6 +53,7 @@ useEffect(()=>{
                                                 return (
 
                                                         <Image
+                                                        key={index}
                                                                 alt={item?.name}
                                                                 src={item?.imageLink?.secure_url}
                                                                 className='h-[270px]  w-full object-cover rounded-[15px]'

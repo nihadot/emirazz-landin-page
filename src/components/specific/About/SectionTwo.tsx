@@ -1,6 +1,5 @@
 import Banner from '../../reusable/Banner/Banner'
 import { aboutImage2 } from '../../../assets/images'
-import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 import { RootState } from '../../../store'
 import { useSelector } from 'react-redux'
@@ -17,11 +16,11 @@ function SectionTwo({}: Props) {
     const children = <div className="px-4 md:px-10 lg:px-20 absolute top-0 left-0 flex flex-col justify-center w-full h-full">
         <HeadingTwo
             className='md:mb-6 mb-3 !max-w-xl !leading-tight text-start pt-8 sm:pt-0'
-            content={AboutJSON.section2[language].h2}
+            content={AboutJSON.section2[language as 'en' | 'ar'].h2}
         />
         <Paragraph
             className='text-white/90 !leading-normal text-start'
-            content={AboutJSON.section2[language].p}
+            content={AboutJSON.section2[language as 'en' | 'ar'].p}
 
         />
 
@@ -36,7 +35,7 @@ function SectionTwo({}: Props) {
   return (
     <div className=' relative  bg-black text-white'>
         <Banner
-        alt={AboutJSON.section2[language].h2}
+        alt={AboutJSON.section2[language as 'en' | 'ar'].h2}
         containerClassName='!h-[768px]'
         imageUrl={aboutImage2}
         brightness

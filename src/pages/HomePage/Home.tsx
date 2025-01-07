@@ -11,8 +11,6 @@ import SectionTwo from '../../components/specific/Home/SectionTwo'
 import SectionNine from "../../components/specific/Home/SectionNine"
 import SectionTen from "../../components/specific/Home/SectionTen"
 import SectionTwelve from "../../components/specific/Home/SectionTwelve"
-import { useSelector } from 'react-redux'
-import { RootState } from '../../../store'
 import { useEffect } from 'react'
 function Home() {
 

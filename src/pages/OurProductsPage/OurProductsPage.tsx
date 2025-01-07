@@ -2,9 +2,7 @@ import { Header } from '../../components/reusable/Headers'
 import Footer from '../../components/reusable/Footer/Footer'
 import SectionOne from '../../components/specific/OurProducts/SectionOne'
 import SectionTwo from '../../components/specific/OurProducts/SectionTwo'
-import { useEffect, useState } from 'react'
-import { useGetAllProductsQuery } from '../../features/product/productsApi'
-import { useLocation } from 'react-router'
+import { useEffect } from 'react'
 
 type Props = {}
 

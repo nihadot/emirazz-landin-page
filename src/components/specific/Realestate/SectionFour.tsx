@@ -1,5 +1,5 @@
 import TextBanner from '../../reusable/TextBanner/TextBanner'
-import { cityCentreApartment, luxuryWaterFront, modernFamilyHome, ourServicesImageOne, ourServicesImageTwo, realsEstateAbout } from '../../../assets/images'
+import { cityCentreApartment, luxuryWaterFront, modernFamilyHome } from '../../../assets/images'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import Banner from '../../reusable/Banner/Banner'
@@ -20,8 +20,8 @@ function SectionFour({ }: Props) {
         containerClassName='!ps-4 !pt-3 !pe-3 !pb-3 h-fit lg:!h-[128px]'
         paragraphClassName='!text-[13px] !p-0 !m-0 !leading-normal'
         headingClassName='!text-[18px] !p-0 !m-0'
-        paragraph={realestateJSON.section4[language].cards[0].p}
-        heading={realestateJSON.section4[language].cards[0].h3}
+        paragraph={realestateJSON.section4[language as 'en' | 'ar'].cards[0].p}
+        heading={realestateJSON.section4[language as 'en' | 'ar'].cards[0].h3}
         />
     </div>
 
@@ -31,8 +31,8 @@ const childrenTwo = <div className="absolute bottom-0 p-4 z-30">
         containerClassName='!ps-4 !pt-3 !pe-3 !pb-3 h-fit lg:!h-[128px]'
         paragraphClassName='!text-[13px] !p-0 !m-0 !leading-normal'
 headingClassName='!text-[18px] !p-0 !m-0'
-paragraph={realestateJSON.section4[language].cards[1].p}
-heading={realestateJSON.section4[language].cards[1].h3}
+paragraph={realestateJSON.section4[language as 'en' | 'ar'].cards[1].p}
+heading={realestateJSON.section4[language as 'en' | 'ar'].cards[1].h3}
 />
 </div>
 
@@ -43,8 +43,8 @@ const childrenThree = <div className="absolute bottom-0 p-4 z-30">
         containerClassName='!ps-4 !pt-3 !pe-3 !pb-3 h-fit lg:!h-[128px]'
         paragraphClassName='!text-[13px] !p-0 !m-0 !leading-normal'
 headingClassName='!text-[18px] !p-0 !m-0'
-paragraph={realestateJSON.section4[language].cards[2].p}
-heading={realestateJSON.section4[language].cards[2].h3}
+paragraph={realestateJSON.section4[language as 'en' | 'ar'].cards[2].p}
+heading={realestateJSON.section4[language as 'en' | 'ar'].cards[2].h3}
 />
 </div>
 
@@ -56,14 +56,14 @@ heading={realestateJSON.section4[language].cards[2].h3}
 
                 <HeadingThree
                     className='text-[45px] max-w-max mb-4'
-                    content={realestateJSON.section4[language].h3}
+                    content={realestateJSON.section4[language as 'en' | 'ar'].h3}
 
                 />
 
                 <Paragraph
                     className='!font-light !max-w-[900px] text-center !text-lg'
 
-                    content={realestateJSON.section4[language].p}
+                    content={realestateJSON.section4[language as 'en' | 'ar'].p}
                 />
             </div>
 

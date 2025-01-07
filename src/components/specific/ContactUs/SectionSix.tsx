@@ -1,7 +1,5 @@
-import React from 'react'
 import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
-import Card from '../../reusable/Card/Card'
 import { IconButton } from '../../reusable/Buttons'
 import { rightArrow } from '../../../assets/svg'
 

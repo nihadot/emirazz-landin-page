@@ -27,7 +27,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({
   // Memoize the context value
   const contextValue = useMemo(
     () => ({ language, toggleLanguage }),
-    [language]
+    [language as 'en' | 'ar']
   );
 
   return (

@@ -1,4 +1,3 @@
-import React from 'react'
 import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../store';
@@ -19,12 +18,12 @@ function SectionTwelve({ }: Props) {
         <div className='pt-20 bg-black w-full overflow-hidden max-w-full'>
             <HeadingOne
                 className='text-center !max-w-[100%]'
-                content={HomeJSON?.section11[language]?.h3}
+                content={HomeJSON?.section11[language as 'en' | 'ar']?.h3}
             />
             <HeadingThree
                 className='text-center !max-w-[100%]'
 
-                content={HomeJSON?.section11[language]?.p}
+                content={HomeJSON?.section11[language as 'en' | 'ar']?.p}
             />
 
             <div className="flex justify-center mt-12 relative z-10">

@@ -13,7 +13,7 @@ function SectionOne({}: Props) {
 
     const children = <div className="px-4  items-center md:px-10 lg:px-20 absolute top-0 left-0 flex flex-col justify-center w-full h-full">
   <Image
-  alt={InventionJOSN.section1[language].h1}
+  alt={InventionJOSN.section1[language as 'en' | 'ar'].h1}
   src={deepSeaIcon}
   className='w-[600px] h-[340px] object-contain'
 
@@ -27,7 +27,7 @@ function SectionOne({}: Props) {
 
     <Banner
                 // containerClassName='pt-8'
-                alt={InventionJOSN.section1[language].h1}
+                alt={InventionJOSN.section1[language as 'en' | 'ar'].h1}
                 imageUrl={deepSea}
                 containerClassName='!h-[760px]'
                 // home

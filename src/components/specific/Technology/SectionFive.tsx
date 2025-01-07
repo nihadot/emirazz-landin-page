@@ -1,4 +1,3 @@
-import HeadingTwo from '../../reusable/Titles/MainHeading/HeadingTwo'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 import { image8, image9 } from '../../../assets/images'
 import Image from '../../reusable/Image/Image'
@@ -23,13 +22,13 @@ function SectionFive({ }: Props) {
 
                     <HeadingThree
                         className='max-w-max mb-4'
-                        content={HomeJSON.section4[language].h3}
+                        content={HomeJSON.section4[language as 'en' | 'ar'].h3}
 
                     />
 
                     <Paragraph
                         className='!font-light '
-                        content={HomeJSON.section4[language].p}
+                        content={HomeJSON.section4[language as 'en' | 'ar'].p}
                     />
                 </div>
 
@@ -48,7 +47,7 @@ function SectionFive({ }: Props) {
                     <Image
                         className='w-[526px] h-[400px] rounded-2xl sm:h-[499px] object-cover'
                         src={image8}
-                        content={HomeJSON.section4[language].cards[0].h3}
+                        alt=''
                     />
                 </div>
 
@@ -57,12 +56,12 @@ function SectionFive({ }: Props) {
                 <div className="flex flex-col sm:pt-0 pt-8 flex-1">
                     <HeadingThree
                         className=' mb-4'
-                        content={HomeJSON.section4[language].cards[0].h3}
+                        content={HomeJSON.section4[language as 'en' | 'ar'].cards[0].h3}
 
                     />
 
                     <Paragraph
-                        content={HomeJSON.section4[language].cards[0].p}
+                        content={HomeJSON.section4[language as 'en' | 'ar'].cards[0].p}
 
                         className='!font-light ' />
                 </div>
@@ -82,12 +81,12 @@ function SectionFive({ }: Props) {
                 <div className="flex flex-col  sm:pt-0 pt-8 flex-1">
                     <HeadingThree
                         className=' mb-4'
-                        content={HomeJSON.section4[language].cards[1].h3}
+                        content={HomeJSON.section4[language as 'en' | 'ar'].cards[1].h3}
 
                     />
 
                     <Paragraph
-                        content={HomeJSON.section4[language].cards[1].p}
+                        content={HomeJSON.section4[language as 'en' | 'ar'].cards[1].p}
 
                         className='!font-light '
                     />
@@ -97,7 +96,7 @@ function SectionFive({ }: Props) {
 
 
                     <Image
-                    alt={HomeJSON.section4[language].cards[1].h3}
+                    alt={HomeJSON.section4[language as 'en' | 'ar'].cards[1].h3}
                         className='w-[526px] h-[400px]  md:pt-0 rounded-2xl sm:h-[499px] object-cover'
                         src={image9}
                     />

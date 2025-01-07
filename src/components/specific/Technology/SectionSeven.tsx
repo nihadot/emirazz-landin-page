@@ -19,12 +19,12 @@ function SectionSeven({ }: Props) {
         <HeadingThree
             className=' max-w-max mb-4'
 
-            content={HomeJSON.section6[language].banners[0].h3}
+            content={HomeJSON.section6[language as 'en' | 'ar'].banners[0].h3}
         />
         <Paragraph
             className='!font-light '
 
-            content={HomeJSON.section6[language].banners[0].p}
+            content={HomeJSON.section6[language as 'en' | 'ar'].banners[0].p}
         />
     </div>
 
@@ -37,14 +37,14 @@ function SectionSeven({ }: Props) {
 
                 <HeadingThree
                     className=' text-center max-w-max mb-4'
-                    content={HomeJSON.section6[language].h3}
+                    content={HomeJSON.section6[language as 'en' | 'ar'].h3}
 
                 />
 
                 <Paragraph
                     className='!font-light text-center mb-10'
 
-                    content={HomeJSON.section6[language].p}
+                    content={HomeJSON.section6[language as 'en' | 'ar'].p}
                 />
 
 
@@ -52,7 +52,7 @@ function SectionSeven({ }: Props) {
                 <Banner
                     imageUrl={image13}
                     containerClassName='!h-[700px] '
-                    alt={HomeJSON.section6[language].h3}
+                    alt={HomeJSON.section6[language as 'en' | 'ar'].h3}
                     children={children}
                     brightness
                 />

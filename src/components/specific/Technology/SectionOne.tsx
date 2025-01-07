@@ -19,11 +19,11 @@ function SectionOne({ }: Props) {
     const children = <div className="px-4 md:px-10 lg:px-20 absolute top-0 left-0 flex flex-col justify-center w-full h-full">
         <HeadingOne
             className='md:mb-6 mb-3 pt-8 sm:pt-0'
-            content={HomeJSON.section1[language].h1}
+            content={HomeJSON.section1[language as 'en' | 'ar'].h1}
         />
         <Paragraph
             className='text-white/80'
-            content={HomeJSON.section1[language].p}
+            content={HomeJSON.section1[language as 'en' | 'ar'].p}
         />
     </div>
 
@@ -31,7 +31,7 @@ function SectionOne({ }: Props) {
     return (
         <div className="">
             <Banner
-                alt={HomeJSON.section1[language].h1}
+                alt={HomeJSON.section1[language as 'en' | 'ar'].h1}
                 imageUrl={image1}
                 home
                 linearGradient

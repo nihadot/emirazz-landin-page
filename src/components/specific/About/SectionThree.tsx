@@ -18,16 +18,16 @@ function SectionThree({ }: Props) {
             <div className=" flex-1 pe-0 sm:pe-4 flex flex-col relative ">
                 <Paragraph
 
-                    content={AboutJSON.section3[language].p1}
+                    content={AboutJSON.section3[language as 'en' | 'ar'].p1}
                 />
 
                 <HeadingThree
                     className='!leading-[1.2] md:text-[45px] '
-                    content={AboutJSON.section3[language].h3}
+                    content={AboutJSON.section3[language as 'en' | 'ar'].h3}
                 />
                 <Paragraph
                     className='mt-4'
-                    content={AboutJSON.section3[language].p}
+                    content={AboutJSON.section3[language as 'en' | 'ar'].p}
 
                 />
             </div>
@@ -41,7 +41,7 @@ function SectionThree({ }: Props) {
                 <Image
                     src={aboutImage3}
                     className='rounded-2xl mb-10 -me-60 mt-60 flex-1 sm:flex-none sm:-me-36  z-30 border border-black  sm:mt-32 w-[297px] h-[339px] object-cover'
-                    alt={AboutJSON.section3[language].h3}
+                    alt={AboutJSON.section3[language as 'en' | 'ar'].h3}
                 />
 
                 <div className="w-[70px] h-[70px]"></div>
@@ -50,7 +50,7 @@ function SectionThree({ }: Props) {
                 <Image
                     src={aboutImage4}
                     className='rounded-2xl border flex-1 sm:flex-none  -ml-3 sm:ml-0 border-black w-[297px] h-[339px] object-cover'
-                    alt={AboutJSON.section3[language].h3}
+                    alt={AboutJSON.section3[language as 'en' | 'ar'].h3}
                 />
             </div>
 

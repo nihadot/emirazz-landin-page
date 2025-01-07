@@ -1,11 +1,8 @@
-import React, { useEffect } from 'react'
+import  { useEffect } from 'react'
 import { Header } from '../../components/reusable/Headers'
 import Footer from '../../components/reusable/Footer/Footer'
 import SectionOne from "../../components/specific/ProductPage/SectionOne"
 import SectionTwo from "../../components/specific/ProductPage/SectionTwo"
-import { useLocation, useParams } from 'react-router'
-import HeadingOne from '../../components/reusable/Titles/MainHeading/HeadingOne'
-import { useGetProductQuery } from '../../features/product/productsApi'
 type Props = {}
 
 function ProductPage({}: Props) {

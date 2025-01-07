@@ -47,7 +47,7 @@ function SectionNine({ }: Props) {
 
     
         const [page] = useState(1);
-        const [allNews, setAllNews] = useState([]); // State to hold all blogs
+        const [allNews, setAllNews] = useState<any[]>([]); // State to hold all blogs
         const { data } = useGetAllNewsQuery({ page, limit: 20 });
     
      useEffect(() => {
@@ -70,11 +70,11 @@ function SectionNine({ }: Props) {
                 <div className="flex flex-col sm:pb-0 pb-8 flex-1">
                     <HeadingThree
                         className=' mb-4'
-                        content={HomeJSON?.section9[language]?.h3}
+                        content={HomeJSON?.section9[language as 'en' | 'ar']?.h3}
                     />
                     <Paragraph
                         className='!font-light'
-                        content={HomeJSON?.section9[language]?.p}
+                        content={HomeJSON?.section9[language as 'en' | 'ar']?.p}
                     />
                 </div>
 
@@ -130,7 +130,6 @@ interface CardProps {
 }
 
 const Children: React.FC<CardProps> = ({ item }) => {
-    const language = useSelector((state: RootState) => state?.language?.language);
 
   return (
     <div className="absolute  w-full bottom-0 p-4 z-30">

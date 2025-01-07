@@ -3,7 +3,6 @@ import HomeJSON from "../../../data/home.json"
 import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import { RootState } from '../../../store'
 import { useSelector } from 'react-redux'
-import ProductCard from '../../reusable/Card/ProductCard'
 import { useEffect, useState } from 'react'
 import { useGetBlogsQuery } from '../../../features/blog/blogApi'
 import BlogCard from '../../reusable/BlogCard/BlogCard'
@@ -36,11 +35,6 @@ interface BlogFormValues {
     slugNameEn:string
   }
   
-  // Define types for login response
-  interface BlogResponse {
-    success: boolean; // Indicates if the operation was successful
-    message: string;  // Contains a descriptive message
-  }
 
 function SectionTen({ }) {
 
@@ -48,7 +42,7 @@ function SectionTen({ }) {
 
       const [page] = useState(1);
         const [blogs, setBlogs] = useState([]); // State to hold all blogs
-        const { data:BlogData } = useGetBlogsQuery({ page, limit: 10 });
+        const { data:BlogData } = useGetBlogsQuery<any>({ page, limit: 10 });
     
     
    useEffect(() => {
@@ -66,11 +60,11 @@ function SectionTen({ }) {
             <div className="flex flex-col relative justify-center items-center pt-8 px-4 md:px-10 bg-black lg:px-20">
                 <HeadingThree
                     className='!text-center max-w-[400] pb-4 pt-8'
-                    content={HomeJSON?.section10[language]?.h3}
+                    content={HomeJSON?.section10[language as 'en' | 'ar']?.h3}
                 />
                 <Paragraph
                     className='!text-center '
-                    content={HomeJSON?.section10[language]?.p}
+                    content={HomeJSON?.section10[language as 'en' | 'ar']?.p}
                 />
             </div>
 

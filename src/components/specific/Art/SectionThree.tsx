@@ -1,8 +1,7 @@
-import React from 'react'
 import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import Banner from '../../reusable/Banner/Banner'
 import TextBanner from '../../reusable/TextBanner/TextBanner'
-import { artAndTechnologyCollaboration, cityCentreApartment, luxuryWaterFront, modernFamilyHome, publicArtInstallation, theEmpiorSculpture } from '../../../assets/images'
+import { artAndTechnologyCollaboration, publicArtInstallation, theEmpiorSculpture } from '../../../assets/images'
 import ArtJSON from "../../../data/art.json"
 import { useSelector } from 'react-redux'
 import { RootState } from '../../../store'
@@ -20,7 +19,7 @@ function SectionThree({}: Props) {
     // paragraphClassName='!text-[13px] !p-0 !m-0 !leading-normal'
     headingClassName='!text-[16px] !px-4 !py-1 !m-0'
     // paragraph='Luxury waterfront villas with private pools, modern designs, ocean views, and exclusive amenities for ultimate privacy.'
-    heading={ArtJSON?.section2[language]?.cards[0]}
+    heading={ArtJSON?.section2[language as 'en' | 'ar']?.cards[0]}
     />
 </div>
 
@@ -31,7 +30,7 @@ paragraph=''
     // paragraphClassName='!text-[13px] !p-0 !m-0 !leading-normal'
 headingClassName='!text-[16px] !px-4 !py-1 !m-0'
 // paragraph='Luxury waterfront villas with private pools, modern designs, ocean views, and exclusive amenities for ultimate privacy.'
-heading={ArtJSON?.section2[language]?.cards[1]}
+heading={ArtJSON?.section2[language as 'en' | 'ar']?.cards[1]}
 />
 </div>
 
@@ -42,7 +41,7 @@ paragraph=''
     // paragraphClassName='!text-[13px] !p-0 !m-0 !leading-normal'
 headingClassName='!text-[16px] !px-4 !py-1 !m-0'
 // paragraph='Luxury waterfront villas with private pools, modern designs, ocean views, and exclusive amenities for ultimate privacy.'
-heading={ArtJSON?.section2[language]?.cards[2]}
+heading={ArtJSON?.section2[language as 'en' | 'ar']?.cards[2]}
 />
 </div>
 
@@ -54,12 +53,12 @@ heading={ArtJSON?.section2[language]?.cards[2]}
         
         <HeadingThree
         className=' !max-w-full !font-Komorebi !font-normal italic text-center'
-        content={ArtJSON.section2[language].h2}
+        content={ArtJSON.section2[language as 'en' | 'ar'].h2}
         />
 
 <div className="flex md:flex-row  flex-col mt-12 gap-4">
               <Banner
-              alt={ArtJSON.section2[language].h2}
+              alt={ArtJSON.section2[language as 'en' | 'ar'].h2}
 imageClassName='!rounded-[15px]'
               children={childrenOne}
               imageUrl={theEmpiorSculpture}
@@ -69,7 +68,7 @@ imageClassName='!rounded-[15px]'
               
 
               <Banner
-              alt={ArtJSON.section2[language].h2}
+              alt={ArtJSON.section2[language as 'en' | 'ar'].h2}
               children={childrenTwo}
 imageClassName='!rounded-[15px]'
               
@@ -79,7 +78,7 @@ imageClassName='!rounded-[15px]'
 
 
 <Banner
-alt={ArtJSON.section2[language].h2}
+alt={ArtJSON.section2[language as 'en' | 'ar'].h2}
               children={childrenThree}
 imageClassName='!rounded-[15px]'
               

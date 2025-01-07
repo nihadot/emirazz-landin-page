@@ -1,8 +1,5 @@
-import React from 'react'
-import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne'
-import Paragraph from '../../reusable/Paragraph/Paragraph'
 import Banner from '../../reusable/Banner/Banner'
-import { art, image1, noOpacityLogo } from '../../../assets/images'
+import { art, noOpacityLogo } from '../../../assets/images'
 import Image from '../../reusable/Image/Image'
 
 type Props = {}

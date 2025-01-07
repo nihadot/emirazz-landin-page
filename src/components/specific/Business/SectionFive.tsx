@@ -1,4 +1,4 @@
-import { businessImage2, businessImage5 } from '../../../assets/images'
+import {  businessImage5 } from '../../../assets/images'
 import Image from '../../reusable/Image/Image'
 import TextBanner from '../../reusable/TextBanner/TextBanner'
 import BusinessJSON from "../../../data/business.json"
@@ -17,8 +17,8 @@ function SectionFive({ }: Props) {
 <div className="sm:absolute relative right-0">
 <TextBanner
         containerClassName='sm:!ps-8'
-        heading={BusinessJSON.section5[language].h3}
-        paragraph={BusinessJSON.section5[language].p}
+        heading={BusinessJSON.section5[language as 'en' | 'ar'].h3}
+        paragraph={BusinessJSON.section5[language as 'en' | 'ar'].p}
         />
     </div>
 
@@ -26,7 +26,7 @@ function SectionFive({ }: Props) {
 
         <Image
             src={businessImage5}
-            alt={BusinessJSON.section3[language].h3}
+            alt={BusinessJSON.section3[language as 'en' | 'ar'].h3}
             className='w-[780px]  rounded-2xl h-[400px] object-cover'
         />
     </div>

@@ -35,7 +35,7 @@ function Component() {
 
                 <HeadingTwo
                     className={`!leading-[1.2] !max-w-[800px] ${language === 'ar' ? '!max-w-[376px] ': ' '}`}
-                    content={HomeJSON?.section2[language]?.h2}
+                    content={HomeJSON?.section2[language as 'en' | 'ar']?.h2}
                 />
                 <div className={`${language === 'ar' ? 'flex-col':''} flex-col lg:flex-row flex gap-3 `}>
                     <div className={`my-3`}>  
@@ -44,7 +44,7 @@ function Component() {
                     </div>
                     <Paragraph
                         className={`!text-[20px] ${language === 'ar' ? '!max-w-[500px] ' : '!max-w-[800px] '} !font-normal !leading-7 !text-white/80`}
-                        content={HomeJSON?.section2[language]?.p}
+                        content={HomeJSON?.section2[language as 'en' | 'ar']?.p}
                     />
                 </div>
 
@@ -56,7 +56,7 @@ function Component() {
                 <Image
                     src={whereInnovation}
                     className='rounded-2xl  flex-1 sm:flex-none  w-full  z-30 border border-black  sm:w-[457px] h-[400px] sm:h-[388px] object-cover'
-                    alt={HomeJSON?.section2[language]?.h2}
+                    alt={HomeJSON?.section2[language as 'en' | 'ar']?.h2}
                 />
 
                 <div className="bg-[#BC13FE] absolute md:block hidden left-60 top-40 w-28 h-28 rounded-full blur-xl opacity-55"></div>

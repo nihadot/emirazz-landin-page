@@ -1,4 +1,3 @@
-import React from 'react'
 import Footer from '../../components/reusable/Footer/Footer'
 import { Header } from '../../components/reusable/Headers'
 import SectionOne from '../../components/specific/Art/SectionOne'

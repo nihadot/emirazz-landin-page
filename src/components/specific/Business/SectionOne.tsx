@@ -17,18 +17,18 @@ function SectionOne({ }: Props) {
         <HeadingOne
 
             className={'!max-w-[900px] md:mb-6 mb-3 pt-8 sm:pt-0'}
-           content={BusinessJSON.section1[language].h1}
+           content={BusinessJSON.section1[language as 'en' | 'ar'].h1}
         />
         <Paragraph
             className='!max-w-[680px] text-white/80'
-            content={BusinessJSON.section1[language].p}        />
+            content={BusinessJSON.section1[language as 'en' | 'ar'].p}        />
     </div>
 
     return (
         <div className="">
             <Banner
                 // containerClassName='pt-8'
-                alt={BusinessJSON.section1[language].h1}
+                alt={BusinessJSON.section1[language as 'en' | 'ar'].h1}
                 imageUrl={businessImage1}
                 containerClassName=''
                 home

@@ -13,7 +13,7 @@ export const galleryApi = createApi({
     }),
     getGallery: builder.query({
       query: (id) => `/${id}`,
-      providesTags: (result, error, id) => [{ type: 'Galley', id }],
+      providesTags: (id) => [{ type: 'Galley', id }],
     }),    
 
 

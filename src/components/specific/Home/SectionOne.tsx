@@ -20,17 +20,17 @@ function SectionOne({ }: Props) {
         {language === 'ar' && <>
             <HeadingOne
                 className={`md:mb-6 !leading-tight !text-5xl text-center md:text-start md:!text-7xl mb-3 pt-0 sm:pt-0`}
-                content={HomeJSON?.section1[language]?.h1?.[0]}
+                content={HomeJSON?.section1[language as 'en' | 'ar']?.h1?.[0]}
             />
 
             <HeadingOne
                 className={`md:mb-6 !leading-tight !text-5xl  text-center md:text-start md:!text-7xl mb-3 pt-0 sm:pt-0`}
-                content={HomeJSON?.section1[language]?.h1?.[1]}
+                content={HomeJSON?.section1[language as 'en' | 'ar']?.h1?.[1]}
             />
 
             <HeadingOne
                 className={`md:mb-6  !leading-tight !text-5xl  text-center md:text-start md:!text-7xl mb-3 pt-0 sm:pt-0`}
-                content={HomeJSON?.section1[language]?.h1?.[2]}
+                content={HomeJSON?.section1[language as 'en' | 'ar']?.h1?.[2]}
             />
         </>}
     </div>

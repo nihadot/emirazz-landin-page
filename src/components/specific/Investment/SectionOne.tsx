@@ -1,7 +1,7 @@
 import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 import Banner from '../../reusable/Banner/Banner'
-import { empoweringInnovation, empoweringVision } from '../../../assets/images'
+import { empoweringInnovation } from '../../../assets/images'
 import investmentJSON from "../../../data/invertments.json"
 import { useSelector } from 'react-redux'
 import { RootState } from '../../../store'
@@ -17,11 +17,11 @@ function SectionOne({}: Props) {
     <HeadingOne
 
         className='md:mb-6 mb-3 pt-8 sm:pt-0 !max-w-[800px]'
-        content={investmentJSON.section1[language].h1}
+        content={investmentJSON.section1[language as 'en' | 'ar'].h1}
         />
     <Paragraph
         className='text-white/80'
-        content={investmentJSON.section1[language].p}
+        content={investmentJSON.section1[language as 'en' | 'ar'].p}
 
     />
 </div>

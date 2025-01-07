@@ -20,17 +20,17 @@ function SectionFive({ }: Props) {
            
            <div className="flex flex-col justify-center items-center">
            <HeadingThree
-           content={HomeJSON?.section5[language]?.h3}
+           content={HomeJSON?.section5[language as 'en' | 'ar']?.h3}
            className='mb-3 text-center md:!text-[50px]  !leading-snug'
            />
            <HeaderSix
                 className='!text-center pb-3 pt-2'
-                content={HomeJSON?.section5[language]?.title}
+                content={HomeJSON?.section5[language as 'en' | 'ar']?.title}
            
            />
            <Paragraph
                 className='!text-center'
-                content={HomeJSON?.section5[language]?.p}
+                content={HomeJSON?.section5[language as 'en' | 'ar']?.p}
             />
 
 <Link to={'scaleup'}>
@@ -47,7 +47,7 @@ function SectionFive({ }: Props) {
         <div className="px-4 md:px-10 lg:px-20 bg-black py-32">
         <Banner
         containerClassName='!h-[580px]'
-            alt={HomeJSON?.section5[language]?.h3}
+            alt={HomeJSON?.section5[language as 'en' | 'ar']?.h3}
             imageUrl={scaleupYOurBusinessWith}
             brightness
             children={children}

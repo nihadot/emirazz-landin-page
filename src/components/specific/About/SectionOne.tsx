@@ -44,16 +44,16 @@ function SectionOneScreen() {
             <div className="flex flex-col    items-center ">
 
                 <Paragraph
-                    content={AboutJSON.section1[language].p}
+                    content={AboutJSON.section1[language as 'en' | 'ar'].p}
                     className=' text-center'
                 />
                 <HeadingTwo
                     className='!max-w-[850px] text-center !leading-tight'
-                    content={AboutJSON.section1[language].h1} />
+                    content={AboutJSON.section1[language as 'en' | 'ar'].h1} />
             </div>
 
             <Banner
-            alt={AboutJSON.section1[language].h1}
+            alt={AboutJSON.section1[language as 'en' | 'ar'].h1}
             
                 imageUrl={aboutImage1}
                 containerClassName='!h-[600px] sm:!h-[466px] !object-cover'

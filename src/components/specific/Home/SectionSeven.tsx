@@ -19,18 +19,18 @@ function SectionSeven({ }: Props) {
 
         <div className="flex  mt-3 flex-col justify-start items-start">
             <HeadingThree
-                content={HomeJSON?.section7[language]?.h3}
+                content={HomeJSON?.section7[language as 'en' | 'ar']?.h3}
                 className='mb-3 !text-black !leading-tight !max-w-[500px] !text-5xl '
             />
 
             <HeaderSix
                 className='!text-black italic py-2'
-                content={HomeJSON?.section7[language]?.title}
+                content={HomeJSON?.section7[language as 'en' | 'ar']?.title}
             />
 
             <Paragraph
                 className='!font-light !text-black  !max-w-[400px]  !leading-normal mt-3 '
-                content={HomeJSON?.section7[language]?.p}
+                content={HomeJSON?.section7[language as 'en' | 'ar']?.p}
             />
 
             <div className="py-4 flex justify-end">
@@ -54,7 +54,7 @@ function SectionSeven({ }: Props) {
     return (
         <div dir='ltr' className="px-4 relative  md:px-10 lg:px-20 bg-black py-32">
             <Banner
-                alt={HomeJSON?.section7[language]?.h3}
+                alt={HomeJSON?.section7[language as 'en' | 'ar']?.h3}
                 imageUrl={emirazzTechnologyLeadingWith}
                 containerClassName='custom-red !h-[700px]'
                 children={children}

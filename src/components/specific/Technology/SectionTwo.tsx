@@ -60,17 +60,17 @@ function Component() {
 
                 <HeadingTwo
                     className=' '
-                    content={HomeJSON.section2[language].h2}
+                    content={HomeJSON.section2[language as 'en' | 'ar'].h2}
                 />
                 <Paragraph
                     className=' !max-w-[545px] !font-normal !leading-7 !text-white/80'
-                    content={language === "en" ? HomeJSON.section2[language].p : value}
+                    content={language === "en" ? HomeJSON.section2[language as 'en' | 'ar'].p : value}
                 />
 
                 <ul className='list-disc text-white pl-10 pt-1  relative' style={{}}>
 
                     {
-                        language === "en" && HomeJSON.section2[language].lists?.map((item, index) => {
+                        language === "en" && HomeJSON.section2[language as 'en'].lists?.map((item, index) => {
                             return (
                                 <li className='' key={index}>
                                     <Paragraph content={item.li} />
@@ -92,7 +92,7 @@ function Component() {
                 <Image
                     src={image2}
                     className='rounded-2xl mb-10 me-0  mt-60 flex-1 sm:flex-none sm:-me-4 w-[250px]  z-30 border border-black md:mt-30 sm:mt-32 sm:w-[297px] h-[339px] object-cover'
-                    alt={HomeJSON.section2[language].h2}
+                    alt={HomeJSON.section2[language as 'en' | 'ar'].h2}
                 />
 
                 <div className="bg-[#BC13FE] absolute md:block hidden left-60 top-40 w-28 h-28 rounded-full blur-xl opacity-55"></div>
@@ -100,7 +100,7 @@ function Component() {
                 <Image
                     src={image3}
                     className='rounded-2xl border flex-1 sm:flex-none sm:-ml-12 border-black w-[250px] sm:w-[297px] h-[339px] object-cover'
-                    alt={HomeJSON.section2[language].h2}
+                    alt={HomeJSON.section2[language as 'en' | 'ar'].h2}
                 />
             </div>
 
@@ -110,7 +110,7 @@ function Component() {
                 <Image
                     src={image2}
                     className='rounded-2xl mb-10 me-0 z-30 border border-black w-[297px] h-[339px] object-cover'
-                    alt={HomeJSON.section2[language].h2}
+                    alt={HomeJSON.section2[language as 'en' | 'ar'].h2}
                 />
 
                 <div className="bg-[#BC13FE] absolute md:block hidden left-60 top-40 w-28 h-28 rounded-full blur-xl opacity-55"></div>
@@ -118,7 +118,7 @@ function Component() {
                 <Image
                     src={image3}
                     className='rounded-2xl border -mt-40 ms-10  border-black w-[297px] h-[339px] object-cover'
-                    alt={HomeJSON.section2[language].h2}
+                    alt={HomeJSON.section2[language as 'en' | 'ar'].h2}
                 />
             </div>
 

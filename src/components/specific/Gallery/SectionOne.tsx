@@ -18,12 +18,12 @@ function SectionOne({ }: Props) {
         <div className='pt-20 w-full overflow-hidden max-w-full'>
             <HeadingOne
                 className='text-center !max-w-[100%]'
-                content={GalleryJSON.section1[language].h1}
+                content={GalleryJSON.section1[language as 'en' | 'ar'].h1}
             />
             <HeadingTwo
                 className='text-center !max-w-[100%]'
 
-                content={GalleryJSON.section1[language].p}
+                content={GalleryJSON.section1[language as 'en' | 'ar'].p}
             />
             <div className="bg-[#13FEB7] absolute  top-16 -left-20 w-40 h-40 rounded-full blur-xl opacity-55"></div>
                 <div className="bg-[#A513FE] top-16 -right-20  absolute  w-40 h-40 rounded-full blur-xl opacity-55"></div>
@@ -37,12 +37,12 @@ function SectionOne({ }: Props) {
                 <div className="flex justify-center mt-12 relative z-10">
 
 <Image
-alt={GalleryJSON.section1[language].h1}
+alt={GalleryJSON.section1[language as 'en' | 'ar'].h1}
 className='w-[100px] xs-xs:w-[200px] lg:w-[345px] xs-md:w-[210px] xs-xs:h-[230px] h-[100px] mt-8 ms-2 rotate-6 lg:h-[327px] object-cover rounded-[15px]'
 src={visualChronicles1}
 />
    <Image
-   alt={GalleryJSON.section1[language].h1}
+   alt={GalleryJSON.section1[language as 'en' | 'ar'].h1}
 className='w-[100px] xs-xs:w-[200px] lg:w-[345px] xs-md:w-[260px] h-[130px] xs-xs:h-[230px] relative z-20 lg:h-[368px] object-cover rounded-[15px]'
 src={visualChronicles2}
 />
@@ -56,7 +56,7 @@ src={visualChronicles3}
 
 <Paragraph
 className='md:!text-5xl !text-3xl !text-nowrap !font-Komorebi !font-bold'
-content={GalleryJSON.section1[language].title}
+content={GalleryJSON.section1[language as 'en' | 'ar'].title}
 />
 
         </div>

@@ -23,7 +23,7 @@ function SectionThree({ }: Props) {
                     <Image
                         className='w-[526px] h-[400px] rounded-2xl sm:h-[499px] object-cover'
                         src={image4}
-                        alt={HomeJSON.section2[language].cards[0].h3}
+                        alt={HomeJSON.section2[language as 'en' | 'ar'].cards[0].h3}
                     />
                 </div>
 
@@ -31,9 +31,9 @@ function SectionThree({ }: Props) {
                 <div className="flex flex-col sm:pt-0 pt-8 flex-1">
                     <HeadingThree
                         className=' mb-4'
-                        content={HomeJSON.section2[language].cards[0].h3}
+                        content={HomeJSON.section2[language as 'en' | 'ar'].cards[0].h3}
                     />
-                    <Paragraph content={HomeJSON.section2[language].cards[0].p} />
+                    <Paragraph content={HomeJSON.section2[language as 'en' | 'ar'].cards[0].p} />
                 </div>
             </div>
 
@@ -50,7 +50,7 @@ function SectionThree({ }: Props) {
                     <Image
                         className='w-[526px] h-[400px] rounded-2xl md:h-[499px] object-cover'
                         src={image5}
-                        alt={HomeJSON.section2[language].cards[1].h3}
+                        alt={HomeJSON.section2[language as 'en' | 'ar'].cards[1].h3}
                     />
                 </div>
 
@@ -58,11 +58,11 @@ function SectionThree({ }: Props) {
                 <div className="flex flex-col sm:pb-0 pb-8 flex-1">
                     <HeadingThree
                         className=' mb-4'
-                        content={HomeJSON.section2[language].cards[1].h3}
+                        content={HomeJSON.section2[language as 'en' | 'ar'].cards[1].h3}
                     />
                     <Paragraph
                         className='!font-light'
-                        content={HomeJSON.section2[language].cards[1].p}
+                        content={HomeJSON.section2[language as 'en' | 'ar'].cards[1].p}
                     />
                 </div>
             </div>

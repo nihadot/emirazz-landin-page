@@ -16,15 +16,15 @@ function SectionSix({}: Props) {
        
        <Paragraph
        className='md:mb-2'
-            content={AboutJSON.section6[language].banners[0].p1}
+            content={AboutJSON.section6[language as 'en' | 'ar'].banners[0].p1}
             />
         <HeadingThree
             className='md:mb-4 mb-3 pt-8 sm:pt-0'
-            content={AboutJSON.section6[language].banners[0].h3}
+            content={AboutJSON.section6[language as 'en' | 'ar'].banners[0].h3}
             />
         <Paragraph
             className='text-white/80'
-            content={AboutJSON.section6[language].banners[0].p}
+            content={AboutJSON.section6[language as 'en' | 'ar'].banners[0].p}
             />
 
 
@@ -41,7 +41,7 @@ function SectionSix({}: Props) {
         containerClassName='!h-[700px]'
         imageUrl={aboutImage7}
         brightness
-        alt={AboutJSON.section6[language].banners[0].h3}
+        alt={AboutJSON.section6[language as 'en' | 'ar'].banners[0].h3}
     
         children={children}
         />

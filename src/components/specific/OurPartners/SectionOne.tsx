@@ -1,14 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 import Card from '../../reusable/Card/Card'
-import { rightArrow } from '../../../assets/svg'
-import { IconButton } from '../../reusable/Buttons'
 import { RootState } from '../../../store'
 import { useSelector } from 'react-redux'
 import partnersJSON from "../../../data/partners.json"
 import { useGetAllPartnersQuery } from '../../../features/partners/partnersApi'
-import { Link } from 'react-router'
 
 type Props = {}
 
@@ -56,14 +53,14 @@ function SectionOne({}: Props) {
 
         <HeadingOne
             className='text-[45px] max-w-max mb-4'
-            content={partnersJSON.section1[language].h1}
+            content={partnersJSON.section1[language as 'en' | 'ar'].h1}
 
 
         />
 
         <Paragraph
             className='!font-light !max-w-[900px] text-center !text-lg'
-            content={partnersJSON.section1[language].p}
+            content={partnersJSON.section1[language as 'en' | 'ar'].p}
 
         />
     </div>

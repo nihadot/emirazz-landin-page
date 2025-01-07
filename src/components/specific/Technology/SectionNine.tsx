@@ -19,12 +19,12 @@ function SectionNine({ }: Props) {
             <HeadingThree
                 className=' max-w-max mb-4'
 
-                content={HomeJSON.section8[language].h3}
+                content={HomeJSON.section8[language as 'en' | 'ar'].h3}
                 />
             <Paragraph
                 className='!font-light !max-w-[600px]'
 
-                content={HomeJSON.section8[language].p}
+                content={HomeJSON.section8[language as 'en' | 'ar'].p}
             />
         </div>
     </div>
@@ -35,7 +35,7 @@ function SectionNine({ }: Props) {
             <Banner
                 home
                 brightness
-                alt={HomeJSON.section8[language].h3}
+                alt={HomeJSON.section8[language as 'en' | 'ar'].h3}
                 children={children}
                 imageUrl={image16}
                 imageClassName='!rounded-[20px] md:!rounded-[0px]'

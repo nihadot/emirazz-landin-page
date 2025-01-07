@@ -2,7 +2,7 @@
 type Props = {
     id?:string,
     className?:string,
-    content:string,
+    content:any,
 }
 
 function HeadingOne({className,id,content}: Props) {

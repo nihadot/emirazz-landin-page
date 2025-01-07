@@ -12,7 +12,7 @@ export const partnersApi = createApi({
     }),
     getPartners: builder.query({
       query: (id) => `/${id}`,
-      providesTags: (result, error, id) => [{ type: 'Partners', id }],
+      providesTags: (id) => [{ type: 'Partners', id }],
     }), 
   }),
 });

@@ -18,8 +18,8 @@ function SectionTwo({ }: Props) {
                 <TextBanner
                 containerClassName='!pr-8'
 
-                           heading={BusinessJSON.section2[language].h2}
-                           paragraph={BusinessJSON.section2[language].p}
+                           heading={BusinessJSON.section2[language as 'en' | 'ar'].h2}
+                           paragraph={BusinessJSON.section2[language as 'en' | 'ar'].p}
                 />
             </div>
 
@@ -27,7 +27,7 @@ function SectionTwo({ }: Props) {
 
                 <Image
                     src={businessImage2}
-                    alt={BusinessJSON.section2[language].h2}
+                    alt={BusinessJSON.section2[language as 'en' | 'ar'].h2}
 
                     className='w-[780px]  rounded-2xl h-[400px] object-cover'
                 />

@@ -19,16 +19,16 @@ function SectionTwo({}: Props) {
                     <Image
                         className='w-[526px] h-[400px] rounded-2xl sm:h-[499px] object-cover'
                         src={deepSea2Icon}
-                        alt={DeepSeaJSON.section1[language].p}
+                        alt={DeepSeaJSON.section1[language as 'en' | 'ar'].p}
                     />
                 </div>
          
                 <div className="flex flex-col sm:pt-0 pt-8 flex-1">
                     <Paragraph
                         className=' mb-4'
-                        content={DeepSeaJSON.section1[language].p}
+                        content={DeepSeaJSON.section1[language as 'en' | 'ar'].p}
                     />
-                    {/* <Paragraph content={DeepSeaJSON.section1[language].p} /> */}
+                    {/* <Paragraph content={DeepSeaJSON.section1[language as 'en' | 'ar'].p} /> */}
                 </div>
 
                 <Image
@@ -51,7 +51,7 @@ function SectionTwo({}: Props) {
                     <Image
                         className='w-[526px] h-[400px] rounded-2xl md:h-[499px] object-cover'
                         src={image5}
-                        alt={DeepSeaJSON.section2[language].cards[1].h3}
+                        alt={DeepSeaJSON.section2[language as 'en' | 'ar'].cards[1].h3}
                     />
                 </div> */}
 
@@ -59,11 +59,11 @@ function SectionTwo({}: Props) {
                 {/* <div className="flex flex-col sm:pb-0 pb-8 flex-1">
                     <HeadingThree
                         className=' mb-4'
-                        content={DeepSeaJSON.section2[language].cards[1].h3}
+                        content={DeepSeaJSON.section2[language as 'en' | 'ar'].cards[1].h3}
                     />
                     <Paragraph
                         className='!font-light'
-                        content={DeepSeaJSON.section2[language].cards[1].p}
+                        content={DeepSeaJSON.section2[language as 'en' | 'ar'].cards[1].p}
                     />
                 </div> */}
             </div>

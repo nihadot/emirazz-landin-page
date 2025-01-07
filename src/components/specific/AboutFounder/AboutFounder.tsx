@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from '../../reusable/Image/Image'
 import { aboutImage5 } from '../../../assets/images'
 import AboutFounderJSON from "../../../data/aboutFounder.json"
@@ -21,23 +20,23 @@ function AboutFounder({}: Props) {
         <Image
           className='sm:w-[374px] w-full rounded-2xl h-[420px] object-cover'
           src={aboutImage5}
-          alt={AboutFounderJSON.section1[language].h1}
+          alt={AboutFounderJSON.section1[language as 'en' | 'ar'].h1}
         />
       </div>
       {/* images */}
       <div className="flex flex-col sm:pb-0 pb-0 md:pb-8 flex-1">
         <Paragraph
           className='mb-2'
-          content={AboutFounderJSON.section1[language].title}
+          content={AboutFounderJSON.section1[language as 'en' | 'ar'].title}
         />
         <HeadingOne
           className='mb-4 '
-          content={AboutFounderJSON.section1[language].h1}
+          content={AboutFounderJSON.section1[language as 'en' | 'ar'].h1}
 
         />
         <Paragraph
           className='!font-light !text-lg'
-          content={AboutFounderJSON.section1[language].p}
+          content={AboutFounderJSON.section1[language as 'en' | 'ar'].p}
         />
       </div>
     </div>

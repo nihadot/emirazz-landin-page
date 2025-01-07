@@ -1,8 +1,6 @@
-import React from 'react'
 import Image from '../../reusable/Image/Image'
-import { aboutImage6, ourApproachToInvention } from '../../../assets/images'
+import {  ourApproachToInvention } from '../../../assets/images'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
-import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../../store'
 import InventionJOSN from "../../../data/invention.json"
@@ -25,7 +23,7 @@ function SectionTwo({}: Props) {
                   <Image
                       className='w-[544px] h-[400px] rounded-2xl md:h-[574px] object-cover'
                       src={ourApproachToInvention}
-                      alt={InventionJOSN.section2[language].h2}
+                      alt={InventionJOSN.section2[language as 'en' | 'ar'].h2}
 
                   />
               </div>
@@ -36,33 +34,33 @@ function SectionTwo({}: Props) {
             
                   <HeadingOne
                       className='text-[45px] mb-4 '
-                      content={InventionJOSN.section2[language].h2}
+                      content={InventionJOSN.section2[language as 'en' | 'ar'].h2}
                   />
 
                   <Paragraph
                       className='!font-light !text-lg !max-w-[500px]'
-                      content={InventionJOSN.section2[language].p}
+                      content={InventionJOSN.section2[language as 'en' | 'ar'].p}
 
 />
 <ul className=' list-disc ps-4'>
   <li>
     <Paragraph
        className='!font-light pt-3 !text-lg !max-w-[500px]'
-       content={InventionJOSN.section2[language].lists[0]}
+       content={InventionJOSN.section2[language as 'en' | 'ar'].lists[0]}
     />
        </li>
        <li>
 
        <Paragraph
        className='!font-light pt-3 !text-lg !max-w-[500px]'
-       content={InventionJOSN.section2[language].lists[1]}
+       content={InventionJOSN.section2[language as 'en' | 'ar'].lists[1]}
        />
        </li>
        <li>
 
        <Paragraph
        className='!font-light pt-3 !text-lg !max-w-[500px]'
-       content={InventionJOSN.section2[language].lists[2]}
+       content={InventionJOSN.section2[language as 'en' | 'ar'].lists[2]}
        />
        </li>
 </ul>

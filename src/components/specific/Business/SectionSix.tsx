@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 import Card from '../../reusable/Card/Card'
@@ -58,14 +58,14 @@ function SectionSix({ }: Props) {
 
                     <HeadingThree
                         className='text-[45px] max-w-max mb-4'
-                        content={BusinessJSON.section6[language].h3}
+                        content={BusinessJSON.section6[language as 'en' | 'ar'].h3}
 
                     />
 
                     <Paragraph
                         className='!font-light !max-w-[900px] text-center !text-lg'
 
-                        content={BusinessJSON.section6[language].p}
+                        content={BusinessJSON.section6[language as 'en' | 'ar'].p}
                     />
                 </div>
 

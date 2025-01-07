@@ -1,5 +1,5 @@
 import Paragraph from '../../reusable/Paragraph/Paragraph'
-import { businessImage2, businessImage4, empoweringVision, fuelingTomorrowsInnovations, image4, image5 } from '../../../assets/images'
+import { businessImage2, businessImage4, empoweringVision, fuelingTomorrowsInnovations } from '../../../assets/images'
 import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import HomeJSON from "../../../data/home.json"
 import { useSelector } from 'react-redux'
@@ -8,7 +8,7 @@ import Banner from '../../reusable/Banner/Banner'
 import TextBanner from '../../reusable/TextBanner/TextBanner'
 import {  rightDownArrow } from '../../../assets/svg'
 import { IconButton } from '../../reusable/Buttons'
-import { Link, Links } from 'react-router'
+import { Link } from 'react-router'
 type Props = {}
 
 function SectionThree({ }: Props) {
@@ -22,13 +22,13 @@ function SectionThree({ }: Props) {
             containerClassName='!ps-0 !pt-3 !pe-3 !pb-3 h-fit lg:!h-full !bg-transparent'
             paragraphClassName='!text-[13px] !p-0 !m-0 !leading-normal'
             headingClassName='!text-[24px] !font-bold !p-0 !m-0'
-            heading={HomeJSON?.section3[language]?.cards?.[0]?.h3}
+            heading={HomeJSON?.section3[language as 'en' | 'ar']?.cards?.[0]?.h3}
         />
         <div className="group-hover:block hidden transition-all">
 
             <Paragraph
                 className='!text-base !text-white '
-                content={HomeJSON?.section3[language]?.cards?.[0]?.p}
+                content={HomeJSON?.section3[language as 'en' | 'ar']?.cards?.[0]?.p}
             />
 
 
@@ -51,13 +51,13 @@ function SectionThree({ }: Props) {
         containerClassName='!ps-0 !pt-3 !pe-3 !pb-3 h-fit lg:!h-full !bg-transparent'
         paragraphClassName='!text-[13px] !p-0 !m-0 !leading-normal'
         headingClassName='!text-[24px] !font-bold !p-0 !m-0'
-        heading={HomeJSON?.section3[language]?.cards?.[1]?.h3}
+        heading={HomeJSON?.section3[language as 'en' | 'ar']?.cards?.[1]?.h3}
     />
     <div className="group-hover:block hidden transition-all">
 
         <Paragraph
             className='!text-base !text-white '
-            content={HomeJSON?.section3[language]?.cards?.[1]?.p}
+            content={HomeJSON?.section3[language as 'en' | 'ar']?.cards?.[1]?.p}
         />
 
 
@@ -81,13 +81,13 @@ function SectionThree({ }: Props) {
         containerClassName='!ps-0 !pt-3 !pe-3 !pb-3 h-fit lg:!h-full !bg-transparent'
         paragraphClassName='!text-[13px] !p-0 !m-0 !leading-normal'
         headingClassName='!text-[24px] !font-bold !p-0 !m-0'
-        heading={HomeJSON?.section3[language]?.cards?.[2]?.h3}
+        heading={HomeJSON?.section3[language as 'en' | 'ar']?.cards?.[2]?.h3}
     />
     <div className="group-hover:block hidden transition-all">
 
         <Paragraph
             className='!text-base !text-white '
-            content={HomeJSON?.section3[language]?.cards?.[2]?.p}
+            content={HomeJSON?.section3[language as 'en' | 'ar']?.cards?.[2]?.p}
         />
 
 
@@ -112,13 +112,13 @@ function SectionThree({ }: Props) {
         containerClassName='!ps-0 !pt-3 !pe-3 !pb-3 h-fit lg:!h-full !bg-transparent'
         paragraphClassName='!text-[13px] !p-0 !m-0 !leading-normal'
         headingClassName='!text-[24px] !font-bold !p-0 !m-0'
-        heading={HomeJSON?.section3[language]?.cards?.[3]?.h3}
+        heading={HomeJSON?.section3[language as 'en' | 'ar']?.cards?.[3]?.h3}
     />
     <div className="group-hover:block hidden transition-all">
 
         <Paragraph
             className='!text-base !text-white '
-            content={HomeJSON?.section3[language]?.cards?.[3]?.p}
+            content={HomeJSON?.section3[language as 'en' | 'ar']?.cards?.[3]?.p}
         />
 
 
@@ -144,11 +144,11 @@ function SectionThree({ }: Props) {
                 <div className="flex sm:pb-0 flex-col md:flex-row pb-8 flex-1">
                     <HeadingThree
                         className={` flex-1 mb-4 ${language === 'ar' ? 'break-words' : ''} `}
-                        content={HomeJSON?.section3[language]?.h3}
+                        content={HomeJSON?.section3[language as 'en' | 'ar']?.h3}
                     />
                     <Paragraph
                         className='flex-1 !text-[18px] !font-light'
-                        content={HomeJSON?.section3[language]?.p}
+                        content={HomeJSON?.section3[language as 'en' | 'ar']?.p}
                     />
 
                 </div>
@@ -160,7 +160,7 @@ function SectionThree({ }: Props) {
             <div dir='ltr' className="pb-24  relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
 
                 <Banner
-                alt={HomeJSON?.section3[language]?.cards?.[0]?.h3}
+                alt={HomeJSON?.section3[language as 'en' | 'ar']?.cards?.[0]?.h3}
                     imageUrl={businessImage2}
                     containerClassName='rounded-[18px] !h-[280px] md:!h-[433px] object-cover'
                     children={childrenOne}
@@ -168,7 +168,7 @@ function SectionThree({ }: Props) {
                 />
 
                 <Banner
-                alt={HomeJSON?.section3[language]?.cards?.[1]?.h3}
+                alt={HomeJSON?.section3[language as 'en' | 'ar']?.cards?.[1]?.h3}
 
                     imageUrl={empoweringVision}
                     containerClassName='rounded-[18px] !h-[280px] md:!h-[433px] object-cover'
@@ -177,7 +177,7 @@ function SectionThree({ }: Props) {
                 />
 
                 <Banner
-                alt={HomeJSON?.section3[language]?.cards?.[2]?.h3}
+                alt={HomeJSON?.section3[language as 'en' | 'ar']?.cards?.[2]?.h3}
 
                     imageUrl={businessImage4}
                     containerClassName='rounded-[18px] !h-[280px] md:!h-[433px] object-cover'
@@ -186,7 +186,7 @@ function SectionThree({ }: Props) {
                 />
 
                 <Banner
-                alt={HomeJSON?.section3[language]?.cards?.[3]?.h3}
+                alt={HomeJSON?.section3[language as 'en' | 'ar']?.cards?.[3]?.h3}
 
                     imageUrl={fuelingTomorrowsInnovations}
                     containerClassName='rounded-[18px] !h-[280px] md:!h-[433px] object-cover'

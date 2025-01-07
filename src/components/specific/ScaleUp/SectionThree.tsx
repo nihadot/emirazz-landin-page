@@ -1,4 +1,3 @@
-import React from 'react'
 import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 import Image from '../../reusable/Image/Image'
@@ -27,7 +26,7 @@ function SectionThree({}: Props) {
 
         <HeadingThree
             className=' md:text-[45px]'
-            content={ScaleUpJSON.section3[language].h3}
+            content={ScaleUpJSON.section3[language as 'en' | 'ar'].h3}
         />
         
 
@@ -37,20 +36,20 @@ function SectionThree({}: Props) {
                 <Paragraph
             className='!text-lg !max-w-[545px] !md:text-xl !font-normal !leading-7 !text-white/80'
                 
-                content={ScaleUpJSON.section3[language].lists[0].h3} />
-                <Paragraph content={ScaleUpJSON.section3[language].lists[0].p}
+                content={ScaleUpJSON.section3[language as 'en' | 'ar'].lists[0].h3} />
+                <Paragraph content={ScaleUpJSON.section3[language as 'en' | 'ar'].lists[0].p}
                     className='!font-light !text-white/70 !text-base' />
             </li>
 
             <li className=''>
-                <Paragraph content={ScaleUpJSON.section3[language].lists[1].h3} />
-                <Paragraph content={ScaleUpJSON.section3[language].lists[1].p}
+                <Paragraph content={ScaleUpJSON.section3[language as 'en' | 'ar'].lists[1].h3} />
+                <Paragraph content={ScaleUpJSON.section3[language as 'en' | 'ar'].lists[1].p}
                     className='!font-light !text-white/70 !text-base' />
             </li>
 
             <li className=''>
-                <Paragraph content={ScaleUpJSON.section3[language].lists[2].h3} />
-                <Paragraph content={ScaleUpJSON.section3[language].lists[2].p}
+                <Paragraph content={ScaleUpJSON.section3[language as 'en' | 'ar'].lists[2].h3} />
+                <Paragraph content={ScaleUpJSON.section3[language as 'en' | 'ar'].lists[2].p}
                     className='!font-light !text-white/70 !text-base' />
             </li>
 
@@ -58,14 +57,14 @@ function SectionThree({}: Props) {
 
 
             <li className=''>
-                <Paragraph content={ScaleUpJSON.section3[language].lists[3].h3} />
-                <Paragraph content={ScaleUpJSON.section3[language].lists[3].p}
+                <Paragraph content={ScaleUpJSON.section3[language as 'en' | 'ar'].lists[3].h3} />
+                <Paragraph content={ScaleUpJSON.section3[language as 'en' | 'ar'].lists[3].p}
                     className='!font-light !text-white/70 !text-base' />
             </li>
 
             <li className=''>
-                <Paragraph content={ScaleUpJSON.section3[language].lists[3].h3} />
-                <Paragraph content={ScaleUpJSON.section3[language].lists[3].p}
+                <Paragraph content={ScaleUpJSON.section3[language as 'en' | 'ar'].lists[3].h3} />
+                <Paragraph content={ScaleUpJSON.section3[language as 'en' | 'ar'].lists[3].p}
                     className='!font-light !text-white/70 !text-base' />
             </li>
 
@@ -82,14 +81,14 @@ function SectionThree({}: Props) {
         <Image
             src={whatWeOffer1}
             className='rounded-2xl mb-10  mt-60 flex-1 sm:flex-none   z-30 border border-black md:mt-28 sm:mt-32 w-[297px] h-[339px] object-cover'
-            alt={ScaleUpJSON.section3[language].h3}
+            alt={ScaleUpJSON.section3[language as 'en' | 'ar'].h3}
         />
 
 
         <Image
             src={whatWeOffer2}
             className='rounded-2xl border flex-1 sm:flex-none  -ml-3 sm:-ml-10 border-black w-[297px] h-[339px] object-cover'
-            alt={ScaleUpJSON.section3[language].h3}
+            alt={ScaleUpJSON.section3[language as 'en' | 'ar'].h3}
         />
         
     </div>
@@ -101,14 +100,14 @@ function SectionThree({}: Props) {
         <Image
             src={whatWeOffer1}
             className='rounded-2xl absolute top-0 left-0  z-30 border border-black  max-w-[297px] w-full h-[339px] object-cover'
-            alt={ScaleUpJSON.section3[language].h3}
+            alt={ScaleUpJSON.section3[language as 'en' | 'ar'].h3}
         />
 
 
         <Image
             src={whatWeOffer2}
             className='rounded-2xl   absolute -bottom-32 z-40 right-0 mb-10  mt-0  border border-black -ml-64 md:mt-28 sm:mt-32 max-w-[297px] w-full h-[339px] object-cover'
-            alt={ScaleUpJSON.section3[language].h3}
+            alt={ScaleUpJSON.section3[language as 'en' | 'ar'].h3}
         />
         
     </div>
@@ -118,14 +117,14 @@ function SectionThree({}: Props) {
         <Image
             src={whatWeOffer3}
             className='rounded-2xl  mb-10 top-0 mt-60  z-30 border border-black -ml-64 md:mt-28 sm:mt-32 max-w-[297px] w-full h-[339px] object-cover'
-            alt={ScaleUpJSON.section3[language].h3}
+            alt={ScaleUpJSON.section3[language as 'en' | 'ar'].h3}
         />
 
 
         <Image
             src={whatWeOffer4}
             className='rounded-2xl  right-0 bottom-0 border flex-1  -ml-3 sm:-ml-10 border-black max-w-[297px] w-full h-[339px] object-cover'
-            alt={ScaleUpJSON.section3[language].h3}
+            alt={ScaleUpJSON.section3[language as 'en' | 'ar'].h3}
         />
         
     </div>
@@ -137,14 +136,14 @@ function SectionThree({}: Props) {
         <Image
             src={whatWeOffer3}
             className='rounded-2xl absolute top-0 left-0  z-30 border border-black  max-w-[297px] w-full h-[339px] object-cover'
-            alt={ScaleUpJSON.section3[language].h3}
+            alt={ScaleUpJSON.section3[language as 'en' | 'ar'].h3}
         />
 
 
         <Image
             src={whatWeOffer4}
             className='rounded-2xl   absolute -bottom-32 z-40 right-0 mb-10  mt-0  border border-black -ml-64 md:mt-28 sm:mt-32 max-w-[297px] w-full h-[339px] object-cover'
-            alt={ScaleUpJSON.section3[language].h3}
+            alt={ScaleUpJSON.section3[language as 'en' | 'ar'].h3}
         />
         
     </div>

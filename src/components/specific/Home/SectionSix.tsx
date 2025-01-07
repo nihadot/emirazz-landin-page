@@ -18,13 +18,13 @@ function SectionSix({ }: Props) {
 
         <div className="flex  mt-3 flex-col justify-start items-start">
             <HeadingThree
-                content={HomeJSON?.section6[language]?.h3}
+                content={HomeJSON?.section6[language as 'en' | 'ar']?.h3}
                 className='mb-3 !leading-tight '
             />
     
             <Paragraph
                 className='!font-light !leading-normal mt-3 '
-                content={HomeJSON?.section6[language]?.p}
+                content={HomeJSON?.section6[language as 'en' | 'ar']?.p}
             />
         </div>
     </div>
@@ -34,7 +34,7 @@ function SectionSix({ }: Props) {
     return (
         <div className="px-4 relative  md:px-10 lg:px-20 bg-black py-32">
             <Banner
-                alt={HomeJSON?.section5[language]?.h3}
+                alt={HomeJSON?.section5[language as 'en' | 'ar']?.h3}
                 imageUrl={exploreTheWorld}
                 containerRound
                 styleBoxShadow

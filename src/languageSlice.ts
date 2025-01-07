@@ -1,13 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-export type Language = 'en' | 'ar';
+export type Language = 'en' | 'ar' |string;
 
 interface LanguageState {
   language: Language;
 }
 
 const initialState: LanguageState = {
-  language: localStorage.getItem('lang'),
+  language: localStorage.getItem('lang') ?? 'en',
 };
 
 const languageSlice = createSlice({
@@ -20,7 +20,6 @@ const languageSlice = createSlice({
       lang === "ar" && localStorage.setItem('lang','en') 
       lang === "en" && localStorage.setItem('lang','ar')
       state.language = state.language === 'en' ? 'ar' : 'en';
-      // console.log(action.payload,'payload')
 // 
     },
     setLanguage: (state, action) => {

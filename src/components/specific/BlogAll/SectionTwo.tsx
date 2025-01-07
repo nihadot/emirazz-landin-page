@@ -37,15 +37,13 @@ function SectionTwo({}: Props) {
 
   const [page] = useState(1);
   const { state } = useLocation() as { state: BlogFormValues };
-  const { data: blogData } = useGetBlogsQuery({ page, limit: 20 });
+  const { data: blogData } = useGetBlogsQuery<any>({ page, limit: 20 });
 
   const [data, setData] = useState([]);
 
   useEffect(() => {
     if (!state && blogData) {
       setData(blogData?.data);
-    } else {
-      setData(state)
     }
 
   }, [state, blogData]);

@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-import Paragraph from '../../components/reusable/Paragraph/Paragraph'
+import { useEffect } from 'react'
 import SectionOne from '../../components/specific/BlogAll/SectionOne'
 import { Header } from '../../components/reusable/Headers'
 import Footer from '../../components/reusable/Footer/Footer'

@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import { Header } from '../../components/reusable/Headers'
 import Footer from '../../components/reusable/Footer/Footer'
-import SectionOne from '../../components/specific/Startup/SectionOne'
 import BlogCard from "../../components/reusable/BlogCard/BlogCard"
 import Image from '../../components/reusable/Image/Image'
-import { empoweringInnovation } from '../../assets/images'
 import HeadingTwo from '../../components/reusable/Titles/MainHeading/HeadingTwo'
 import Paragraph from '../../components/reusable/Paragraph/Paragraph'
 import { useLocation, useParams } from 'react-router'
@@ -41,7 +39,7 @@ interface BlogFormValues {
 function BlogDetails({}: Props) {
 
 
-  const { slug } = useParams();
+  const { slug } = useParams() as any;
   const { state } = useLocation() as { state: BlogFormValues };
   const { data: newsData } = useGetBlogQuery(slug, {
     skip: !!state, // Skip query if state exists
@@ -50,9 +48,9 @@ function BlogDetails({}: Props) {
   const [page] = useState(1);
 
 
-  const { data: blogAllData } = useGetBlogsQuery({page, limit: 10});
+  const { data: blogAllData } = useGetBlogsQuery<{data:any}>({page, limit: 10});
 
-  const [data, setData] = useState<BlogFormValues>();
+  const [data, setData] = useState<any>();
   const [allNews, setAllBlogs] = useState<BlogFormValues[]>([]);
 
 
@@ -66,9 +64,7 @@ function BlogDetails({}: Props) {
     if (newsData) {
       setData(newsData?.data);
     }
-    if(state){
-      setData(state)
-    }
+   
 
 
 
@@ -77,7 +73,7 @@ function BlogDetails({}: Props) {
 useEffect(()=>{
   if (blogAllData) {
     if (blogAllData.data.length !== 0 && data) {
-      const filtered = blogAllData?.data?.filter((item:BlogFormValues)=> item._id !== data._id )
+      const filtered = blogAllData?.data?.filter((item:any)=> item._id !== data._id )
         setAllBlogs(filtered); // Append new blogs
     }
 }
@@ -107,11 +103,6 @@ useEffect(()=>{
          
     </div>
 </div>
-
-
-    {/* <SectionOne/> */}
-    {/* // <SectionTwo/> */}
-    {/* // <SectionNine/> */}
     <Footer/>
     </div>
   )
@@ -120,12 +111,12 @@ useEffect(()=>{
 export default BlogDetails
 
 
-function BlogBody({ item }: { item: BlogFormValues }) {
+function BlogBody({ item }: { item: BlogFormValues | undefined }) {
   return (
     <div className='max-w-[772px] w-full'>
       
       { item?.imageLink?.secure_url && <Image
-        content={item?.blogTitle}
+      alt=''
         src={item?.imageLink?.secure_url}
         className='w-full rounded-[20px] h-[300px] md:h-[512px]'
       />}
@@ -140,7 +131,7 @@ function BlogBody({ item }: { item: BlogFormValues }) {
 
       <Paragraph
       className='!text-sm'
-            content={formatToDayMonthYear(item?.blogDate)}
+            content={formatToDayMonthYear(item?.blogDate ?? '')}
       />
 
       <Paragraph
