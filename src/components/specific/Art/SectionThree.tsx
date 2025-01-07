@@ -14,6 +14,8 @@ function SectionThree({}: Props) {
 
     const childrenOne = <div className="absolute  bottom-0 w-full p-4 z-30">
     <TextBanner
+    paragraph=''
+    
     containerClassName='sm:!p-0 !p-2 h-fit !rounded-[6px] !bg-black '
     // paragraphClassName='!text-[13px] !p-0 !m-0 !leading-normal'
     headingClassName='!text-[16px] !px-4 !py-1 !m-0'
@@ -24,6 +26,7 @@ function SectionThree({}: Props) {
 
 const childrenTwo = <div className="absolute bottom-0 w-full p-4 z-30">
 <TextBanner
+paragraph=''
     containerClassName='sm:!p-0 !p-2 h-fit !rounded-[6px] !bg-black '
     // paragraphClassName='!text-[13px] !p-0 !m-0 !leading-normal'
 headingClassName='!text-[16px] !px-4 !py-1 !m-0'
@@ -34,6 +37,7 @@ heading={ArtJSON?.section2[language]?.cards[1]}
 
 const childrenThree = <div className="absolute bottom-0 w-full p-4 z-30">
 <TextBanner
+paragraph=''
     containerClassName='sm:!p-0 !p-2 h-fit !rounded-[6px] !bg-black '
     // paragraphClassName='!text-[13px] !p-0 !m-0 !leading-normal'
 headingClassName='!text-[16px] !px-4 !py-1 !m-0'
@@ -65,6 +69,7 @@ imageClassName='!rounded-[15px]'
               
 
               <Banner
+              alt={ArtJSON.section2[language].h2}
               children={childrenTwo}
 imageClassName='!rounded-[15px]'
               
@@ -74,6 +79,7 @@ imageClassName='!rounded-[15px]'
 
 
 <Banner
+alt={ArtJSON.section2[language].h2}
               children={childrenThree}
 imageClassName='!rounded-[15px]'
               

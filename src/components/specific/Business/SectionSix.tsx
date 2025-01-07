@@ -77,7 +77,7 @@ function SectionSix({ }: Props) {
                                         data?.length > 0 && data?.map((item: PartnersFormValues, index: number) => {
                                                 return (
 
-                                                    <Card alt={item.name} imageUrl={item?.imageLink?.secure_url} key={index} />
+                                                    <Card imageClassName='' alt={item.name} imageUrl={item?.imageLink?.secure_url} key={index} />
 
 
 

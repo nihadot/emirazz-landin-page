@@ -32,7 +32,7 @@ function SectionFour({ }: Props) {
     <div className="px-4 my-24 md:px-10 pt-8 lg:px-20">
       <Banner
         containerClassName='!h-[700px]'
-        alt={DeepSeaJSON.section4[language].h1}
+        alt={DeepSeaJSON.section4[language].h3}
         imageUrl={innovationFromAbyss}
         // home
         linearGradient

@@ -53,9 +53,10 @@ function SectionOneScreen() {
             </div>
 
             <Banner
+            alt={AboutJSON.section1[language].h1}
+            
                 imageUrl={aboutImage1}
                 containerClassName='!h-[600px] sm:!h-[466px] !object-cover'
-                content={AboutJSON.section1[language].h1}
             />
         </div>
     )

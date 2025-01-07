@@ -1,14 +1,11 @@
 import React from 'react'
 import Card from './Card'
-import demo from "../../../assets/images/demo.png"
 import HeadingThree from '../Titles/MainHeading/HeaderThree'
 import Paragraph from '../Paragraph/Paragraph'
-import IconBtn from '../Buttons/IconBtn'
 import { IconButton } from '../Buttons'
 import { rightArrow } from '../../../assets/svg'
 import { Link } from 'react-router'
 
-type Props = {}
 
 
 

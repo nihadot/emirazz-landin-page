@@ -29,19 +29,6 @@ function SectionSix({ }: Props) {
                 </div>
 
 
-
-<div className="grid grid-cols-2 sm:grid-cols-4 w-full gap-5 py-8">
-
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-</div>
-
 <IconButton
 iconUrl={rightArrow}
 content='View All'

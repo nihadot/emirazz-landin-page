@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import Image from '../Image/Image'
 import { logo } from '../../../assets/images'
 import { header_navlink } from '../../../data'
@@ -40,7 +40,7 @@ export default Header
 
 
 
-function NavLinks({ }: Props) {
+function NavLinks({ }) {
 
     const language = useSelector((state: RootState) => state.language.language);
     const dispatch = useDispatch();
@@ -54,7 +54,7 @@ function NavLinks({ }: Props) {
 
                     return (
                         <li onClick={()=>item.url && navigateHandler(item.url)} key={index} className='group'>
-                            <button className={`h-full w-full font-light font-poppins cursor-default text-base`} to={'/'} key={item.id}>
+                            <button className={`h-full w-full font-light font-poppins cursor-default text-base`} key={item.id}>
                                 { language === 'en' ?  item.nameEn : item.nameAr}
                             </button>
                             <label className='w-full group-hover:opacity-100 opacity-0 invisible group-hover:visible bg-white rounded-full h-[2px] flex mt-1'></label>

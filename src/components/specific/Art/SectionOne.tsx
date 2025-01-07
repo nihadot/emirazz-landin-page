@@ -12,6 +12,7 @@ function SectionOne({}: Props) {
        <Image
        className='w-60 h-60 object-contain'
        src={noOpacityLogo}
+       alt=''
        />
     </div>
 

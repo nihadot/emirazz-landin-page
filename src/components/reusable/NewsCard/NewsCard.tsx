@@ -42,6 +42,7 @@ function NewsCard({item}: Props) {
   return (
     <div className=''>
         <Image
+        alt={item?.newsTitle}
          src={item?.imageLink?.secure_url}
 
          className='h-[285px]  w-full rounded-[15px] object-cover'

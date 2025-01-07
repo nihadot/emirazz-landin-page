@@ -1,8 +1,5 @@
-import React from 'react'
-import Image from '../../reusable/Image/Image'
-import { aboutImage6, deepSea, deepSea2Icon, ourApproachToInvention, theDepthOfExploration, treeFour, treeOne, treeThree, treeTwo } from '../../../assets/images'
+import {  theDepthOfExploration } from '../../../assets/images'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
-import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../../store'
 import DeepSeaJSON from "../../../data/deepSea.json"
@@ -32,7 +29,7 @@ function SectionThree({}: Props) {
     <div className="px-4 md:px-10 pt-8 lg:px-20">
     <Banner
           containerClassName='!h-[700px]'
-        alt={DeepSeaJSON.section2[language].h1}
+        alt={DeepSeaJSON.section2[language].p}
         imageUrl={theDepthOfExploration}
         // home
         linearGradient

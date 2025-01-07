@@ -1,12 +1,9 @@
-import React from 'react'
 import Image from '../../reusable/Image/Image'
-import { aboutImage6, deepSea, deepSea2Icon, ourApproachToInvention, treeFour, treeOne, treeThree, treeTwo } from '../../../assets/images'
+import { deepSea2Icon, treeFour } from '../../../assets/images'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
-import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../../store'
 import DeepSeaJSON from "../../../data/deepSea.json"
-import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne'
 
 type Props = {}
 
@@ -35,6 +32,7 @@ function SectionTwo({}: Props) {
                 </div>
 
                 <Image
+                alt=''
                 src={treeFour}
                 className='w-[187px] brightness-50 md:brightness-75  md:-right-40 -bottom-60 -rotate-45 absolute h-[283px] object-contain'
                 />

@@ -1,4 +1,3 @@
-import React from 'react'
 import HeaderSix from '../Titles/MainHeading/HeaderSix'
 import HeaderFive from '../Titles/MainHeading/HeaderFive'
 import { footer_navlink_about, footer_navlink_business, footer_navlink_our_products } from '../../../data'
@@ -146,18 +145,25 @@ function Footer({ }: Props) {
               alt='facebook'
             /> */}
             <Image
+            className=''
               src={linkedin}
               alt='linkedin'
             />
             <Image
+            className=''
+
               src={x}
               alt='x platform'
             />
             <Image
+            className=''
+
               src={thread}
               alt='thread'
             />
             <Image
+            className=''
+
               src={youtube}
               alt='youtube'
             />

@@ -25,7 +25,7 @@ function SectionFive({ }: Props) {
           <Image
             className='w-[500px] h-[400px] rounded-2xl md:h-[574px] object-cover'
             src={aboutImage6}
-            content={AboutJSON.section5[language].h3}
+            alt={AboutJSON.section5[language].p1}
           />
         </div>
 

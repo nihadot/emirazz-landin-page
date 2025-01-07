@@ -102,6 +102,7 @@ function SectionNine({ }: Props) {
                     allNews.length > 0 && allNews.map((item: NewsFormValues,index:number) => {
                         return (
                             <Banner
+                             alt={''}
                             key={index}
                             
                         children={<Children item={item}/>}

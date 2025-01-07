@@ -119,6 +119,7 @@ const Card: React.FC<CardProps> = ({ item }) => {
     return (
         <div style={{ backgroundColor: genrateColor({ luminosity: 'bright' }) }} className='h-[400px] brightness-95 p-4 w-[300px] sm:w-[360px]  flex-none rounded-[20px]'>
             <Image
+            alt={item.productTitle}
                 src={item.imageLink.secure_url}
                 className=' rounded-2xl h-[324px] object-cover'
 

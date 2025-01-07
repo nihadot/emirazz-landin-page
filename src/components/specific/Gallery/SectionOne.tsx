@@ -1,4 +1,3 @@
-import React from 'react'
 import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 import HeadingTwo from '../../reusable/Titles/MainHeading/HeadingTwo'
@@ -47,6 +46,7 @@ src={visualChronicles2}
 />
 
 <Image
+alt=''
 className='w-[100px] xs-xs:w-[200px] lg:w-[345px] xs-md:w-[210px] mt-8 xs-xs:h-[230px]  h-[100px] -rotate-6 lg:h-[327px] object-cover rounded-[15px]'
 src={visualChronicles3}
 />

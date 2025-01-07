@@ -1,11 +1,5 @@
-import React from 'react'
-import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne'
-import Paragraph from '../../reusable/Paragraph/Paragraph'
-import Card from '../../reusable/Card/Card'
-import { rightArrow } from '../../../assets/svg'
-import { IconButton } from '../../reusable/Buttons'
 import Banner from '../../reusable/Banner/Banner'
-import { deepSea, deepSeaIcon, empoweringInnovation, empoweringVision, invention, sponsorship } from '../../../assets/images'
+import { deepSea, deepSeaIcon,  } from '../../../assets/images'
 import { RootState } from '../../../store'
 import { useSelector } from 'react-redux'
 import InventionJOSN from "../../../data/invention.json"
@@ -19,6 +13,7 @@ function SectionOne({}: Props) {
 
     const children = <div className="px-4  items-center md:px-10 lg:px-20 absolute top-0 left-0 flex flex-col justify-center w-full h-full">
   <Image
+  alt={InventionJOSN.section1[language].h1}
   src={deepSeaIcon}
   className='w-[600px] h-[340px] object-contain'
 

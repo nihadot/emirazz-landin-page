@@ -28,7 +28,6 @@ function SectionEight({}: Props) {
                       alt={AboutJSON.section8[language].h3}
                           className='w-[544px] h-[400px] rounded-2xl md:h-[574px] object-cover'
                           src={aboutImage9}
-                          content={AboutJSON.section8[language].h3}
 
                       />
                   </div>
