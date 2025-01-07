@@ -1,35 +1,39 @@
 import React from 'react'
 import HeaderSix from '../Titles/MainHeading/HeaderSix'
 import HeaderFive from '../Titles/MainHeading/HeaderFive'
-import { footer_navlink, footer_navlink_about, footer_navlink_business, footer_navlink_our_products } from '../../../data'
+import { footer_navlink_about, footer_navlink_business, footer_navlink_our_products } from '../../../data'
 import Image from '../Image/Image'
-import {   linkedin, thread, x, youtube } from '../../../assets/svg'
+import { linkedin, thread, x, youtube } from '../../../assets/svg'
 import { Link } from 'react-router'
+import { useSelector } from 'react-redux'
+import { RootState } from '../../../store'
 type Props = {
 
 }
 
 function Footer({ }: Props) {
+
+  const language = useSelector((state: RootState) => state?.language?.language);
+
+
   return (
     <footer className='px-4 pt-40 relative h-full md:px-20 overflow-hidden bg-black '>
 
       <div className="my-12 grid grid-cols-2 md:grid-cols-5 pe-0 md:pe-60">
-
-
         <div className="">
 
 
-<Link to={'/about'} >
-          <HeaderFive
-            content='About'
-            className='mb-4'
-          />
-</Link>
+          <Link to={'/about'} >
+            <HeaderFive
+              content={ language  === 'en' ? 'About' : 'عن'}
+              className='mb-4'
+            />
+          </Link>
 
           {footer_navlink_about.length > 0 && footer_navlink_about.map((item) => {
             return (
               <HeaderSix
-                content={item.name}
+                content={ language  === 'en' ? item.nameEn : item.nameAr}
                 key={item.id}
               />
             )
@@ -42,14 +46,15 @@ function Footer({ }: Props) {
 
 
           <HeaderFive
-            content='Business'
+            content={ language  === 'en' ? 'Business' : 'عمل'}
+
             className='mb-4'
           />
           {footer_navlink_business.length > 0 && footer_navlink_business.map((item) => {
             return (
               <HeaderSix
-                content={item.name}
-                key={item.id}
+              content={ language  === 'en' ? item.nameEn : item.nameAr}
+              key={item.id}
               />
             )
           })}
@@ -62,14 +67,15 @@ function Footer({ }: Props) {
 
 
           <HeaderFive
-            content='Our Proudcts'
+            content={ language  === 'en' ? 'Our Proudcts' : 'منتجاتنا'}
+
             className='mb-4'
           />
           {footer_navlink_our_products.length > 0 && footer_navlink_our_products.map((item) => {
             return (
               <HeaderSix
-                content={item.name}
-                key={item.id}
+              content={ language  === 'en' ? item.nameEn : item.nameAr}
+              key={item.id}
               />
             )
           })}
@@ -82,7 +88,8 @@ function Footer({ }: Props) {
 
 
           <HeaderFive
-            content='Scale Up By Emiraaz'
+              content={ language  === 'en' ? 'Scale Up By Emiraaz' : 'توسيع نطاق طيران الإمارات'}
+          
             className='mb-4'
           />
 
@@ -95,7 +102,8 @@ function Footer({ }: Props) {
 
 
           <HeaderFive
-            content='Art'
+            content={ language  === 'en' ? 'Art' : 'فن'}
+            
             className='mb-4'
           />
 
@@ -106,18 +114,23 @@ function Footer({ }: Props) {
 
 
 
-      <HeaderFive content='Technology' className='mb-4' />
-      <HeaderFive content='Real Estate' className='mb-4' />
-      <HeaderFive content='Founder' className='mb-4' />
-      <HeaderFive content='Media' className='mb-4' />
+      <HeaderFive
+            content={ language  === 'en' ? 'Technology' : 'تكنولوجيا'}
+      className='mb-4' />
+
+      <HeaderFive 
+            content={ language  === 'en' ? 'Real Estate' : 'العقارات'}
+       className='mb-4' />
+      <HeaderFive content={language === 'en' ? 'Founder' : 'مؤسس'} className='mb-4' />
+      <HeaderFive content={language === 'en' ? 'Media' : 'وسائط'} className='mb-4' />
 
       <div className="flex gap-12 mb-4">
-        <HeaderSix content={'News'} />
-        <HeaderSix content={'Gallery'} />
-        <HeaderSix content={'Blog'} />
+        <HeaderSix content={language === 'en' ? 'News' : 'أخبار'} />
+        <HeaderSix content={language === 'en' ? 'Gallery' : 'معرض الصور'} />
+        <HeaderSix content={ language === 'en'? 'Blog' : 'مدونة'} />
       </div>
 
-      <HeaderFive content='Contact' className='mb-20' />
+      <HeaderFive content={ language === 'en' ? 'Contact' : 'اتصال'} className='mb-20' />
 
       <div className=" flex md:flex-row flex-col items-center  justify-between">
         <div className="">

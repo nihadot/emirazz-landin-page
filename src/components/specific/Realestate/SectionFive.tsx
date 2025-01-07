@@ -4,7 +4,7 @@ import { yourGateWayToDubai } from '../../../assets/images'
 import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 import RealestateJSON from "../../../data/realestate.json"
-import { RootState } from '../../../storey'
+import { RootState } from '../../../store'
 import { useSelector } from 'react-redux'
 
 type Props = {}

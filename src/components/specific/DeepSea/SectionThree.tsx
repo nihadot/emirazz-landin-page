@@ -4,7 +4,7 @@ import { aboutImage6, deepSea, deepSea2Icon, ourApproachToInvention, theDepthOfE
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import { useSelector } from 'react-redux'
-import { RootState } from '../../../storey'
+import { RootState } from '../../../store'
 import DeepSeaJSON from "../../../data/deepSea.json"
 import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne'
 import Banner from '../../reusable/Banner/Banner'

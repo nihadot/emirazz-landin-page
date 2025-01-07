@@ -12,9 +12,13 @@ import SectionNine from "../../components/specific/Home/SectionNine"
 import SectionTen from "../../components/specific/Home/SectionTen"
 import SectionTwelve from "../../components/specific/Home/SectionTwelve"
 import { useSelector } from 'react-redux'
-import { RootState } from '../../../storey'
+import { RootState } from '../../../store'
+import { useEffect } from 'react'
 function Home() {
 
+    useEffect(()=>{
+      window.scrollTo(0,0)
+    },[])
   return (
     <div className="m-auto max-w-[1680px] w-full">
         <Header/>
@@ -28,7 +32,7 @@ function Home() {
         <SectionEight/>
         <SectionNine/>
         <SectionTen/>
-        {/* <SectionTwelve/> */}
+        <SectionTwelve/>
         {/* <SectionOne/>
         <SectionTwo/>
         <SectionNine/> */}

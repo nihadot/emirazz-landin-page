@@ -2,7 +2,7 @@ import Banner from '../../reusable/Banner/Banner'
 import { aboutImage2 } from '../../../assets/images'
 import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
-import { RootState } from '../../../storey'
+import { RootState } from '../../../store'
 import { useSelector } from 'react-redux'
 import AboutJSON from "../../../data/about.json"
 import HeadingTwo from '../../reusable/Titles/MainHeading/HeadingTwo'

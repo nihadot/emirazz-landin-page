@@ -5,7 +5,7 @@ import Banner from '../../reusable/Banner/Banner'
 // import { useLanguage } from '../../../LanguageContext'
 import HomeJSON from "../../../data/home"
 import { useSelector } from 'react-redux'
-import { RootState } from '../../../storey'
+import { RootState } from '../../../store'
 type Props = {}
 
 function SectionOne({ }: Props) {

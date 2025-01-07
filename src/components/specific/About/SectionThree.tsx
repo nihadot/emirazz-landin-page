@@ -3,7 +3,7 @@ import { aboutImage3, aboutImage4 } from '../../../assets/images'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import AboutJSON from "../../../data/about.json"
-import { RootState } from '../../../storey'
+import { RootState } from '../../../store'
 import { useSelector } from 'react-redux'
 
 type Props = {}
@@ -17,11 +17,12 @@ function SectionThree({ }: Props) {
             {/* section one */}
             <div className=" flex-1 pe-0 sm:pe-4 flex flex-col relative ">
                 <Paragraph
+
                     content={AboutJSON.section3[language].p1}
                 />
 
                 <HeadingThree
-                    className=' md:text-[45px] !leading-tight'
+                    className='!leading-[1.2] md:text-[45px] '
                     content={AboutJSON.section3[language].h3}
                 />
                 <Paragraph

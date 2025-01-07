@@ -4,7 +4,7 @@ import { blackIcon, emirazzTechnologyLeadingWith } from '../../../assets/images'
 import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import HomeJSON from "../../../data/home.json"
 import { useSelector } from 'react-redux'
-import { RootState } from '../../../storey'
+import { RootState } from '../../../store'
 import { IconButton } from '../../reusable/Buttons'
 import HeaderSix from '../../reusable/Titles/MainHeading/HeaderSix'
 

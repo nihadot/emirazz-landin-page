@@ -2,9 +2,9 @@ import React from 'react'
 import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 import Image from '../../reusable/Image/Image'
-import { image2, image3, whatWeOffer1, whatWeOffer2, whatWeOffer3, whatWeOffer4 } from '../../../assets/images'
+import { whatWeOffer1, whatWeOffer2, whatWeOffer3, whatWeOffer4 } from '../../../assets/images'
 import { useSelector } from 'react-redux'
-import { RootState } from '../../../storey'
+import { RootState } from '../../../store'
 import ScaleUpJSON from "../../../data/scaleup.json"
 
 type Props = {}
@@ -97,17 +97,17 @@ function SectionThree({}: Props) {
 
 
     {/* mobile only */}
-    <div className="sm:hidden flex mt-10 pt-20  md:pe-0 relative">
+    <div className="sm:hidden h-[500px]  w-full mt-10 pt-20  md:pe-0 relative">
         <Image
             src={whatWeOffer1}
-            className='rounded-2xl  mb-10 top-0 mt-60  z-30 border border-black -ml-64 md:mt-28 sm:mt-32 max-w-[297px] w-full h-[339px] object-cover'
+            className='rounded-2xl absolute top-0 left-0  z-30 border border-black  max-w-[297px] w-full h-[339px] object-cover'
             alt={ScaleUpJSON.section3[language].h3}
         />
 
 
         <Image
             src={whatWeOffer2}
-            className='rounded-2xl  right-0 bottom-0 border flex-1  -ml-3 sm:-ml-10 border-black max-w-[297px] w-full h-[339px] object-cover'
+            className='rounded-2xl   absolute -bottom-32 z-40 right-0 mb-10  mt-0  border border-black -ml-64 md:mt-28 sm:mt-32 max-w-[297px] w-full h-[339px] object-cover'
             alt={ScaleUpJSON.section3[language].h3}
         />
         
@@ -133,25 +133,23 @@ function SectionThree({}: Props) {
 
 
 
-
-
-       {/* images */}
-       <div className="hidden sm:flex flex-1 pt-0  md:pe-0 relative">
+    <div className="sm:hidden h-[500px] bg-red-300 w-full mt-10 pt-20  md:pe-0 relative">
         <Image
             src={whatWeOffer3}
-            className='rounded-2xl mb-10  mt-60 flex-1 sm:flex-none   z-30 border border-black md:mt-28 sm:mt-32 w-[297px] h-[339px] object-cover'
+            className='rounded-2xl absolute top-0 left-0  z-30 border border-black  max-w-[297px] w-full h-[339px] object-cover'
             alt={ScaleUpJSON.section3[language].h3}
         />
 
 
         <Image
             src={whatWeOffer4}
-            className='rounded-2xl border flex-1 sm:flex-none  -ml-3 sm:-ml-10 border-black w-[297px] h-[339px] object-cover'
+            className='rounded-2xl   absolute -bottom-32 z-40 right-0 mb-10  mt-0  border border-black -ml-64 md:mt-28 sm:mt-32 max-w-[297px] w-full h-[339px] object-cover'
             alt={ScaleUpJSON.section3[language].h3}
         />
         
     </div>
 
+   
 
 
 

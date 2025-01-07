@@ -41,10 +41,10 @@ function Routes({ }: Props) {
       <Route path="art" element={<ArtPage />} />
       <Route path="gallery" element={<Gallery />} />
       <Route path="blogall" element={<BlogAll />} />
-      <Route path="blog" element={<BlogDetails />} />
+      <Route path="blog/:slug" element={<BlogDetails />} />
       <Route path="newsall" element={<NewsAll />} />
-      <Route path="news" element={<News />} />
-      <Route path="product" element={<ProductPage />} />
+      <Route path="news/:slug" element={<News />} />
+      <Route path="product/:slug" element={<ProductPage />} />
       <Route path="contactus" element={<ContactPage />} />
       <Route path="invention" element={<Invention />} />
       <Route path="deepsea" element={<DeepSea />} />

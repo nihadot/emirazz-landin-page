@@ -2,7 +2,7 @@ import { businessImage2, businessImage5 } from '../../../assets/images'
 import Image from '../../reusable/Image/Image'
 import TextBanner from '../../reusable/TextBanner/TextBanner'
 import BusinessJSON from "../../../data/business.json"
-import { RootState } from '../../../storey'
+import { RootState } from '../../../store'
 import { useSelector } from 'react-redux'
 
 type Props = {}

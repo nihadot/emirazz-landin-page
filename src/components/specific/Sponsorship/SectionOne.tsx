@@ -7,7 +7,7 @@ import { IconButton } from '../../reusable/Buttons'
 import Banner from '../../reusable/Banner/Banner'
 import { empoweringVision, sponsorship } from '../../../assets/images'
 import sponsorshipJSON from "../../../data/sponsorship.json"
-import { RootState } from '../../../storey'
+import { RootState } from '../../../store'
 import { useSelector } from 'react-redux'
 
 type Props = {}

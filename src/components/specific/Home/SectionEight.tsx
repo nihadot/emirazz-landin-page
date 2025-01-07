@@ -4,10 +4,11 @@ import Paragraph from '../../reusable/Paragraph/Paragraph'
 import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import HomeJSON from "../../../data/home.json"
 import { useSelector } from 'react-redux'
-import { RootState } from '../../../storey'
+import { RootState } from '../../../store'
 import HeaderSix from '../../reusable/Titles/MainHeading/HeaderSix'
 import { IconButton } from '../../reusable/Buttons'
 import { rightArrow } from '../../../assets/svg'
+import { Link } from 'react-router'
 
 
 function SectionEight() {
@@ -50,11 +51,13 @@ function SectionEight() {
 
                     <div className="py-4">
 
+<Link to={'/realestate'}>
                         <IconButton
                     className={`my-6 ${ language === 'en' ? '' : '-rotate-180'} `}
-                            iconUrl={rightArrow}
-                            content={language === "en" ? 'Learn More    ' : 'يتعلم أكثر'}
-                        />
+                    iconUrl={rightArrow}
+                    content={language === "en" ? 'Learn More    ' : 'يتعلم أكثر'}
+                    />
+                    </Link>
                     </div>
                 </div>
             </div>

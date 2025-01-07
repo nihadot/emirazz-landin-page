@@ -1,18 +1,53 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 import Card from '../../reusable/Card/Card'
 import { IconButton } from '../../reusable/Buttons'
 import { rightArrow } from '../../../assets/svg'
-import { RootState } from '../../../storey'
+import { RootState } from '../../../store'
 import { useSelector } from 'react-redux'
 import BusinessJSON from "../../../data/business.json"
+import { useGetAllPartnersQuery } from '../../../features/partners/partnersApi'
+import { Link } from 'react-router'
+
+
+
 
 type Props = {}
+
+
+
+export interface IImageLink {
+    public_id: string;
+    secure_url: string;
+    url: string;
+    width: number;
+    height: number;
+}
+
+interface PartnersFormValues {
+    name: string;
+    slug: string;
+    imageLink: IImageLink
+}
 
 function SectionSix({ }: Props) {
 
     const language = useSelector((state: RootState) => state.language.language);
+
+
+          const [page] = useState(1);
+                const { data: partnersData } = useGetAllPartnersQuery({ page, limit: 8 });
+        
+                const [data, setData] = useState([]);
+        
+                useEffect(() => {
+                        if (partnersData) {
+                                setData(partnersData?.data);
+                        }
+        
+                }, [partnersData]);
+        
 
     return (
         <div>
@@ -38,16 +73,19 @@ function SectionSix({ }: Props) {
 
 <div className="grid grid-cols-2 sm:grid-cols-4 mt-8 w-full gap-5 py-8">
 
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-</div>
+{
+                                        data?.length > 0 && data?.map((item: PartnersFormValues, index: number) => {
+                                                return (
 
+                                                    <Card alt={item.name} imageUrl={item?.imageLink?.secure_url} key={index} />
+
+
+
+                                                )
+                                        })
+                                }
+                                </div>
+<Link to={'/our/partners'}>
 <div className="pb-8">
 
 <IconButton
@@ -55,7 +93,9 @@ iconUrl={rightArrow}
 content={language === "en" ? 'View All' : 'عرض المزيد'}
 
 />
+
 </div>
+</Link>
                 
                 
 

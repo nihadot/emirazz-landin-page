@@ -2,7 +2,7 @@ import React from 'react'
 import realestateJSON from "../../../data/realestate.json"
 import TextBanner from '../../reusable/TextBanner/TextBanner'
 import Image from '../../reusable/Image/Image'
-import { RootState } from '../../../storey'
+import { RootState } from '../../../store'
 import { useSelector } from 'react-redux'
 import { bundlessPotential, diveDeepUs } from '../../../assets/images'
 import Banner from '../../reusable/Banner/Banner'

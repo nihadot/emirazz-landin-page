@@ -2,7 +2,7 @@ import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 import Banner from '../../reusable/Banner/Banner'
 import {  fuelingTomorrowsInnovations, sponsorship } from '../../../assets/images'
-import { RootState } from '../../../storey'
+import { RootState } from '../../../store'
 import { useSelector } from 'react-redux'
 import BlogJSON from "../../../data/blogs.json"
 

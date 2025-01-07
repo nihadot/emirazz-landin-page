@@ -9,10 +9,10 @@ type Props = {
   home?: boolean;
   linearGradient?: boolean;
   containerClassName?: string;
-  brightness?: string;
-  style:string;
-  styleBoxShadow:boolean;
-  containerRound:string;
+  brightness?: boolean;
+  style?:string;
+  styleBoxShadow?:boolean;
+  containerRound?:string;
 };
 
 

@@ -25,14 +25,44 @@
         "h3": "Empowering Business Opportunities",
         "p": "At Emiraaz, we build partnerships, support innovation, and drive growth. Our Business division focuses on Partners, Sponsorship, Investment, and Startups, offering opportunities for collaboration and success.",
         "cards": [
-           "Partnership","Sponsorship","Investment","Startup"
+            {
+                "h3":"Partnership",
+                "p":"Join forces with industry leaders and leverage our network to achieve shared success"
+            },
+            {
+                "h3":"Sponsorship",
+                "p":"Explore opportunities to sponsor events and initiatives that align with your brand."
+            },
+            {
+                "h3":"Investment",
+                "p":"Discover our investment strategies and how we can help you grow your wealth."
+            },
+            {
+                "h3":"Startup",
+                "p":"Get the support and resources you need to turn your startup idea into a reality."
+            }
         ]
     },
     "ar":{
         "h3":"تمكين الفرص التجارية ",
         "p": "في أميراز، نقوم ببناء الشراكات ودعم الابتكار ودفع عجلة النمو. يركز قسم الأعمال لدينا على الشركاء والرعاية والاستثمار والشركات الناشئة، مما يوفر فرصًا للتعاون والنجاح.",
         "cards": [
-          "شراكة","الرعاية","استثمار","بدء"
+            {
+                "h3":"شراكة",
+                "p":"انضم إلى قادة الصناعة واستفد من شبكتنا لتحقيق النجاح المشترك"
+            },
+            {
+                "h3":"الرعاية",
+                "p":"استكشف الفرص المتاحة لرعاية الأحداث والمبادرات التي تتوافق مع علامتك التجارية."
+            },
+            {
+                "h3":"بدء",
+                "p":"اكتشف استراتيجياتنا الاستثمارية وكيف يمكننا مساعدتك على تنمية ثروتك."
+            },
+            {
+                "h3":"بدء",
+                "p":"احصل على الدعم والموارد التي تحتاجها لتحويل فكرة شركتك الناشئة إلى حقيقة."
+            }
        ]
     }
    
@@ -131,8 +161,8 @@
 
 "section11": {
     "ar":{
-        "h3":"رؤيتنا للمستقبل",
-        "p":"يعتقد أميراز أن التكنولوجيا هي المفتاح لتشكيل غد أفضل. مهمتنا هي مواصلة استكشاف التطورات الرائدة، ودمجها في استراتيجيات أعمالنا، وتمكين الانتقال السلس إلى المستقبل. ومن خلال تبني التكنولوجيا، نهدف إلى قيادة الصناعات ورفع مستوى الخبرات وخلق تأثير دائم في مشهد رقمي يتطور باستمرار."
+        "h3":"رحلة الإميراز بالصور",
+"p":"سجلات مرئية"
         
     },
     "en":{

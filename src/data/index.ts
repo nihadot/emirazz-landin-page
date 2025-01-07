@@ -1,113 +1,141 @@
 type NavLink ={
-    name:string,
+    nameEn: string;
+    nameAr: string;
     id:number,
+    dropDown?:boolean,
+    url?:string,
+
 }
 
 export const header_navlink :NavLink[]= [
 {
     id:1,
-    name:"Explore Emiraaz"
+    nameEn:"Explore Emiraaz",
+    nameAr:"اكتشف اميراز",
+    dropDown:true,
 },
 {
     id:2,
-    name:"Technology"
+    nameEn:"Technology",
+    nameAr:"تكنولوجيا",
+    url:'/technology'
 },
 {
     id:3,
-    name:"Real Estate"
+    nameEn:"Real Estate",
+    nameAr:"العقارات",
+    url:'/realestate'
+
 },
 {
     id:4,
-    name:"Founder"
+    url:"/about-founder",
+    nameAr:"مؤسس",
+    nameEn:"Founder"
 },
 {
     id:5,
-    name:"Media"
+    nameEn:"Media",
+    nameAr:"وسائط",
+    dropDown:true
+
 },
 {
     id:6,
-    name:"Media"
-},
-{
-    id:7,
-    name:"Contact"
+    url:"/contactus",
+    nameAr:"اتصال",
+    nameEn:"Contact"
 }
 ]
 
-export const footer_navlink_about:NavLink[]=[
-    {
-        id:1,
-        name:'Story'
-    },
-    {
-        id:2,
-        name:'Leadership'
-    },
-    {
-        id:3,
-        name:'Inspire'
-    },
-    {
-        id:4,
-        name:'Culture & Values'
-    },
-    
-    {
-        id:5,
-        name:'Sustainability'
-    },
-    {
-        id:6,
-        name:'Procurement'
-    },
-    {
-        id:7,
-        name:'Deep Sea'
-    },
- 
-    
-]
 
+type FooterLink = {
+    nameEn: string;
+    nameAr: string;
+    id: number;
+    url?: string;
+}
 
-export const footer_navlink_business:NavLink[]=[
+export const footer_navlink_about: FooterLink[] = [
     {
-        id:1,
-        name:'Partners'
+      id: 1,
+      nameEn: 'Story',
+      nameAr: 'القصة',
     },
     {
-        id:2,
-        name:'Sponsorship'
+      id: 2,
+      nameEn: 'Leadership',
+      nameAr: 'القيادة',
     },
     {
-        id:3,
-        name:'Investment'
+      id: 3,
+      nameEn: 'Inspire',
+      nameAr: 'إلهام',
     },
     {
-        id:4,
-        name:'Startup'
+      id: 4,
+      nameEn: 'Culture & Values',
+      nameAr: 'الثقافة والقيم',
     },
- 
-]
+    {
+      id: 5,
+      nameEn: 'Sustainability',
+      nameAr: 'الاستدامة',
+    },
+    {
+      id: 6,
+      nameEn: 'Procurement',
+      nameAr: 'المشتريات',
+    },
+    {
+      id: 7,
+      nameEn: 'Deep Sea',
+      nameAr: 'البحر العميق',
+    },
+  ];
 
-
-
-export const footer_navlink_our_products:NavLink[]=[
+  export const footer_navlink_business: FooterLink[] = [
     {
-        id:1,
-        name:'Explore our Products'
+      id: 1,
+      nameEn: 'Partners',
+      nameAr: 'الشركاء',
     },
     {
-        id:2,
-        name:'Product 1'
+      id: 2,
+      nameEn: 'Sponsorship',
+      nameAr: 'الرعاية',
     },
     {
-        id:3,
-        name:'Product 2'
+      id: 3,
+      nameEn: 'Investment',
+      nameAr: 'الاستثمار',
     },
     {
-        id:4,
-        name:'Product 4'
+      id: 4,
+      nameEn: 'Startup',
+      nameAr: 'الشركات الناشئة',
     },
- 
-]
-
+  ];
+  
+  export const footer_navlink_our_products: FooterLink[] = [
+    {
+      id: 1,
+      nameEn: 'Explore our Products',
+      nameAr: 'استكشف منتجاتنا',
+    },
+    {
+      id: 2,
+      nameEn: 'Product 1',
+      nameAr: 'المنتج 1',
+    },
+    {
+      id: 3,
+      nameEn: 'Product 2',
+      nameAr: 'المنتج 2',
+    },
+    {
+      id: 4,
+      nameEn: 'Product 4',
+      nameAr: 'المنتج 4',
+    },
+  ];

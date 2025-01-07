@@ -3,7 +3,7 @@ import Paragraph from '../../reusable/Paragraph/Paragraph'
 import { businessImage1 } from '../../../assets/images'
 import Banner from '../../reusable/Banner/Banner'
 import BusinessJSON from "../../../data/business.json"
-import { RootState } from '../../../storey'
+import { RootState } from '../../../store'
 import { useSelector } from 'react-redux'
 
 type Props = {}

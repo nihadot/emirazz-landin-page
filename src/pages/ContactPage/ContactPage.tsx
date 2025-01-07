@@ -9,11 +9,14 @@ function ContactPage({ }: Props) {
     <div className="m-auto max-w-[1440px] bg-black">
       <Header />
 
-      <SectionOne />
+      <div className="mt-12">
+
+        <SectionOne />
 
 
 
-      <Footer />
+        <Footer />
+      </div>
     </div>
   )
 }

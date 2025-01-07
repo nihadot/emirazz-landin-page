@@ -3,11 +3,12 @@ import { scaleupYOurBusinessWith } from '../../../assets/images'
 import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import HomeJSON from "../../../data/home.json"
 import { useSelector } from 'react-redux'
-import { RootState } from '../../../storey'
+import { RootState } from '../../../store'
 import Banner from '../../reusable/Banner/Banner'
 import HeaderSix from '../../reusable/Titles/MainHeading/HeaderSix'
 import { rightArrow } from '../../../assets/svg'
 import { IconButton } from '../../reusable/Buttons'
+import { Link } from 'react-router'
 
 type Props = {}
 
@@ -20,7 +21,7 @@ function SectionFive({ }: Props) {
            <div className="flex flex-col justify-center items-center">
            <HeadingThree
            content={HomeJSON?.section5[language]?.h3}
-           className='mb-3 text-center'
+           className='mb-3 text-center md:!text-[50px]  !leading-snug'
            />
            <HeaderSix
                 className='!text-center pb-3 pt-2'
@@ -32,22 +33,23 @@ function SectionFive({ }: Props) {
                 content={HomeJSON?.section5[language]?.p}
             />
 
-<IconButton
-iconUrl={rightArrow}
-className='my-4'
-content={'en' === "en" ? 'View All' : 'عرض المزيد'}
-
-/>
+<Link to={'scaleup'}>
+                    <IconButton
+                        className={`my-6 ${language === 'en' ? '' : '-rotate-180'} `}
+                        iconUrl={rightArrow}
+                        content={language === "en" ? 'Learn More' : 'يتعلم أكثر'}
+                    />
+                </Link>
            </div>  
         </div>
 
     return (
         <div className="px-4 md:px-10 lg:px-20 bg-black py-32">
         <Banner
+        containerClassName='!h-[580px]'
             alt={HomeJSON?.section5[language]?.h3}
             imageUrl={scaleupYOurBusinessWith}
-            // home
-            linearGradient
+            brightness
             children={children}
         />
     </div>

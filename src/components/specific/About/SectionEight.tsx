@@ -4,7 +4,7 @@ import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import Image from '../../reusable/Image/Image'
 import { aboutImage9 } from '../../../assets/images'
 import AboutJSON from "../../../data/about.json"
-import { RootState } from '../../../storey'
+import { RootState } from '../../../store'
 import { useSelector } from 'react-redux'
 
 type Props = {}
@@ -25,6 +25,7 @@ function SectionEight({}: Props) {
                       <div className="bg-[#BC13FE]  absolute right-3 -bottom-24 w-32 h-32 rounded-full blur-xl opacity-30"></div>
     
                       <Image
+                      alt={AboutJSON.section8[language].h3}
                           className='w-[544px] h-[400px] rounded-2xl md:h-[574px] object-cover'
                           src={aboutImage9}
                           content={AboutJSON.section8[language].h3}

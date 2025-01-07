@@ -3,7 +3,7 @@ import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne'
 import { useSelector } from 'react-redux'
-import { RootState } from '../../../storey'
+import { RootState } from '../../../store'
 import ArtJSON from "../../../data/art.json"
 
 type Props = {}

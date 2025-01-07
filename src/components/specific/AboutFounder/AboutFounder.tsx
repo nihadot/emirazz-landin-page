@@ -3,7 +3,7 @@ import Image from '../../reusable/Image/Image'
 import { aboutImage5 } from '../../../assets/images'
 import AboutFounderJSON from "../../../data/aboutFounder.json"
 import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne'
-import { RootState } from '../../../storey'
+import { RootState } from '../../../store'
 import { useSelector } from 'react-redux'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 

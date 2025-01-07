@@ -5,7 +5,7 @@ import Paragraph from '../../reusable/Paragraph/Paragraph'
 import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import HomeJSON from "../../../data/technology.json"
 import { useSelector } from 'react-redux'
-import { RootState } from '../../../storey'
+import { RootState } from '../../../store'
 
 
 function SectionEight() {

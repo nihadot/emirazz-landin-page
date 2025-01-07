@@ -6,7 +6,7 @@ import { rightArrow } from '../../../assets/svg'
 import { IconButton } from '../../reusable/Buttons'
 import Banner from '../../reusable/Banner/Banner'
 import { empoweringInnovation, empoweringVision, invention, sponsorship } from '../../../assets/images'
-import { RootState } from '../../../storey'
+import { RootState } from '../../../store'
 import { useSelector } from 'react-redux'
 import InventionJOSN from "../../../data/invention.json"
 type Props = {}

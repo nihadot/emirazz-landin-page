@@ -1,4 +1,4 @@
-import { RootState } from "../../../storey"
+import { RootState } from "../../../store"
 import { aboutImage5 } from "../../../assets/images"
 import Image from "../../reusable/Image/Image"
 import Paragraph from "../../reusable/Paragraph/Paragraph"

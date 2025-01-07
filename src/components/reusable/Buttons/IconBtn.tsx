@@ -2,14 +2,15 @@ import Image from '../Image/Image'
 
 type Props = {
     content:string;
-    className:string;
-    iconUrl:string;
-    textBlack:string;
+    className?:string;
+    iconUrl?:string;
+    textBlack?:string;
+    reverce?:boolean;
 }
 
-function IconBtn({content,iconUrl,className,textBlack}: Props) {
+function IconBtn({content,iconUrl,className,textBlack,reverce}: Props) {
   return (
-    <button className='text-white flex items-center gap-3'>
+    <button className={`text-white flex items-center gap-3 ${reverce ? 'flex-row-reverse' : ''}`}>
         <Image
         className={`w-8 h-8 object-cover ${className}`}
         src={iconUrl}
