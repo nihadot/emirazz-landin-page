@@ -47,7 +47,7 @@ const ProductCard: React.FC<CardProps> = ({ item }) => {
     
     <div className=" p-0 sm:p-6">
         <Card
-        
+        alt={item?.productTitle}
         imageUrl={item?.imageLink?.secure_url}
         imageClassName='w-full h-full object-cover'
         />

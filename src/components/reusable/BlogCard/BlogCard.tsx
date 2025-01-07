@@ -45,7 +45,7 @@ function BlogCard({item}: Props) {
     <div className=''>
         <Image
          src={item?.imageLink?.secure_url}
-
+    alt={item?.blogTitle}
          className='h-[285px]  w-full rounded-[15px] object-cover'
         />
      <Link to={`/blog/${item.slugNameEn}`}>

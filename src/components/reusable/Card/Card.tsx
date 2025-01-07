@@ -2,7 +2,7 @@ import React from 'react'
 import Image from '../Image/Image';
 
 type Props = {
-    imageClassName?:string;
+    imageClassName:string;
     containerClassName?:string;
     imageUrl:string;
     alt:string;

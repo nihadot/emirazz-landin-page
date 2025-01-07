@@ -18,7 +18,7 @@ type Props = {
 
 function Banner({ containerRound,styleBoxShadow,style,imageUrl, alt, children, imageClassName, home, linearGradient, containerClassName, brightness }: Props) {
   return (
-    <div style={ styleBoxShadow && {boxShadow:"0px 0px 62.4px 1px rgba(255, 0, 0, 0.41)"}} className={`w-full h-[700px] md:h-[820px] ${containerRound ? 'rounded-[20px] overflow-hidden' : ''} relative ${containerClassName}`}>
+    <div style={ styleBoxShadow ? {boxShadow:"0px 0px 62.4px 1px rgba(255, 0, 0, 0.41)"} : undefined} className={`w-full h-[700px] md:h-[820px] ${containerRound ? 'rounded-[20px] overflow-hidden' : ''} relative ${containerClassName}`}>
       <Image
         src={imageUrl}
         className={` object-cover  rounded-[20px] w-full h-full top-0 ${imageClassName} ${home ? 'rounded-none' : ''} ${brightness ? 'brightness-50' : ''} `}
