@@ -71,6 +71,7 @@ heading={realestateJSON.section4[language].cards[2].h3}
 
             <div className="flex md:flex-row  flex-col mt-12 gap-8">
               <Banner
+              alt=''
 
               children={childrenOne}
               imageUrl={luxuryWaterFront}
@@ -80,6 +81,7 @@ heading={realestateJSON.section4[language].cards[2].h3}
               
 
               <Banner
+              alt=''
               children={childrenTwo}
               
               imageUrl={cityCentreApartment}
@@ -88,6 +90,7 @@ heading={realestateJSON.section4[language].cards[2].h3}
 
 
 <Banner
+alt=''
               children={childrenThree}
               
               imageUrl={modernFamilyHome}

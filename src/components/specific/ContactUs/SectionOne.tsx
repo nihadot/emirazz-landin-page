@@ -7,7 +7,7 @@ import { RootState } from '../../../store'
 import ContactJSON from "../../../data/contactUs.json"
 import HeadingTwo from '../../reusable/Titles/MainHeading/HeadingTwo'
 import { useState } from 'react'
-import axios from 'axios'
+import axios, { AxiosError } from 'axios'
 import { baseUrl } from '../../../api'
 import toast, { Toaster } from 'react-hot-toast'
 
@@ -76,7 +76,8 @@ function ContactUs() {
 
           } catch (error) {
             
-            toast.error(error?.response?.data?.message || error?.message)
+            const axiosError = error as AxiosError;
+            toast.error(axiosError?.response?.data?.message || axiosError?.message)
 
 
           }finally{

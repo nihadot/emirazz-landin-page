@@ -1,8 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import Banner from '../../reusable/Banner/Banner'
+import { useEffect, useState } from 'react'
 import Image from '../../reusable/Image/Image'
-import { empoweringInnovation } from '../../../assets/images'
-import { useLocation } from 'react-router'
 import { useGetAllGalleryQuery } from '../../../features/gallery/galleryApi'
 
 type Props = {}

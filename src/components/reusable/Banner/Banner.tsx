@@ -12,7 +12,7 @@ type Props = {
   brightness?: boolean;
   style?:string;
   styleBoxShadow?:boolean;
-  containerRound?:string;
+  containerRound?:boolean;
 };
 
 

@@ -21,7 +21,7 @@ const refreshTokenQuery = fetchBaseQuery({
 
 
 // Enhanced base query to handle token refresh
-const baseQueryWithReauth = async (args, api, extraOptions) => {
+const baseQueryWithReauth = async (args:any, api:any, extraOptions:any) => {
   let result = await baseQuery(args, api, extraOptions);
 
   // Check if token expired (e.g., status 401 or 403)
@@ -30,7 +30,7 @@ const baseQueryWithReauth = async (args, api, extraOptions) => {
     
   
   // Attempt to refresh the token
-  const refreshResult = await refreshTokenQuery('/refresh', api, extraOptions);
+  const refreshResult:any = await refreshTokenQuery('/refresh', api, extraOptions);
 
     if (refreshResult?.data?.accessToken) {
       // Save the new token and retry the original request

@@ -25,6 +25,7 @@ interface ProductFormValues {
   seoKeywords: string;
   seoKeywordsAr: string;
   imageLink: ImageLink;
+  slugNameEn:string;
 }
 
 function SectionTwo({ }: Props) {

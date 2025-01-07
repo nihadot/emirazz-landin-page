@@ -5,7 +5,7 @@ import Card from '../../reusable/Card/Card'
 import { rightArrow } from '../../../assets/svg'
 import { IconButton } from '../../reusable/Buttons'
 import Banner from '../../reusable/Banner/Banner'
-import { empoweringVision, sponsorship } from '../../../assets/images'
+import { empoweringVision } from '../../../assets/images'
 import sponsorshipJSON from "../../../data/sponsorship.json"
 import { RootState } from '../../../store'
 import { useSelector } from 'react-redux'

@@ -33,6 +33,7 @@ interface BlogFormValues {
     seoKeywords: string;
     seoKeywordsAr: string;
     imageLink: IImageLink;
+    slugNameEn:string
   }
   
   // Define types for login response
@@ -41,7 +42,7 @@ interface BlogFormValues {
     message: string;  // Contains a descriptive message
   }
 
-function SectionTen({ }: Props) {
+function SectionTen({ }) {
 
     const language = useSelector((state: RootState) => state?.language?.language);
 
@@ -79,7 +80,7 @@ function SectionTen({ }: Props) {
 
 blogs.length > 0 && blogs.map((item:BlogFormValues,index:number)=>{
     return(
-        <BlogCard key={index} item={item} />
+        <BlogCard key={index}  item={item} />
     )
 })  
                }

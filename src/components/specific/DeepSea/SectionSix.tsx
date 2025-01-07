@@ -41,10 +41,12 @@ function SectionSix({}: Props) {
     </div>
 
     <Image
+    alt={realestateJSON.section6[language].h3}
         src={treeThree}
         className='w-[280px] brightness-50 h-[500px] absolute -bottom-40 left-10 md:left-24 object-contain'
         />
             <Image
+            alt={realestateJSON.section6[language].h3}
         src={treeTwo}
         className='w-[240px] md:block hidden z-40 absolute -right-8 bottom-0 brightness-50 h-[360px] object-contain'
         />

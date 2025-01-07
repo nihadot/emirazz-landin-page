@@ -4,7 +4,7 @@ type Props = {
     content:string;
     className?:string;
     iconUrl:string;
-    textBlack?:string;
+    textBlack?:boolean;
     reverce?:boolean;
 }
 

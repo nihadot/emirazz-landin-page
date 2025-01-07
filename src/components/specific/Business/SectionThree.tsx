@@ -18,7 +18,7 @@ function SectionThree({}: Props) {
     <div className="sm:absolute relative right-0">
         <TextBanner
         containerClassName='sm:!ps-8'
-        heading={BusinessJSON.section3[language].h2}
+        heading={BusinessJSON.section3[language].h3}
         paragraph={BusinessJSON.section3[language].p}
         />
     </div>

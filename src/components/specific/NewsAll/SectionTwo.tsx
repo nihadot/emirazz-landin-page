@@ -47,8 +47,6 @@ function SectionTwo({ }: Props) {
   useEffect(() => {
     if (!state && newsData) {
       setData(newsData?.data);
-    } else {
-      setData(state)
     }
 
   }, [state, newsData]);

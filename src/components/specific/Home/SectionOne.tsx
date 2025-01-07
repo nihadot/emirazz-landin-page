@@ -39,7 +39,7 @@ function SectionOne({ }: Props) {
     return (
         <div className="">
             <Banner
-                alt={HomeJSON?.section1[language]?.h1}
+                alt={''}
                 imageUrl={technologyRealEstateInvention}
                 home
                 children={children}

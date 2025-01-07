@@ -63,7 +63,7 @@ function SectionTwo({}: Props) {
 
         <Paragraph
         className='text prose whitespace-break-spaces'
-        content={data?.productDetails}
+        content={data?.productDetails ?? 'Default value'}
         />
 
 

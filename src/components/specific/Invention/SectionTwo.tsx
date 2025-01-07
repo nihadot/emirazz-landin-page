@@ -25,7 +25,7 @@ function SectionTwo({}: Props) {
                   <Image
                       className='w-[544px] h-[400px] rounded-2xl md:h-[574px] object-cover'
                       src={ourApproachToInvention}
-                      alt={InventionJOSN.section2[language].h1}
+                      alt={InventionJOSN.section2[language].h2}
 
                   />
               </div>

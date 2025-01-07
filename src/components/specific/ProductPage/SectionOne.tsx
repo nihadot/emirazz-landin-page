@@ -7,6 +7,7 @@ import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 import { useLocation, useParams } from 'react-router'
 import { useGetProductQuery } from '../../../features/product/productsApi'
+import { placeHolderLink } from '../../../api'
 
 type Props = {}
 
@@ -19,7 +20,7 @@ interface ImageLink {
 }
 
 interface ProductFormValues {
-  productTitle: string;
+  productTitle: string | undefined;
   productTitleAr: string;
   productDescription: string;
   productDescriptionAr: string;
@@ -55,11 +56,11 @@ useEffect(() => {
   const children = <div className="px-4 md:px-10 lg:px-20 absolute top-0 left-0 flex flex-col justify-center w-full h-full">
   <HeadingOne
       className='md:mb-6 mb-3 capitalize pt-8 sm:pt-0'
-      content={data?.productTitle}
+      content={data?.productTitle ?? 'Default value'}
   />
   <Paragraph
       className='text-white/80'
-      content={data?.productDescription}
+      content={data?.productDescription ?? 'Default value'}
   />
 </div>
 
@@ -68,7 +69,7 @@ useEffect(() => {
             <Banner
                 // containerClassName='pt-8'
                 alt='Emiraaz & Technology: Shaping the Future'
-                imageUrl={data?.imageLink.secure_url}
+                imageUrl={data?.imageLink?.secure_url ??placeHolderLink}
                 containerClassName='!max-h-[700px]'
                 imageClassName='object-cover'
                 home

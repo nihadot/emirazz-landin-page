@@ -37,10 +37,12 @@ function SectionOne({ }: Props) {
                 <div className="flex justify-center mt-12 relative z-10">
 
 <Image
+alt={GalleryJSON.section1[language].h1}
 className='w-[100px] xs-xs:w-[200px] lg:w-[345px] xs-md:w-[210px] xs-xs:h-[230px] h-[100px] mt-8 ms-2 rotate-6 lg:h-[327px] object-cover rounded-[15px]'
 src={visualChronicles1}
 />
    <Image
+   alt={GalleryJSON.section1[language].h1}
 className='w-[100px] xs-xs:w-[200px] lg:w-[345px] xs-md:w-[260px] h-[130px] xs-xs:h-[230px] relative z-20 lg:h-[368px] object-cover rounded-[15px]'
 src={visualChronicles2}
 />

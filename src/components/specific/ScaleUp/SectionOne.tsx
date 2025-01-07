@@ -1,7 +1,7 @@
 import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 import Banner from '../../reusable/Banner/Banner'
-import {  fuelingTomorrowsInnovations, sponsorship, unlockYourBusiness } from '../../../assets/images'
+import {   unlockYourBusiness } from '../../../assets/images'
 import ScaleUpJSON from "../../../data/scaleup.json"
 import { RootState } from '../../../store'
 import { useSelector } from 'react-redux'

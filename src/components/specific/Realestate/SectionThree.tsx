@@ -56,6 +56,7 @@ content={realestateJSON.section3[language].h3}
 
             <div className="flex md:flex-row  flex-col mt-12 gap-8">
               <Banner
+              alt=''
 
               children={childrenOne}
               imageUrl={ourServicesImageOne}
@@ -65,6 +66,7 @@ content={realestateJSON.section3[language].h3}
               
 
               <Banner
+              alt=''
               children={childrenTwo}
               
               imageUrl={ourServicesImageTwo}

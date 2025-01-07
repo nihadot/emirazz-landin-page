@@ -97,9 +97,9 @@ function SectionFive({ }: Props) {
 
 
                     <Image
+                    alt={HomeJSON.section4[language].cards[1].h3}
                         className='w-[526px] h-[400px]  md:pt-0 rounded-2xl sm:h-[499px] object-cover'
                         src={image9}
-                        content={HomeJSON.section4[language].cards[0].h3}
                     />
                 </div>
 

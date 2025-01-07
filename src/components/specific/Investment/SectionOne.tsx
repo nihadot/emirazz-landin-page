@@ -1,7 +1,7 @@
 import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne'
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 import Banner from '../../reusable/Banner/Banner'
-import { empoweringInnovation, empoweringVision, sponsorship } from '../../../assets/images'
+import { empoweringInnovation, empoweringVision } from '../../../assets/images'
 import investmentJSON from "../../../data/invertments.json"
 import { useSelector } from 'react-redux'
 import { RootState } from '../../../store'

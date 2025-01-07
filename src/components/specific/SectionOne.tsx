@@ -13,6 +13,7 @@ function SectionOne({}: Props) {
             content='What’s New @ Emiraaz'
             />
             <Paragraph
+            content=''
             className='Stay updated with the latest from Emiraaz. Discover our groundbreaking projects, key partnerships, and technological advancements, offering insights into our growth and impact.'
             />
     </div>

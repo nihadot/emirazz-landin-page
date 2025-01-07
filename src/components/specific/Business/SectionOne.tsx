@@ -28,7 +28,7 @@ function SectionOne({ }: Props) {
         <div className="">
             <Banner
                 // containerClassName='pt-8'
-                content={BusinessJSON.section1[language].h1}
+                alt={BusinessJSON.section1[language].h1}
                 imageUrl={businessImage1}
                 containerClassName=''
                 home

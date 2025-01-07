@@ -18,6 +18,7 @@ function SectionThree({ }: Props) {
 
     const childrenOne = <div dir={language === 'ar' ? 'rtl' : 'ltr'} className="absolute group w-full bottom-0 py-2 pe-2 ps-4 z-30">
         <TextBanner
+        paragraph=''
             containerClassName='!ps-0 !pt-3 !pe-3 !pb-3 h-fit lg:!h-full !bg-transparent'
             paragraphClassName='!text-[13px] !p-0 !m-0 !leading-normal'
             headingClassName='!text-[24px] !font-bold !p-0 !m-0'
@@ -46,6 +47,7 @@ function SectionThree({ }: Props) {
 
     const childrenTwo =  <div dir={language === 'ar' ? 'rtl' : 'ltr'} className="absolute group w-full bottom-0 py-2 pe-2 ps-4 z-30">
     <TextBanner
+    paragraph=''
         containerClassName='!ps-0 !pt-3 !pe-3 !pb-3 h-fit lg:!h-full !bg-transparent'
         paragraphClassName='!text-[13px] !p-0 !m-0 !leading-normal'
         headingClassName='!text-[24px] !font-bold !p-0 !m-0'
@@ -75,6 +77,7 @@ function SectionThree({ }: Props) {
 
     const childrenThree =  <div dir={language === 'ar' ? 'rtl' : 'ltr'} className="absolute group w-full bottom-0 py-2 pe-2 ps-4 z-30">
     <TextBanner
+    paragraph=''
         containerClassName='!ps-0 !pt-3 !pe-3 !pb-3 h-fit lg:!h-full !bg-transparent'
         paragraphClassName='!text-[13px] !p-0 !m-0 !leading-normal'
         headingClassName='!text-[24px] !font-bold !p-0 !m-0'
@@ -105,6 +108,7 @@ function SectionThree({ }: Props) {
 
     const childrenFour =  <div dir={language === 'ar' ? 'rtl' : 'ltr'} className="absolute group w-full bottom-0 py-2 pe-2 ps-4 z-30">
     <TextBanner
+    paragraph=''
         containerClassName='!ps-0 !pt-3 !pe-3 !pb-3 h-fit lg:!h-full !bg-transparent'
         paragraphClassName='!text-[13px] !p-0 !m-0 !leading-normal'
         headingClassName='!text-[24px] !font-bold !p-0 !m-0'
