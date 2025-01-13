@@ -39,7 +39,7 @@ import empoweringVision from "./empowering-vision.webp";
 import fuelingTomorrowsInnovations from "./startup-support.webp";
 
 // Real Estate
-import yourGateWayToDubai from "./your-gate-way-to-dubai.webp";
+import yourGateWayToDubai from "./emira-real-estate-transforming.webp";
 import realsEstateAbout from "./about-us.webp";
 import ourServicesImageOne from "./our-service-1.webp";
 import ourServicesImageTwo from "./our-service-2.webp";

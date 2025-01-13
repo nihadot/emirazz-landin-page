@@ -11,14 +11,28 @@ import SectionTwo from '../../components/specific/Home/SectionTwo'
 import SectionNine from "../../components/specific/Home/SectionNine"
 import SectionTen from "../../components/specific/Home/SectionTen"
 import SectionTwelve from "../../components/specific/Home/SectionTwelve"
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import SplashScreen from '../../components/splash/SplashScreen'
 function Home() {
+  const [loading,setLoading] = useState(true);
 
     useEffect(()=>{
       window.scrollTo(0,0)
     },[])
+
+    useEffect(()=>{
+      setTimeout(()=>{
+        setLoading(false)
+      },600)
+
+    },[])
   return (
-    <div className="m-auto max-w-[1680px] w-full">
+  <>
+  
+ { loading ?
+ 
+ <SplashScreen/>
+ :   <div className="m-auto max-w-[1680px] w-full">
         <Header/>
         <SectionOne/>
         <SectionTwo/>
@@ -35,7 +49,8 @@ function Home() {
         <SectionTwo/>
         <SectionNine/> */}
         <Footer/>
-    </div>
+    </div>}
+  </>
   )
 }
 
