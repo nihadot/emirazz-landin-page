@@ -8,7 +8,6 @@ function AboutFounder({}: Props) {
     <div className="m-auto max-w-[1440px]">
         <Header/>
         <SectionOne/>
-  
         <Footer/>
     </div>
   )

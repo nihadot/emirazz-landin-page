@@ -87,7 +87,7 @@ import exploreTheWorld from "./explore-the-world.webp";
 import emirazzTechnologyLeadingWith from "./emiraz-technology-leading-with.webp";
 import blackIcon from "./black-arrow.png";
 import emirazzRealEstateTransformin from "./emira-real-estate-transforming.webp";
-
+import user from "./user.svg";
 export {
     logo,
     image1,
@@ -162,5 +162,5 @@ deepSea2Icon,
 treeOne,treeTwo,treeThree,treeFour,theDepthOfExploration,
 innovationFromAbyss,bundlessPotential,ANewFrontier,diveDeepUs,
 technologyRealEstateInvention,whereInnovation,scaleupYOurBusinessWith,exploreTheWorld,
-emirazzTechnologyLeadingWith,blackIcon,emirazzRealEstateTransformin
+emirazzTechnologyLeadingWith,blackIcon,emirazzRealEstateTransformin,user
 }

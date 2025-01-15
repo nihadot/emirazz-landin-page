@@ -1,5 +1,5 @@
 import Image from '../../reusable/Image/Image'
-import { aboutImage5 } from '../../../assets/images'
+import { user } from '../../../assets/images'
 import AboutFounderJSON from "../../../data/aboutFounder.json"
 import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne'
 import { RootState } from '../../../store'
@@ -18,10 +18,11 @@ function AboutFounder({}: Props) {
       {/*  */}
       <div className="relative w-full sm:w-[370px] pb-8 md:pb-0 pe-0 md:pt-0 sm:pe-4 flex flex-col ">
         <Image
-          className='sm:w-[374px] w-full rounded-2xl h-[420px] object-cover'
-          src={aboutImage5}
+          className='sm:w-[374px] border w-full rounded-2xl h-[420px] p-28 object-contain'
+          src={user}
           alt={AboutFounderJSON.section1[language as 'en' | 'ar'].h1}
         />
+        {/* <div className="bg-slate-200 sm:w-[374px] w-full rounded-2xl h-[420px]"></div> */}
       </div>
       {/* images */}
       <div className="flex flex-col sm:pb-0 pb-0 md:pb-8 flex-1">
