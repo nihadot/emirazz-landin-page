@@ -1,4 +1,3 @@
-import React from 'react'
 import imag from "../../assets/images/emiraaz white.png"
 type Props = {}
 
