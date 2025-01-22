@@ -1,6 +1,5 @@
 import Paragraph from '../../reusable/Paragraph/Paragraph'
 import { scaleupYOurBusinessWith } from '../../../assets/images'
-import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import HomeJSON from "../../../data/home.json"
 import { useSelector } from 'react-redux'
 import { RootState } from '../../../store'

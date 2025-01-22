@@ -3,7 +3,7 @@ import HeaderFive from '../Titles/MainHeading/HeaderFive'
 import { footer_navlink_about, footer_navlink_business, footer_navlink_our_products } from '../../../data'
 import Image from '../Image/Image'
 import { linkedin, thread, x, youtube } from '../../../assets/svg'
-import { Link, Links } from 'react-router'
+import { Link } from 'react-router'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../../store'
 type Props = {
@@ -31,7 +31,7 @@ function Footer({ }: Props) {
 
           {footer_navlink_about.length > 0 && footer_navlink_about.map((item) => {
             return (
-              <Link to={item.link}>
+               item.link && <Link to={item.link}>
               <HeaderSix
                 content={ language  === 'en' ? item.nameEn : item.nameAr}
                 key={item.id}
@@ -53,7 +53,7 @@ function Footer({ }: Props) {
           />
           {footer_navlink_business.length > 0 && footer_navlink_business.map((item) => {
             return (
-              <Link to={item.link}>
+              item.link && <Link to={item.link}>
 
               <HeaderSix
               content={ language  === 'en' ? item.nameEn : item.nameAr}
@@ -123,11 +123,18 @@ function Footer({ }: Props) {
             className='mb-4' />
             </Link>
 
+            <Link to={'/realestate'}>
       <HeaderFive 
             content={ language  === 'en' ? 'Real Estate' : 'العقارات'}
-       className='mb-4' />
+            className='mb-4' />
+            </Link>
+
+            <Link to={'/about-founder'}>
       <HeaderFive content={language === 'en' ? 'Founder' : 'مؤسس'} className='mb-4' />
+            </Link>
+            <Link to={'/'}>
       <HeaderFive content={language === 'en' ? 'Media' : 'وسائط'} className='mb-4' />
+            </Link>
 
       <div className="flex gap-12 mb-4">
         <HeaderSix content={language === 'en' ? 'News' : 'أخبار'} />

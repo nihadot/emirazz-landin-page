@@ -1,8 +1,6 @@
-import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../store';
 import HomeJSON from "../../../data/home.json"
-import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree';
 import Image from '../../reusable/Image/Image';
 import { visualChronicles1, visualChronicles2, visualChronicles3 } from '../../../assets/images';
 import { IconButton } from '../../reusable/Buttons';

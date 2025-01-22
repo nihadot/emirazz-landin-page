@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { toggleLanguage } from '../../../languageSlice'
 import { RootState } from '../../../store'
 import { closeIcon, emirazzArLogo, greaterthan, menuIcon } from '../../../assets/svg'
-import { motion, AnimatePresence, color } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Header() {
 
@@ -47,7 +47,7 @@ function NavLinks({ }) {
     const dispatch = useDispatch();
     const navigate = useNavigate()
     const [isOpen, setIsOpen] = useState(false);
-    const [activeDropdown, setActiveDropdown] = useState(null);
+    const [activeDropdown, setActiveDropdown] = useState<number>(0);
     const navigateHandler = (url:string)=> navigate(url); 
     const [activePage, setActivePage] = useState<number>(0);
 
@@ -152,7 +152,7 @@ function NavLinks({ }) {
                   {item.dropDown && (
                     <div
                       onMouseEnter={() => setActiveDropdown(item.id)}
-                      onMouseLeave={() => setActiveDropdown(null)}
+                      onMouseLeave={() => setActiveDropdown(0)}
                     >
                       <AnimatePresence>
                         {activeDropdown === item.id && (
@@ -166,7 +166,7 @@ function NavLinks({ }) {
                             <div className="flex justify-start items-start ps-2 mt-0">
 
                             <label htmlFor="" className='font-bold' onClick={()=> {
-                              setActiveDropdown(null)
+                              setActiveDropdown(0)
                               setActivePage(0);
                             } }>Back to menu </label>
                             </div>
@@ -291,7 +291,7 @@ function Media() {
 }
 
 
-  function ExploreEmiraazMobile({activePage,setActivePage}) {
+  function ExploreEmiraazMobile({activePage,setActivePage}:{activePage:any,setActivePage:any}) {
 
 
   const aboutEmiraaz = <ul className=' w-full py-0 -mt-10  text-start font-light bg-black font-poppins cursor-pointer text-base text-[16px]   flex flex-col gap-4'>
@@ -355,7 +355,7 @@ function Media() {
 
 
 
-function MediaMobile({setActiveDropdown}) {
+function MediaMobile({setActiveDropdown}:{setActiveDropdown:any}) {
 
 
   const navigate = useNavigate()
