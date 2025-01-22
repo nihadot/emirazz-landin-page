@@ -20,12 +20,12 @@ function SectionEight() {
         <div className="bg-black px-4 md:px-10 lg:px-20">
             {/* first image section */}
 
-            <div className="flex flex-col-reverse md:flex-row  justify-center pb-4 sm:pb-24 gap-0 sm:gap-8 pt-4 ms:pt-40 items-center">
+            <div className="flex flex-col-reverse md:flex-row  justify-center pb-4 sm:pb-24 gap-0 sm:gap-8 pt-4 ms:pt-40 items-start">
                 {/*  */}
-                <div className="relative w-fit pe-0 pt-4 sm:pe-4 flex flex-col ">
+                <div className="relative w-fit pe-0 pt-0 sm:pe-4 flex flex-col ">
 
                     <Image
-                        className='w-[526px] h-[400px] rounded-2xl sm:h-[499px] object-cover'
+                        className='w-[526px] h-[400px] rounded-2xl sm:h-[440px] object-cover'
                         src={emirazzRealEstateTransformin}
                         alt={HomeJSON?.section8[language as 'en' | 'ar']?.h3}
                     />
@@ -35,12 +35,12 @@ function SectionEight() {
                 {/* images */}
                 <div className="flex flex-col sm:pt-0 pt-4 flex-1">
                     <HeadingThree
-                        className=' mb-4'
+                        className=' mb-2 md:mb-4'
                         content={HomeJSON?.section8[language as 'en' | 'ar']?.h3}
                     />
 
                     <HeaderSix
-                        className='pb-4'
+                        className='pb-2 sm:pb-4'
                         content={HomeJSON?.section8[language as 'en' | 'ar']?.title}
                     />
 
@@ -53,7 +53,7 @@ function SectionEight() {
 
 <Link to={'/realestate'}>
                         <IconButton
-                    className={`my-6 ${ language === 'en' ? '' : '-rotate-180'} `}
+                    className={`my-0 ${ language === 'en' ? '' : '-rotate-180'} `}
                     iconUrl={rightArrow}
                     content={language === "en" ? 'Learn More    ' : 'يتعلم أكثر'}
                     />

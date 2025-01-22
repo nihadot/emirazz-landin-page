@@ -10,14 +10,14 @@ type Props = {
 
 function IconBtn({content,iconUrl,className,textBlack,reverce}: Props) {
   return (
-    <button className={`text-white flex items-center gap-3 ${reverce ? 'flex-row-reverse' : ''}`}>
+    <button className={`text-white flex items-center  gap-3 ${reverce ? 'flex-row-reverse' : ''}`}>
         <Image
         alt=''
         className={`w-8 h-8 object-cover ${className}`}
         src={iconUrl}
 
         />
-        <label className={` text-base font-medium font-sfbold ${textBlack ? 'text-black' : ''}`}>{content}</label>
+        <label className={` font-bold text-[15px] leading-[18.29px] ${textBlack ? 'text-black' : ''}`}>{content}</label>
     </button>
   )
 }

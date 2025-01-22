@@ -54,6 +54,7 @@ type FooterLink = {
     nameAr: string;
     id: number;
     url?: string;
+    link?:string;
 }
 
 export const footer_navlink_about: FooterLink[] = [
@@ -61,56 +62,67 @@ export const footer_navlink_about: FooterLink[] = [
       id: 1,
       nameEn: 'Story',
       nameAr: 'القصة',
+      link: '/',
     },
     {
       id: 2,
       nameEn: 'Leadership',
+      link:'/',
       nameAr: 'القيادة',
     },
     {
       id: 3,
       nameEn: 'Inspire',
+      link:'/',
       nameAr: 'إلهام',
     },
     {
       id: 4,
       nameEn: 'Culture & Values',
+      link:'/',
       nameAr: 'الثقافة والقيم',
     },
     {
       id: 5,
       nameEn: 'Sustainability',
+      link:'/',
       nameAr: 'الاستدامة',
     },
     {
       id: 6,
       nameEn: 'Procurement',
+      link:'/',
       nameAr: 'المشتريات',
     },
     {
       id: 7,
       nameEn: 'Deep Sea',
+      link:'/deepsea',
       nameAr: 'البحر العميق',
     },
   ];
 
   export const footer_navlink_business: FooterLink[] = [
     {
+      link:'/our/partners',
       id: 1,
       nameEn: 'Partners',
       nameAr: 'الشركاء',
     },
     {
+      link:'/sponsorship',
       id: 2,
       nameEn: 'Sponsorship',
       nameAr: 'الرعاية',
     },
     {
+      link:'/investment',
       id: 3,
       nameEn: 'Investment',
       nameAr: 'الاستثمار',
     },
     {
+      link:'/startup',
       id: 4,
       nameEn: 'Startup',
       nameAr: 'الشركات الناشئة',

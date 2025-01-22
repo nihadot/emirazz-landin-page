@@ -5,7 +5,7 @@ import { RootState } from '../../../store';
 
 type Props = {
   heading: string;
-  paragraph: string;
+  paragraph?: string;
   containerClassName?: string;
   paragraphClassName?: string;
   headingClassName?: string;

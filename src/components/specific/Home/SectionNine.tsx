@@ -64,10 +64,10 @@ function SectionNine({ }: Props) {
     return (
         <>
 
-            <div className="flex py-8 px-4 md:px-10 lg:px-20 bg-black lg:flex-row flex-col-reverse justify-center sm:gap-8 items-center">
+            <div className="flex flex-col pt-20 pb-0 px-4 md:px-10 lg:px-20 bg-black lg:flex-row justify-center sm:gap-8 items-center">
 
                 {/* images */}
-                <div className="flex flex-col sm:pb-0 pb-8 flex-1">
+                <div className="flex flex-col sm:pb-0 pb-4 md:pb-8 flex-1">
                     <HeadingThree
                         className=' mb-4'
                         content={HomeJSON?.section9[language as 'en' | 'ar']?.h3}
@@ -78,11 +78,11 @@ function SectionNine({ }: Props) {
                     />
                 </div>
 
-                <div className="py-4">
+                <div className="pb-4 md:p-0 w-full md:w-auto">
 
 <Link to={'/newsall'}>
                     <IconButton
-                    className={`my-6 ${ language === 'en' ? '' : '-rotate-180'} `}
+                    className={` ${ language === 'en' ? '' : '-rotate-180'} `}
                     
                     iconUrl={rightArrow}
                     content={language === "en" ? 'Learn More    ' : 'يتعلم أكثر'}
@@ -92,14 +92,15 @@ function SectionNine({ }: Props) {
             </div>
 
 
-            <div className="bg-black pt-10 px-4 md:px-10 lg:px-20  w-full py-0">
+            <div className="bg-black pt-6s md:pt-0 px-4 md:px-10 lg:px-20  w-full py-0">
 
 
-                <div id='home-news' className="flex md:flex-row   flex-col mt-12 gap-8 overflow-x-scroll">
+                <div id='home-news' className="flex md:flex-row flex-col mt-0 gap-8 overflow-x-scroll">
                  
 
 {
                     allNews.length > 0 && allNews.map((item: NewsFormValues,index:number) => {
+                        
                         return (
                             <Banner
                              alt={''}

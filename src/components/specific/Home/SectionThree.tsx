@@ -20,21 +20,21 @@ function SectionThree({ }: Props) {
         <TextBanner
         paragraph=''
             containerClassName='!ps-0 !pt-3 !pe-3 !pb-3 h-fit lg:!h-full !bg-transparent'
-            paragraphClassName='!text-[13px] !p-0 !m-0 !leading-normal'
-            headingClassName='!text-[24px] !font-bold !p-0 !m-0'
+            paragraphClassName='font !p-0 !m-0 '
+            headingClassName='font-black text-[30px] leading-[36.57px] !p-0 !m-0'
             heading={HomeJSON?.section3[language as 'en' | 'ar']?.cards?.[0]?.h3}
         />
         <div className="group-hover:block hidden transition-all">
 
             <Paragraph
-                className='!text-base !text-white '
-                content={HomeJSON?.section3[language as 'en' | 'ar']?.cards?.[0]?.p}
+            className='!text-base !text-white '
+            content={HomeJSON?.section3[language as 'en' | 'ar']?.cards?.[0]?.p}
             />
 
 
 <Link to={'/sponsorship'} >
             <IconButton
-                className={`my-3 ${language === 'en' ? '' : '-rotate-180'} !w-3 !h-4 object-contain `}
+                className={` my-3 ${language === 'en' ? '' : '-rotate-180'} !w-3 !h-4 object-contain `}
                 iconUrl={rightDownArrow}
                 content={language === "en" ? 'Know More' : 'اعرف المزيد'}
                 reverce
@@ -147,7 +147,7 @@ function SectionThree({ }: Props) {
                         content={HomeJSON?.section3[language as 'en' | 'ar']?.h3}
                     />
                     <Paragraph
-                        className='flex-1 !text-[18px] !font-light'
+                        className='flex-1 '
                         content={HomeJSON?.section3[language as 'en' | 'ar']?.p}
                     />
 

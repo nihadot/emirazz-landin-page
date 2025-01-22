@@ -16,7 +16,8 @@ export default {
         sfregular:["Sf-Pro-Regular","sans-serif"],
         sfmedium:["Sf-Pro-Medium","sans-serif"],
         poppins: ["Poppins", "serif"],
-        Komorebi:['Komorebi', 'sans-serif']
+        Komorebi:['Komorebi', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
       },
       screens:{
         'xs-md': '812px',

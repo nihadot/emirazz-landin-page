@@ -3,7 +3,7 @@ import HeaderFive from '../Titles/MainHeading/HeaderFive'
 import { footer_navlink_about, footer_navlink_business, footer_navlink_our_products } from '../../../data'
 import Image from '../Image/Image'
 import { linkedin, thread, x, youtube } from '../../../assets/svg'
-import { Link } from 'react-router'
+import { Link, Links } from 'react-router'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../../store'
 type Props = {
@@ -31,10 +31,12 @@ function Footer({ }: Props) {
 
           {footer_navlink_about.length > 0 && footer_navlink_about.map((item) => {
             return (
+              <Link to={item.link}>
               <HeaderSix
                 content={ language  === 'en' ? item.nameEn : item.nameAr}
                 key={item.id}
-              />
+                />
+                </Link>
             )
           })}
 
@@ -51,10 +53,13 @@ function Footer({ }: Props) {
           />
           {footer_navlink_business.length > 0 && footer_navlink_business.map((item) => {
             return (
+              <Link to={item.link}>
+
               <HeaderSix
               content={ language  === 'en' ? item.nameEn : item.nameAr}
               key={item.id}
               />
+              </Link>
             )
           })}
 
@@ -112,10 +117,11 @@ function Footer({ }: Props) {
       </div>
 
 
-
+          <Link to={'/technology'}>
       <HeaderFive
             content={ language  === 'en' ? 'Technology' : 'تكنولوجيا'}
-      className='mb-4' />
+            className='mb-4' />
+            </Link>
 
       <HeaderFive 
             content={ language  === 'en' ? 'Real Estate' : 'العقارات'}

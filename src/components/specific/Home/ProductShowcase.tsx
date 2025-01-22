@@ -1,6 +1,4 @@
 import Image from '../../reusable/Image/Image'
-import Paragraph from '../../reusable/Paragraph/Paragraph'
-import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
 import HomeJSON from "../../../data/home.json"
 import { useSelector } from 'react-redux'
 import { RootState } from '../../../store'
@@ -11,7 +9,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router'
 import { useGetAllProductsQuery } from '../../../features/product/productsApi'
 import H2 from '../../reusable/Home/H2'
-import H3 from '../../reusable/Home/H3'
+import Paragraph from '../../reusable/Home/Paragraph'
 
 
 interface ImageLink {
@@ -36,7 +34,7 @@ interface ProductFormValues {
     imageLink: ImageLink;
 }
 
-function SectionFour() {
+function ProductShowcase() {
     const language = useSelector((state: RootState) => state?.language?.language);
 
     const [page] = useState(1);
@@ -56,22 +54,19 @@ function SectionFour() {
 
     return (
 
-        <section className="bg-black px-4 md:px-10 lg:px-20">
-            <div className="flex relative pb-4 justify-center items-center pt-0 sm:pt-10">
+        <div className="bg-black px-4 md:px-10 lg:px-20">
+            <div className="flex relative pb-4 justify-center items-center pt-0 sm:pt-0">
                 {/*  */}
 
                 <div className="relative text-center justify-center items-center flex-1 pe-4 flex flex-col ">
 
                     <H2
-                        className='max-w-[500px] !text-center mb-4'
+                    className='!text-center'
                         value={HomeJSON?.section4[language as 'en' | 'ar']?.h3}
-
                     />
 
                     <Paragraph
-                        className='!font-light !max-w-5xl '
-
-                        content={HomeJSON?.section4[language as 'en' | 'ar']?.p}
+                        value={HomeJSON?.section4[language as 'en' | 'ar']?.p}
                     />
                 </div>
 
@@ -103,11 +98,11 @@ function SectionFour() {
 
 
 
-        </section>
+        </div>
     )
 }
 
-export default SectionFour
+export default ProductShowcase
 
 // Define the props type for the Card component
 interface CardProps {
@@ -119,7 +114,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ item }) => {
 
     return (
-        <div style={{ backgroundColor: genrateColor({ luminosity: 'light' }) }} className='h-[425px] brightness-95 p-4 w-[300px] sm:w-[360px]  flex-none rounded-[20px]'>
+        <div style={{ backgroundColor: genrateColor({ luminosity: 'bright' }) }} className='h-[400px] brightness-95 p-4 w-[300px] sm:w-[360px]  flex-none rounded-[20px]'>
             <Image
             alt={item.productTitle}
                 src={item.imageLink.secure_url}
@@ -127,9 +122,9 @@ const Card: React.FC<CardProps> = ({ item }) => {
 
             />
 
-            <H3
+            <Paragraph
                 value={item.productTitle}
-                className='text-[25px] md:!text-[25px] pt-3 capitalize leading-[30.48px] text-white md!leading-[30.48px]'
+                className='!text-[25px] !font-bold line-clamp-1  md:!text-[25px] pt-3 capitalize leading-[30.48px] text-white md!leading-[30.48px]'
             />
         </div>
     )

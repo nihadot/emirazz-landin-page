@@ -14,12 +14,12 @@ function SectionSix({ }: Props) {
     const language = useSelector((state: RootState) => state?.language?.language);
 
 
-    const children = <div className="px-4  flex-1 md:px-10 lg:px-20 absolute top-0 left-0 flex flex-col justify-start py-12 w-full h-full">
+    const children = <div className="px-4  flex-1 md:px-10 justify-center text-center absolute top-0 left-0 flex flex-col md:text-start md:justify-start py-12 w-full h-full">
 
         <div className="flex  mt-3 flex-col justify-start items-start">
             <HeadingThree
                 content={HomeJSON?.section6[language as 'en' | 'ar']?.h3}
-                className='mb-3 !leading-tight '
+                className='mb-0 !leading-tight '
             />
     
             <Paragraph
@@ -32,7 +32,7 @@ function SectionSix({ }: Props) {
 
 
     return (
-        <div className="px-4 relative  md:px-10 lg:px-20 bg-black py-32">
+        <div className="px-4 relative  md:px-10 lg:px-20 bg-black pt-32">
             <Banner
                 alt={HomeJSON?.section5[language as 'en' | 'ar']?.h3}
                 imageUrl={exploreTheWorld}
@@ -42,14 +42,14 @@ function SectionSix({ }: Props) {
                 linearGradient
                 children={children}
             />
-            <div className={`absolute bottom-40 ${ language  === 'en' ? 'right-32' : 'left-32'}  `}>
+            <div className={`absolute bottom-32 right-[32%]  md:bottom-10 ${ language  === 'en' ? 'sm:right-40' : 'left-32'}  `}>
 
                 <IconButton
                     iconUrl={rightArrow}
                     className={`my-6 ${ language === 'en' ? '' : '-rotate-180'} `}
-                        content={language === "en" ? 'Known More' : 'عرض المزيد'}
-
-                />
+                    content={language === "en" ? 'Known More' : 'عرض المزيد'}
+                    />
+                
             </div>
         </div>
     )

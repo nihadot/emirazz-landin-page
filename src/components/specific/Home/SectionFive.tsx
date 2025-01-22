@@ -9,6 +9,7 @@ import HeaderSix from '../../reusable/Titles/MainHeading/HeaderSix'
 import { rightArrow } from '../../../assets/svg'
 import { IconButton } from '../../reusable/Buttons'
 import { Link } from 'react-router'
+import H2 from '../../reusable/Home/H2'
 
 type Props = {}
 
@@ -19,9 +20,9 @@ function SectionFive({ }: Props) {
             const children = <div className="px-4 md:px-10 lg:px-20 absolute top-0 left-0 flex flex-col justify-center w-full h-full">
            
            <div className="flex flex-col justify-center items-center">
-           <HeadingThree
-           content={HomeJSON?.section5[language as 'en' | 'ar']?.h3}
-           className='mb-3 text-center md:!text-[50px]  !leading-snug'
+           <H2
+            value={HomeJSON?.section5[language as 'en' | 'ar']?.h3}
+           className='mb-3 !text-center md:!text-[50px]  !leading-snug'
            />
            <HeaderSix
                 className='!text-center pb-3 pt-2'
@@ -44,7 +45,7 @@ function SectionFive({ }: Props) {
         </div>
 
     return (
-        <div className="px-4 md:px-10 lg:px-20 bg-black py-32">
+        <section className="px-4 md:px-10 lg:px-20 bg-black py-10 md:py-20">
         <Banner
         containerClassName='!h-[580px]'
             alt={HomeJSON?.section5[language as 'en' | 'ar']?.h3}
@@ -52,7 +53,7 @@ function SectionFive({ }: Props) {
             brightness
             children={children}
         />
-    </div>
+    </section>
     )
 }
 

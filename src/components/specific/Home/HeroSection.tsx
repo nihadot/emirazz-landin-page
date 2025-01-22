@@ -4,18 +4,19 @@ import Banner from '../../reusable/Banner/Banner'
 import HomeJSON from "../../../data/home.json"
 import { useSelector } from 'react-redux'
 import { RootState } from '../../../store'
+import H1 from '../../reusable/Home/H1'
 type Props = {}
 
-function SectionOne({ }: Props) {
+function HeroSection({ }: Props) {
 
     const language = useSelector((state: RootState) => state?.language?.language);
 
     const children = <div className="px-4 md:px-10 lg:px-20 absolute top-0 left-0 flex flex-col justify-center w-full h-full">
-        {language === 'en' && <HeadingOne
-            className={` text-center !max-w-[650px] sm:!leading-[103.62px] !font-bold font-montserrat sm:text-start !text-[45px] !leading-[60.95px]   sm:!text-[85px] lg:!leading-[1.2] uppercase lg:!text-[85px] mb-3 pt-8 sm:pt-0`}
-            content={'Technology. Real Estate. Invention'}
-        />}
-   
+        {language === 'en' &&
+            <H1
+                value={'Technology. Real Estate. Invention.'}
+            />}
+
 
 
         {language === 'ar' && <>
@@ -38,15 +39,15 @@ function SectionOne({ }: Props) {
 
 
     return (
-        <div className="mt-0 sm:mt-20">
+        <section className="mt-0 sm:mt-20">
             <Banner
                 alt={''}
                 imageUrl={technologyRealEstateInvention}
                 home
                 children={children}
             />
-        </div>
+        </section>
     )
 }
 
-export default SectionOne
+export default HeroSection

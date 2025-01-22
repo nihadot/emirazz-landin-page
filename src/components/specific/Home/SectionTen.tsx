@@ -55,7 +55,7 @@ function SectionTen({ }) {
     }, [BlogData]);
 
     return (
-        <div className='px-4 md:px-10 lg:px-20 bg-black'>
+        <div className='px-4 md:px-10 pt-6 md:pt-28 lg:px-20 bg-black'>
 
             <div className="flex flex-col relative justify-center items-center pt-8 px-4 md:px-10 bg-black lg:px-20">
                 <HeadingThree
@@ -68,7 +68,7 @@ function SectionTen({ }) {
                 />
             </div>
 
-            <div className="sm:pt-4 gap-y-16  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-10 items-center flex-col sm:flex-row relative justify-end">
+            <div className=" gap-y-16  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-6 md:pt-10 items-center flex-col sm:flex-row relative justify-end">
 
                {
 
