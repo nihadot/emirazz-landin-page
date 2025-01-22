@@ -52,7 +52,7 @@ function SectionSeven({ }: Props) {
 
 
     return (
-        <div dir='ltr' className="px-4 relative  md:px-10 lg:px-20 bg-black py-6 md:py-32">
+        <div dir='ltr' className="px-4 relative  md:px-10 lg:px-20 bg-black py-16 md:py-32">
             <Banner
                 alt={HomeJSON?.section7[language as 'en' | 'ar']?.h3}
                 imageUrl={emirazzTechnologyLeadingWith}

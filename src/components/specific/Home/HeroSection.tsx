@@ -11,7 +11,7 @@ function HeroSection({ }: Props) {
 
     const language = useSelector((state: RootState) => state?.language?.language);
 
-    const children = <div className="px-4 md:px-10 lg:px-20 absolute top-0 left-0 flex flex-col justify-center w-full h-full">
+    const children = <div className="px-4  md:px-10 lg:px-20 absolute top-0 left-0 flex flex-col justify-center w-full h-full">
         {language === 'en' &&
             <H1
                 value={'Technology. Real Estate. Invention.'}

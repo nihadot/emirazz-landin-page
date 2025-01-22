@@ -17,7 +17,7 @@ function TextBanner({ heading, paragraph, containerClassName, paragraphClassName
   const language = useSelector((state: RootState) => state.language.language);
 
   return (
-    <div dir={language === 'en' ? 'ltr' : 'rtl'} className={` bg-transparent sm:bg-black  text-white max-w-[700px] pe-16 py-8  rounded-2xl w-full  sm:max-h-[288px] h-full ${containerClassName} `}>
+    <div dir={language === 'en' ? 'ltr' : 'rtl'} className={` bg-black  text-white max-w-[700px] pe-16 py-8  rounded-2xl w-full  sm:max-h-[288px] h-full ${containerClassName} `}>
       <HeaderFour
 
         content={heading}

@@ -14,38 +14,40 @@ type Props = {}
 function BusinessOpportunities({ }: Props) {
 
     const paragraphClassName = '!text-[15px] md:!text-[18px] !leading-[20px] md:!leading-[25.02px]'
-   const paragraphChildrenClassName = '!text-[15px] md:!text-[15px] !font-medium !leading-[18.29px] md:!leading-[18.29px]'
     const language = useSelector((state: RootState) => state?.language?.language);
 
 
-    const childrenOne = <div dir={language === 'ar' ? 'rtl' : 'ltr'} className="absolute group w-full bottom-0 py-2 pe-2 ps-4 z-30">
-        <TextBanner
-            containerClassName='!ps-0 !pt-3 !pe-3 !pb-3 h-fit lg:!h-full !bg-transparent'
-            headingClassName='!p-0 !m-0 font-black text-[30px] md:text-[30px] leading-[36.57px] md:leading-[36.57px]'
-            heading={HomeJSON?.section3[language as 'en' | 'ar']?.cards?.[0]?.h3}
+   
+
+
+const childrenOne = <div dir={language === 'ar' ? 'rtl' : 'ltr'} className="absolute group w-full bottom-0 py-2 pe-2 ps-4 z-30">
+<TextBanner
+
+    containerClassName='!ps-0 !pt-3 !pe-3 !pb-3 h-fit lg:!h-full !bg-transparent'
+ 
+    headingClassName='!p-0 !m-0 font-black text-[30px] md:text-[30px] leading-[36.57px] md:leading-[36.57px]'
+
+    heading={HomeJSON?.section3[language as 'en' | 'ar']?.cards?.[0]?.h3}
+/>
+<div className="group-hover:block hidden transition-all">
+
+    <Paragraph
+        className={paragraphClassName}
+        value={HomeJSON?.section3[language as 'en' | 'ar']?.cards?.[0]?.p}
         />
-        <div className=" group-hover:block hidden transition-all">
-
-            <Paragraph
-                className={paragraphChildrenClassName}
-                value={HomeJSON?.section3[language as 'en' | 'ar']?.cards?.[0]?.p}
-            />
 
 
-            <Link to={'/sponsorship'} >
-            <button>
+    <Link to={'/sponsorship'} >
+        <IconButton
+            className={`my-3 ${language === 'en' ? '' : '-rotate-180'} !w-3 !h-4 object-contain `}
+            iconUrl={rightDownArrow}
+            content={language === "en" ? 'Know More' : 'اعرف المزيد'}
+            reverce
+        />
+    </Link>
 
-                <IconButton
-                    className={` my-3 ${language === 'en' ? '' : '-rotate-180'} !w-3 !h-4 object-contain `}
-                    iconUrl={rightDownArrow}
-                    content={language === "en" ? 'Know More' : 'اعرف المزيد'}
-                    reverce
-                    />
-                    </button>
-            </Link>
-
-        </div>
-    </div>
+</div>
+</div>
 
 
     const childrenTwo = <div dir={language === 'ar' ? 'rtl' : 'ltr'} className="absolute group w-full bottom-0 py-2 pe-2 ps-4 z-30">
@@ -136,12 +138,12 @@ function BusinessOpportunities({ }: Props) {
 
 
     return (
-        <div className=" pt-8 pb-20  bg-black px-4 md:px-10 lg:px-20 overflow-hidden">
+        <div className=" pt-8 pb-0 md:pb-14  bg-black px-4 md:px-10 lg:px-20 overflow-hidden">
 
-            <div className="flex py-0 md:py-8 lg:flex-row flex-col-reverse justify-center sm:gap-8 items-center">
+            <div className="flex py-0 md:py- lg:flex-row flex-col-reverse justify-center sm:gap-8 items-center">
 
                 {/* images */}
-                <div className="flex sm:pb-0 flex-col md:flex-row pb-8 flex-1">
+                <div className="flex sm:pb-0 flex-col md:flex-row pb-4 flex-1">
                     <H3
                         className={` flex-1 mb-4 ${language === 'ar' ? 'break-words' : ''} `}
                         value={HomeJSON?.section3[language as 'en' | 'ar']?.h3}
@@ -157,7 +159,7 @@ function BusinessOpportunities({ }: Props) {
 
             </div>
 
-            <div dir='ltr' className="pb-24  relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+            <div dir='ltr' className="md:pb-24 pb-16 relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
 
                 <Banner
                     alt={HomeJSON?.section3[language as 'en' | 'ar']?.cards?.[0]?.h3}

@@ -7,7 +7,8 @@ import rightDownArrow from "./right-down.svg";
 import greaterthan from "./greater-than.svg"
 import emirazzArLogo from "./emiraaz-arb 1.svg"
 import menuIcon from "./menu.svg";
-import closeIcon from "./close.svg"
+import closeIcon from "./close.svg";
+import instagram from "./instagram.svg"
 export {
     linkedin,
     x,
@@ -18,7 +19,8 @@ export {
     greaterthan,
     emirazzArLogo,
     menuIcon,
-    closeIcon
+    closeIcon,
+    instagram
 
 
 }

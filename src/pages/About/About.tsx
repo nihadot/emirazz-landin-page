@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import Footer from '../../components/reusable/Footer/Footer'
 import { Header } from '../../components/reusable/Headers'
 import SectionEight from '../../components/specific/About/SectionEight'
@@ -9,6 +10,11 @@ import SectionSix from '../../components/specific/About/SectionSix'
 import SectionThree from '../../components/specific/About/SectionThree'
 
 function About() {
+
+     useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
   return (
     <div className="m-auto max-w-[1440px]">
         <Header/>

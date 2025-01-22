@@ -237,7 +237,7 @@ function ExploreEmiraaz() {
     </ul>
 
     const handleThePage = (number: number) => setActivePage(number);
-
+const navigate = useNavigate();
     return (
         <div className="left-0 px-4 md:px-10 lg:px-20 top-[80px] absolute w-screen h-[500px] bg-black">
             <div className=" flex pt-4 w-full max-h-[340px] h-full">
@@ -248,8 +248,8 @@ function ExploreEmiraaz() {
                         <li onClick={() => handleThePage(2)} className='flex gap-6 items-center justify-between'> <label htmlFor="">Business</label> <img src={greaterthan} alt="more options" className='w-[10px] h-[15px] object-cover' /> </li>
                         <li onClick={() => handleThePage(3)} className='flex gap-6 items-center justify-between'> <label htmlFor="">Our Products</label> <img src={greaterthan} alt="more options" className='w-[10px] h-[15px] object-cover' /> </li>
                         <li className='flex gap-6 items-center justify-between'> <label htmlFor="">Scale Up By Emiraaz</label>  </li>
-                        <li className='flex gap-6 items-center justify-between'> <label htmlFor="">Art</label>  </li>
-                        <li className='flex gap-6 items-center justify-between'> <label htmlFor="">Deep Sea</label>  </li>
+                        <li onClick={() => navigate('/art')} className='flex gap-6 items-center justify-between'> <label htmlFor="">Art</label>  </li>
+                        <li onClick={() => navigate('/deepsea')}  className='flex gap-6 items-center justify-between'> <label htmlFor="">Deep Sea</label>  </li>
                     </ul>
                 </div>
                 <div className="flex-1 ps-6 pt-8">
@@ -293,6 +293,7 @@ function Media() {
 
   function ExploreEmiraazMobile({activePage,setActivePage}:{activePage:any,setActivePage:any}) {
 
+const navigate = useNavigate();
 
   const aboutEmiraaz = <ul className=' w-full py-0 -mt-10  text-start font-light bg-black font-poppins cursor-pointer text-base text-[16px]   flex flex-col gap-4'>
       <li className='flex gap-6 items-center justify-between'> <label className='font-bold' onClick={()=>setActivePage(0)}>Back to Previous</label>  </li>
@@ -336,8 +337,8 @@ function Media() {
                       <li onClick={() => handleThePage(2)} className='flex gap-6 items-center justify-between'> <label htmlFor="">Business</label> <img src={greaterthan} alt="more options" className='w-[10px] h-[15px] object-cover' /> </li>
                       <li onClick={() => handleThePage(3)} className='flex gap-6 items-center justify-between'> <label htmlFor="">Our Products</label> <img src={greaterthan} alt="more options" className='w-[10px] h-[15px] object-cover' /> </li>
                       <li className='flex gap-6 items-center justify-between'> <label htmlFor="">Scale Up By Emiraaz</label>  </li>
-                      <li className='flex gap-6 items-center justify-between'> <label htmlFor="">Art</label>  </li>
-                      <li className='flex gap-6 items-center justify-between'> <label htmlFor="">Deep Sea</label>  </li>
+                      <li onClick={()=>navigate('/art')} className='flex gap-6 items-center justify-between'> <label htmlFor="">Art</label>  </li>
+                      <li onClick={()=>navigate('/deepsea')}className='flex gap-6 items-center justify-between'> <label htmlFor="">Deep Sea</label>  </li>
                   </ul>
               </div>}
               <div className="  flex-1 pt-0">

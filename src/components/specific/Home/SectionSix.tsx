@@ -32,7 +32,7 @@ function SectionSix({ }: Props) {
 
 
     return (
-        <div className="px-4 relative  md:px-10 lg:px-20 bg-black pt-32">
+        <div className="px-4 relative  md:px-10 lg:px-20 bg-black pt-16 md:pt-32">
             <Banner
                 alt={HomeJSON?.section5[language as 'en' | 'ar']?.h3}
                 imageUrl={exploreTheWorld}

@@ -7,14 +7,23 @@ import SectionFour from '../../components/specific/DeepSea/SectionFour'
 import SectionFive from "../../components/specific/DeepSea/SectionFive"
 import SectionSix from "../../components/specific/DeepSea/SectionSix"
 import SectionSeven from '../../components/specific/DeepSea/SectionSeven'
+import { useEffect } from 'react'
 type Props = {}
 
 function DeepSea({ }: Props) {
+
+        useEffect(() => {
+          window.scrollTo(0, 0)
+        }, [])
+    
+
     return (
         <div className="m-auto bg-black max-w-[1440px]">
 
 
             <Header />
+            <div className="mt-24   ">
+
             <SectionOne />
             <SectionTwo />
             <SectionThree />
@@ -25,6 +34,7 @@ function DeepSea({ }: Props) {
             </div>
             <SectionSeven />
             <Footer />
+            </div>
         </div>
     )
 }

@@ -15,7 +15,7 @@ function SectionThree({}: Props) {
   return (
     <div className="relative h-full px-4 md:px-10 lg:px-20 overflow-hidden bg-black">
 
-    <div className="flex flex-wrap xl:flex-row flex-col justify-center items-center pt-32">
+    <div className="flex flex-wrap xl:flex-row flex-col justify-center items-center pt-20 md:pt-32">
 
     {/* section one */}
     <div className=" flex-1 pe-0 sm:pe-4 flex flex-col ">
@@ -76,18 +76,37 @@ function SectionThree({}: Props) {
 
 <div className="">
 
-    {/* images */}
-    <div className="sm:flex hidden flex-1 pt-20  md:pe-0 relative">
+    {/* images first one desktop and mobile */} 
+    <div className="sm:flex flex-1 -mr-8 md:mr-0 pt-6 md:pt-20  md:pe-0 relative">
         <Image
             src={whatWeOffer1}
-            className='rounded-2xl mb-10  mt-60 flex-1 sm:flex-none   z-30 border border-black md:mt-28 sm:mt-32 w-[297px] h-[339px] object-cover'
+            className='rounded-2xl mb-10  mt-0 flex-1 sm:flex-none   z-30 border border-black md:mt-16 sm:mt-32 w-[297px] h-[339px] object-cover'
             alt={ScaleUpJSON.section3[language as 'en' | 'ar'].h3}
         />
 
 
         <Image
             src={whatWeOffer2}
-            className='rounded-2xl border flex-1 sm:flex-none  -ml-3 sm:-ml-10 border-black w-[297px] h-[339px] object-cover'
+            className='rounded-2xl border flex-1 sm:flex-none  -ms-8 -mt-44 md:mt-0  sm:-ms-10 border-black w-[297px] h-[339px] object-cover'
+            alt={ScaleUpJSON.section3[language as 'en' | 'ar'].h3}
+        />
+        
+    </div>
+
+
+
+       {/* images first one desktop and mobile */} 
+       <div className="sm:flex flex-1 mt-8 md:mt-0 -mr-8 md:mr-0 pt-6 md:pt-0  md:pe-0 relative">
+        <Image
+            src={whatWeOffer3}
+            className='rounded-2xl mb-10  mt-0 flex-1 sm:flex-none   z-30 border border-black md:mt-16 sm:mt-32 w-[297px] h-[339px] object-cover'
+            alt={ScaleUpJSON.section3[language as 'en' | 'ar'].h3}
+        />
+
+
+        <Image
+            src={whatWeOffer4}
+            className='rounded-2xl border flex-1 sm:flex-none  -ms-8 -mt-44 md:mt-0  sm:-ms-10 border-black w-[297px] h-[339px] object-cover'
             alt={ScaleUpJSON.section3[language as 'en' | 'ar'].h3}
         />
         
@@ -96,7 +115,7 @@ function SectionThree({}: Props) {
 
 
     {/* mobile only */}
-    <div className="sm:hidden h-[500px]  w-full mt-10 pt-20  md:pe-0 relative">
+    {/* <div className="sm:hidden h-[500px]  w-full mt-10 pt-20  md:pe-0 relative">
         <Image
             src={whatWeOffer1}
             className='rounded-2xl absolute top-0 left-0  z-30 border border-black  max-w-[297px] w-full h-[339px] object-cover'
@@ -110,29 +129,29 @@ function SectionThree({}: Props) {
             alt={ScaleUpJSON.section3[language as 'en' | 'ar'].h3}
         />
         
-    </div>
+    </div> */}
 
 
-    <div className="sm:hidden flex mt-10 pt-20  md:pe-0 relative">
+    {/* <div className="sm:hidden  flex mt-10 pt-20  md:pe-0 relative">
         <Image
             src={whatWeOffer3}
-            className='rounded-2xl  mb-10 top-0 mt-60  z-30 border border-black -ml-64 md:mt-28 sm:mt-32 max-w-[297px] w-full h-[339px] object-cover'
+            className='rounded-2xl  mb-10 top-0 mt-60  z-30 border border-black  md:mt-28 sm:mt-32 max-w-[297px] w-full h-[339px] object-cover'
             alt={ScaleUpJSON.section3[language as 'en' | 'ar'].h3}
         />
 
 
         <Image
             src={whatWeOffer4}
-            className='rounded-2xl  right-0 bottom-0 border flex-1  -ml-3 sm:-ml-10 border-black max-w-[297px] w-full h-[339px] object-cover'
+            className='rounded-2xl  right-0 bottom-0 border flex-1  border-black max-w-[297px] w-full h-[339px] object-cover'
             alt={ScaleUpJSON.section3[language as 'en' | 'ar'].h3}
         />
         
-    </div>
+    </div> */}
     {/*  */}
 
 
 
-    <div className="sm:hidden h-[500px] bg-red-300 w-full mt-10 pt-20  md:pe-0 relative">
+    {/* <div className="sm:hidden h-[500px] bg-red-300 w-full mt-10 pt-20  md:pe-0 relative">
         <Image
             src={whatWeOffer3}
             className='rounded-2xl absolute top-0 left-0  z-30 border border-black  max-w-[297px] w-full h-[339px] object-cover'
@@ -146,7 +165,7 @@ function SectionThree({}: Props) {
             alt={ScaleUpJSON.section3[language as 'en' | 'ar'].h3}
         />
         
-    </div>
+    </div> */}
 
    
 

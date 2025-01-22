@@ -42,7 +42,7 @@ interface CardProps {
 const ProductCard: React.FC<CardProps> = ({ item }) => {
   return (
     
-    <div className=" p-0 sm:p-6">
+    <div className=" p-0 sm:p-6 hover:border hover:border-white/15 rounded-xl">
         <Card
         alt={item?.productTitle}
         imageUrl={item?.imageLink?.secure_url}
@@ -61,7 +61,7 @@ const ProductCard: React.FC<CardProps> = ({ item }) => {
 
         />
 
-<Link to={`/product/${item?.slugNameEn}`} state={item} className='pt-2'>
+<Link to={`/product/${item?.slugNameEn}`} state={item} className='pt-3 block'>
         <IconButton
         content='View All'
         iconUrl={rightArrow}

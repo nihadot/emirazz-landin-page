@@ -19,9 +19,9 @@ function SectionTwo({}: Props) {
     
         <div className="sm:absolute relative left-0">
             <TextBanner
-            containerClassName='sm:!ps-8'
-            headingClassName='!p-0 !m-0'
-            paragraphClassName='!pb-2'
+            containerClassName='sm:!ps-8 !pb-5 sm:!pb-8'
+            headingClassName='!pb-2 !m-0 !leading-tight !text-3xl '
+            paragraphClassName='!pb-0'
                 heading={ScaleUpJSON.section2[language as 'en' | 'ar'].h2}
                 paragraph={ScaleUpJSON.section2[language as 'en' | 'ar'].p}
             />
@@ -31,7 +31,7 @@ function SectionTwo({}: Props) {
     
             <Image
                 src={ourMission}
-                alt='⁠About Us'
+                alt={ScaleUpJSON.section2[language as 'en' | 'ar'].h2}
                 className='w-[780px]  rounded-2xl h-[400px] object-cover'
             />
         </div>

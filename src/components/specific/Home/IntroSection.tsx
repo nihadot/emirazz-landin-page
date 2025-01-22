@@ -55,7 +55,7 @@ function Component() {
             <div className={` md:flex pt-4 sm:pt-8  justify-end  ${language === "ar" ? 'pe-0' : 'pe-0'} relative`}>
                 <Image
                     src={whereInnovation}
-                    className='rounded-2xl  flex-1 sm:flex-none  w-full  z-30 border border-black  sm:w-[457px] h-[400px] sm:h-[388px] object-cover'
+                    className='rounded-2xl  flex-1 sm:flex-none  w-full  z-30 border border-black  sm:w-[457px] h-[350px] sm:h-[388px] object-cover'
                     alt={HomeJSON?.section2[language as 'en' | 'ar']?.h2}
                 />
 

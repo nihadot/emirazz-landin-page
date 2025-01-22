@@ -17,7 +17,7 @@ function OurProductsPage({ }: Props) {
   return (
     <div className="m-auto max-w-[1680px] bg-black">
       <Header />
-      <div className="mt-24">
+      <div className="md:mt-36 mt-24">
 
       <SectionOne />
       <SectionTwo />

@@ -10,13 +10,13 @@ function Gallery({}: Props) {
     window.scrollTo(0,0);
   },[])
   return (
-    <div className="m-auto   bg-black max-w-[1440px]">
+    <div className="m-auto  w-full bg-black max-w-[1680px]">
 
 
     <Header />
 
 
-<div className="mt-24 ">
+<div className="mt-24   ">
 
    <SectionOne />
      <SectionTwo/>

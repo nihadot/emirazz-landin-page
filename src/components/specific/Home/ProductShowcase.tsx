@@ -55,7 +55,7 @@ function ProductShowcase() {
     return (
 
         <div className="bg-black px-4 md:px-10 lg:px-20">
-            <div className="flex relative pb-4 justify-center items-center pt-0 sm:pt-0">
+            <div className="flex relative pb-0 md:pb-4 justify-center items-center pt-0 sm:pt-0">
                 {/*  */}
 
                 <div className="relative text-center justify-center items-center flex-1 pe-4 flex flex-col ">

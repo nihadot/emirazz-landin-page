@@ -18,7 +18,7 @@ function SectionTwo({}: Props) {
 
     <div className={`sm:absolute relative left-0`}>
         <TextBanner
-                containerClassName='!pr-8'
+                containerClassName='!pr-8  !pt-0 md:!pt-8 !pb-4 md:!pb-0'
 
             heading={realestateJSON.section2[language as 'en' | 'ar'].h2}
             paragraph={realestateJSON.section2[language as 'en' | 'ar'].p}

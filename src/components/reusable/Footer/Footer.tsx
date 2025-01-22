@@ -2,7 +2,7 @@ import HeaderSix from '../Titles/MainHeading/HeaderSix'
 import HeaderFive from '../Titles/MainHeading/HeaderFive'
 import { footer_navlink_about, footer_navlink_business, footer_navlink_our_products } from '../../../data'
 import Image from '../Image/Image'
-import { linkedin, thread, x, youtube } from '../../../assets/svg'
+import {  linkedin, thread, x, youtube } from '../../../assets/svg'
 import { Link } from 'react-router'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../../store'
@@ -142,12 +142,14 @@ function Footer({ }: Props) {
         <HeaderSix content={ language === 'en'? 'Blog' : 'مدونة'} />
       </div>
 
+      <Link to={'/contactus'}>
       <HeaderFive content={ language === 'en' ? 'Contact' : 'اتصال'} className='mb-20' />
+      </Link>
 
-      <div className=" flex md:flex-row flex-col items-center  justify-between">
+      <div className="pb-10 flex md:flex-row flex-col items-center  justify-between">
         <div className="">
           <HeaderFive content='Follow Us' className='!text-lg text-center md:text-start mb-4 md:mb-0' />
-          <div className="flex gap-3">
+          <div className="flex gap-3 pb-3 md:py-3 pt-0 md:pt-3">
             {/* <Image
               src={instagram}
               alt='instagram'
@@ -176,14 +178,16 @@ function Footer({ }: Props) {
             />
             <Image
             className=''
-
               src={youtube}
               alt='youtube'
             />
+
+
+            {/*  */}
           </div>
         </div>
 
-        <div className="flex items-end">
+        <div className="flex items-end ">
           <HeaderFive content='Copyright ⓒ emiraaz.com' className='mb-4 !font-light !text-sm' />
 
         </div>

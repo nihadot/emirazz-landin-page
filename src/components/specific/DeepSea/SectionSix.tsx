@@ -3,10 +3,13 @@ import { useSelector } from 'react-redux';
 import TextBanner from '../../reusable/TextBanner/TextBanner';
 import { ANewFrontier, treeThree, treeTwo } from '../../../assets/images';
 import Image from '../../reusable/Image/Image';
-import realestateJSON from "../../../data/realestate.json"
+import deepSea from "../../../data/home.json"
 
 
 type Props = {}
+
+// deepSea.section1.en.p
+// deepSea.section6.en.h1
 
 function SectionSix({}: Props) {
     const language = useSelector((state: RootState) => state.language.language);
@@ -22,8 +25,8 @@ function SectionSix({}: Props) {
             <TextBanner
                     containerClassName='!pr-8 ps-8 !max-h-[350px]'
     
-                heading={realestateJSON.section6[language as 'en' | 'ar'].h3}
-                paragraph={realestateJSON.section6[language as 'en' | 'ar'].p}
+                heading={deepSea.section6[language as 'en' | 'ar'].h3}
+                paragraph={deepSea.section6[language as 'en' | 'ar'].p}
             />
         </div>
     
@@ -31,7 +34,7 @@ function SectionSix({}: Props) {
     
             <Image
                 src={ANewFrontier}
-                alt={realestateJSON.section6[language as 'en' | 'ar'].h3}
+                alt={deepSea.section6[language as 'en' | 'ar'].h3}
                 className='w-[780px]  rounded-2xl h-[400px] object-cover'
             />
         </div>
@@ -40,12 +43,12 @@ function SectionSix({}: Props) {
     </div>
 
     <Image
-    alt={realestateJSON.section6[language as 'en' | 'ar'].h3}
+    alt={deepSea.section6[language as 'en' | 'ar'].h3}
         src={treeThree}
         className='w-[280px] brightness-50 h-[500px] absolute -bottom-40 left-10 md:left-24 object-contain'
         />
             <Image
-            alt={realestateJSON.section6[language as 'en' | 'ar'].h3}
+            alt={deepSea.section6[language as 'en' | 'ar'].h3}
         src={treeTwo}
         className='w-[240px] md:block hidden z-40 absolute -right-8 bottom-0 brightness-50 h-[360px] object-contain'
         />

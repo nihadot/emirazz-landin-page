@@ -52,10 +52,10 @@ heading={realestateJSON.section4[language as 'en' | 'ar'].cards[2].h3}
     return (
         <div className="bg-black px-4 md:px-10 lg:px-20  w-full py-0">
 
-            <div className="relative pt-20 text-center justify-center items-center flex-1 pe-4 flex flex-col ">
+            <div className="relative pt-20 md:pt-40 text-center justify-center items-center flex-1 pe-4 flex flex-col ">
 
                 <HeadingThree
-                    className='text-[45px] max-w-max mb-4'
+                    className='text-[45px] max-w-max !mb-0'
                     content={realestateJSON.section4[language as 'en' | 'ar'].h3}
 
                 />
@@ -69,7 +69,7 @@ heading={realestateJSON.section4[language as 'en' | 'ar'].cards[2].h3}
 
 
 
-            <div className="flex md:flex-row  flex-col mt-12 gap-8">
+            <div className="flex md:flex-row  flex-col mt-4 gap-8">
               <Banner
               alt=''
 

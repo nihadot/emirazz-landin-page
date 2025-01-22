@@ -49,7 +49,7 @@ heading={ArtJSON?.section2[language as 'en' | 'ar']?.cards[2]}
 
 
   return (
-    <div className='px-4 md:px-10 relative lg:px-20 pt-20'>
+    <div className='px-4 md:px-10 relative lg:px-20 pt-0'>
         
         <HeadingThree
         className=' !max-w-full !font-Komorebi !font-normal italic text-center'

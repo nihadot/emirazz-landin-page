@@ -23,15 +23,12 @@ content={RealestateJSON.section5[language as 'en' | 'ar'].h3}   />
 </div>
 
 return (
-    <div className="px-4 pt-20 sm:pt-40 md:px-10 lg:px-20 bg-black ">
+    <div className="px-4 pt-20 sm:pt-28 md:px-10 lg:px-20 bg-black ">
         <Banner
-            // containerClassName=''
             alt={RealestateJSON.section5[language as 'en' | 'ar'].h3} 
             imageUrl={yourGateWayToDubai}
-            // containerClassName=''
-            // home
-            // linearGradient
             brightness
+            containerClassName='!h-[700px]'
             children={children}
         />
     </div>

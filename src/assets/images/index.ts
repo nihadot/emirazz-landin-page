@@ -39,7 +39,7 @@ import empoweringVision from "./empowering-vision.webp";
 import fuelingTomorrowsInnovations from "./startup-support.webp";
 
 // Real Estate
-import yourGateWayToDubai from "./emira-real-estate-transforming.webp";
+import yourGateWayToDubai from "./emira-real-estate-transforming.jpg";
 import realsEstateAbout from "./about-us.webp";
 import ourServicesImageOne from "./our-service-1.webp";
 import ourServicesImageTwo from "./our-service-2.webp";
@@ -88,6 +88,7 @@ import emirazzTechnologyLeadingWith from "./emiraz-technology-leading-with.webp"
 import blackIcon from "./black-arrow.png";
 import emirazzRealEstateTransformin from "./emira-real-estate-transforming.webp";
 import user from "./user.svg";
+import founder from "./founder.jpeg";
 export {
     logo,
     image1,
@@ -162,5 +163,5 @@ deepSea2Icon,
 treeOne,treeTwo,treeThree,treeFour,theDepthOfExploration,
 innovationFromAbyss,bundlessPotential,ANewFrontier,diveDeepUs,
 technologyRealEstateInvention,whereInnovation,scaleupYOurBusinessWith,exploreTheWorld,
-emirazzTechnologyLeadingWith,blackIcon,emirazzRealEstateTransformin,user
+emirazzTechnologyLeadingWith,blackIcon,emirazzRealEstateTransformin,user,founder
 }

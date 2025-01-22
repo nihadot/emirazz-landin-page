@@ -11,11 +11,11 @@ function SectionOne({ }: Props) {
 
 
   return (
-    <div className="flex flex-col relative justify-center items-center pt-4 px-4 md:px-10 bg-black lg:px-20">
+    <section className="flex flex-col relative justify-center items-center pt-4 px-4 md:px-10 bg-black lg:px-20">
       {/*  */}
 
       <HeadingTwo
-        className='!text-center text-[45px] max-w-[100%]'
+        className='!text-center !leading-tight text-[45px] max-w-[100%]'
         content='What’s New @ Emiraaz'
 
 
@@ -30,7 +30,7 @@ function SectionOne({ }: Props) {
 
 
 
-    </div>
+    </section>
   )
 }
 

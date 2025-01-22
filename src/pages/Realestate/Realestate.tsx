@@ -19,6 +19,8 @@ function Realestate({}: Props) {
     <div  className="m-auto max-w-[1440px]">
     <Header/>
 
+    <div className="pt-16">
+
     <SectionOne/>
     <div  dir='ltr' className="">
 
@@ -28,6 +30,7 @@ function Realestate({}: Props) {
 </div>
     <SectionFive/>
     <Footer/>
+</div>
     </div>
   )
 }

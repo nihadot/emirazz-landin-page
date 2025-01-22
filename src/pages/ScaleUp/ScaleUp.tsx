@@ -8,26 +8,26 @@ import { useEffect } from 'react'
 type Props = {}
 
 function ScaleUp({ }: Props) {
-  useEffect(()=>{
-    window.scrollTo(0,0)
-  },[])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className="m-auto max-w-[1440px]">
 
 
       <Header />
 
-<div className="pt-16">
+      <div className="pt-16">
 
-      <SectionOne />
-<div dir='ltr'  className="">
+        <SectionOne />
+        <div dir='ltr' className="">
 
-      <SectionTwo />
-</div>
-      <SectionThree />
-      <SectionFour />
-      <Footer />
-</div>
+          <SectionTwo />
+        </div>
+        <SectionThree />
+        <SectionFour />
+        <Footer />
+      </div>
     </div>
   )
 }
