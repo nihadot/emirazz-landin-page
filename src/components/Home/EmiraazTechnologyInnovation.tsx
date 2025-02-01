@@ -29,7 +29,7 @@ function EmiraazTechnologyInnovation({ }: Props) {
                     />
 
                     <H3
-                        className='py-2 text-center'
+                        className='py-2 text-center !text-white md:text-black'
                         text={language === 'en' ? 'Always Ahead in the New Tech Landscape' : 'دائما في المقدمة في المشهد التكنولوجي الجديد'}
                         type='type1'
                     />
