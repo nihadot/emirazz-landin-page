@@ -3,8 +3,8 @@ import Button, { HeadingType } from './Button'
 import Image from './Image';
 import { useSelector } from 'react-redux';
 import { blackIcon } from '../../../../assets/images';
-import { rightArrow } from '../../../../assets/svg';
 import { RootState } from '../../../../store';
+import { rightArrow } from '../../../../assets/svg';
 
 type Props = {
     className?: string;
