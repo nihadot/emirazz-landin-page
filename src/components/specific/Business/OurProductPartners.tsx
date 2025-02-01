@@ -1,12 +1,9 @@
 import  { useEffect, useState } from 'react'
-import HeadingThree from '../../reusable/Titles/MainHeading/HeaderThree'
-import Paragraph from '../../reusable/Paragraph/Paragraph'
 import Card from '../../reusable/Card/Card'
 import { IconButton } from '../../reusable/Buttons'
 import { rightArrow } from '../../../assets/svg'
 import { RootState } from '../../../store'
 import { useSelector } from 'react-redux'
-import BusinessJSON from "../../../data/business.json"
 import { useGetAllPartnersQuery } from '../../../features/partners/partnersApi'
 import { Link } from 'react-router'
 import H2 from './components/H2'

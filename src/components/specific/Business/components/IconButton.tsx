@@ -1,9 +1,9 @@
 import { Link } from 'react-router';
-import { rightDownArrow } from '../../../assets/svg';
 import Button, { HeadingType } from '../components/Button'
 import Image from './Image';
 import { useSelector } from 'react-redux';
-import { RootState } from '../../../store';
+import { RootState } from '../../../../store';
+import { rightDownArrow } from '../../../../assets/svg';
 
 type Props = {
     className: string;

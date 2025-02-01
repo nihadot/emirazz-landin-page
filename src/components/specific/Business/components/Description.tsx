@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { RootState } from "../../../store";
+import { RootState } from "../../../../store";
 
 // Define the type for the `type` prop
 type DescriptionType = 'type1' | 'type2' | 'type3' | 'type4' | 'type5' | 'type6' | 'type7' | 'type8' | 'type9' | 'type10' | 'type11';
