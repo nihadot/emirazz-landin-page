@@ -2,7 +2,7 @@ import HeaderSix from '../Titles/MainHeading/HeaderSix'
 import HeaderFive from '../Titles/MainHeading/HeaderFive'
 import { footer_navlink_about, footer_navlink_business, footer_navlink_our_products } from '../../../data'
 import Image from '../Image/Image'
-import {  linkedin, thread, x, youtube } from '../../../assets/svg'
+import {  facebook, instagram, linkedin, thread, x, youtube } from '../../../assets/svg'
 import { Link } from 'react-router'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../../store'
@@ -180,6 +180,21 @@ function Footer({ }: Props) {
             className=''
               src={youtube}
               alt='youtube'
+            />
+
+
+<Image
+            className='w-[25px] mt-[2px] h-[25px]'
+              src={facebook}
+              alt='facebook'
+            />
+
+
+
+<Image
+            className='w-8 h-8'
+              src={instagram}
+              alt='instagram'
             />
 
 

@@ -1,4 +1,4 @@
-import Image from '../Image/Image'
+// import Image from '../Image/Image'
 import Paragraph from '../Paragraph/Paragraph'
 import HeaderFour from '../Titles/MainHeading/HeaderFour'
 import { IconButton } from '../Buttons'
@@ -6,6 +6,7 @@ import { rightArrow } from '../../../assets/svg'
 import { Link } from 'react-router'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../../store'
+import Image from '../Image/Image'
 
 
 

@@ -42,7 +42,7 @@ interface CardProps {
 const ProductCard: React.FC<CardProps> = ({ item }) => {
   return (
     
-    <div className=" p-0 sm:p-6 hover:border hover:border-white/15 rounded-xl">
+    <div className=" p-4 sm:p-6 hover:border hover:border-white/15 rounded-xl">
         <Card
         alt={item?.productTitle}
         imageUrl={item?.imageLink?.secure_url}

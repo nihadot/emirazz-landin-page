@@ -9,6 +9,8 @@ import emirazzArLogo from "./emiraaz-arb 1.svg"
 import menuIcon from "./menu.svg";
 import closeIcon from "./close.svg";
 import instagram from "./instagram.svg"
+import facebook from "./facebook.svg";
+import logo from "./emiraaz white (1) 1.png"
 export {
     linkedin,
     x,
@@ -20,7 +22,7 @@ export {
     emirazzArLogo,
     menuIcon,
     closeIcon,
-    instagram
-
-
+    instagram,
+    logo,
+facebook
 }

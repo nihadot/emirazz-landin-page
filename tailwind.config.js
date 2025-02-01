@@ -18,6 +18,8 @@ export default {
         poppins: ["Poppins", "serif"],
         Komorebi:['Komorebi', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
+        almaraiLight: ['almarai-light', 'sans-serif'],
+        
       },
       screens:{
         'xs-md': '812px',

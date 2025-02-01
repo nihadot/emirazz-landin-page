@@ -1,32 +1,32 @@
 import { Header } from '../../components/reusable/Headers'
-import SectionOne from '../../components/specific/Business/SectionOne'
 import Footer from '../../components/reusable/Footer/Footer'
-import SectionTwo from '../../components/specific/Business/SectionTwo'
-import SectionThree from "../../components/specific/Business/SectionThree"
-import SectionFour from "../../components/specific/Business/SectionFour"
-import SectionFive from "../../components/specific/Business/SectionFive"
-import SectionSix from "../../components/specific/Business/SectionSix"
+import Partnership from '../../components/specific/Business/Partnership'
+import Sponsorship from "../../components/specific/Business/Sponsorship"
+import StartupSupport from "../../components/specific/Business/StartupSupport"
+import HeroSection from '../../components/specific/Business/HeroSection'
+import Investment from '../../components/specific/Business/Investment'
+import OurProductPartners from '../../components/specific/Business/OurProductPartners'
 type Props = {}
 
-function Business({}: Props) {
+function Business({ }: Props) {
   return (
     <div className="m-auto max-w-[1440px]">
-    <Header/>
-    
-    <SectionOne/>
+      <Header />
 
-    <div  dir='ltr' className="bg-black px-4 md:px-10 lg:px-20  w-full py-0">
+      <HeroSection />
 
-    <SectionTwo/>
-    <SectionThree/>
-    <SectionFour/>
-    <SectionFive/>
-    <SectionSix/>
+      <div dir='ltr' className="bg-black px-4 md:px-10 lg:px-20  w-full py-0">
 
+        <Partnership />
+        <Sponsorship />
+        <Investment />
+        <StartupSupport />
+        <OurProductPartners />
+
+      </div>
+      {/* <SectionNine/> */}
+      <Footer />
     </div>
-    {/* <SectionNine/> */}
-    <Footer/>
-</div>
   )
 }
 

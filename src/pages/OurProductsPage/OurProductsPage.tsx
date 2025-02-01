@@ -1,6 +1,6 @@
 import { Header } from '../../components/reusable/Headers'
 import Footer from '../../components/reusable/Footer/Footer'
-import SectionOne from '../../components/specific/OurProducts/SectionOne'
+import HeroSection from '../../components/specific/OurProducts/HeroSection'
 import SectionTwo from '../../components/specific/OurProducts/SectionTwo'
 import { useEffect } from 'react'
 
@@ -17,9 +17,9 @@ function OurProductsPage({ }: Props) {
   return (
     <div className="m-auto max-w-[1680px] bg-black">
       <Header />
-      <div className="md:mt-36 mt-24">
+      <div className=" mt-0">
 
-      <SectionOne />
+      <HeroSection />
       <SectionTwo />
 
 

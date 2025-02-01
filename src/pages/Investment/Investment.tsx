@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { Header } from '../../components/reusable/Headers'
 import Footer from '../../components/reusable/Footer/Footer'
-import SectionOne from '../../components/specific/Investment/SectionOne'
+import {HeroSection} from '../../components/Investment'
 
 type Props = {}
 
@@ -12,13 +12,13 @@ function Investment({ }: Props) {
   }, [])
 
   return (
-    <div className="m-auto max-w-[1680px] ">
+    <main className="m-auto max-w-[1680px] ">
       <Header />
       <div className="mt-24">
-        <SectionOne />
+        <HeroSection />
         <Footer />
       </div>
-    </div>
+    </main>
   )
 }
 

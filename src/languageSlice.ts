@@ -16,16 +16,17 @@ const languageSlice = createSlice({
   reducers: {
     toggleLanguage: (state) => {
       const lang = localStorage.getItem('lang');
-      console.log(lang,'---')
+      // console.log(state.language,'lang')
+      if(!lang) return localStorage.setItem('lang',state.language)
       lang === "ar" && localStorage.setItem('lang','en') 
       lang === "en" && localStorage.setItem('lang','ar')
       state.language = state.language === 'en' ? 'ar' : 'en';
-// 
+
     },
     setLanguage: (state, action) => {
       state.language = action.payload;
-      console.log(action.payload,'payload')
-      // localStorage.setItem('lang',action.payload)
+      console.log(action.payload,'--')
+      localStorage.setItem('lang',action.payload)
 
     },
   },

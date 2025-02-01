@@ -1,12 +1,12 @@
 import  { useEffect, useState } from 'react'
 import Image from '../Image/Image'
-import { logo } from '../../../assets/images'
+// import { logo } from '../../../assets/images'
 import { header_navlink } from '../../../data'
 import { Link, useNavigate } from 'react-router'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleLanguage } from '../../../languageSlice'
 import { RootState } from '../../../store'
-import { closeIcon, emirazzArLogo, greaterthan, menuIcon } from '../../../assets/svg'
+import { closeIcon,logo, emirazzArLogo, greaterthan, menuIcon } from '../../../assets/svg'
 import { motion, AnimatePresence } from "framer-motion";
 
 function Header() {
@@ -20,7 +20,7 @@ function Header() {
                 <Link to={'/'}>
                     <Image
                         src={ language === 'en' ? logo : emirazzArLogo}
-                        className=' object-contain w-[100px] h-full '
+                        className=' object-contain w-[130px] h-full '
                         alt='logo'
                     />
                 </Link>
@@ -88,7 +88,7 @@ function NavLinks({ }) {
             }
 
             <button onClick={() => dispatch(toggleLanguage())}>
-                <Link className='font-light rounded-[6px] border border-white px-3 py-2 font-poppins text-base ' to={'/'}  >{language === "en" ? 'العربية' : 'English'}</Link>
+                <label className='font-light rounded-[6px] border border-white px-3 py-2 font-poppins text-base ' >{language === "en" ? 'العربية' : 'English'}</label>
 
             </button>
         </ul>
