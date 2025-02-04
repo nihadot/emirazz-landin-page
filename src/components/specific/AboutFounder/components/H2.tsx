@@ -21,7 +21,7 @@ function H2({ text, type, className }: Props) {
       case "type1":
         return `${language === 'en' ? 'font-montserrat' : 'font-almaraiLight'} md:text-[45px] md:leading-[54.86px] font-bold font-montserrat text-white text-[26px] leading-[31.69px]`;
       case "type6":
-        return `${language === 'en' ? 'font-montserrat' : 'font-almaraiLight'} leading-tight text-xl md:text-2xl w-full sm:text-4xl font-semibold text-white md:font-bold`;
+        return `${language === 'en' ? 'font-montserrat' : 'font-almaraiLight'} leading-tight text-2xl w-full sm:text-4xl font-semibold text-white font-bold`;
       
         case "type2":
         return `${language === 'en' ? 'font-montserrat' : 'font-almaraiLight'} font-medium text-[20px] max-w-[600px]  w-full text-white `;
