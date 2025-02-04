@@ -1,22 +1,24 @@
 import { Header } from '../../components/reusable/Headers'
 import Footer from '../../components/reusable/Footer/Footer'
-import SectionOne from '../../components/specific/Invention/SectionOne'
-import SectionTwo from "../../components/specific/Invention/SectionTwo"
+import { useEffect } from 'react'
+
+import {
+    HeroSection,
+    OurApproach
+} from '../../components/specific/Invention'
 type Props = {}
 
 function ArtPage({ }: Props) {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className="m-auto bg-black max-w-[1440px]">
-
-
             <Header />
-
-
-
-         <SectionOne />
-          <SectionTwo/>
-          {/*  <SectionThree/>
-      <SectionFour/> */}
+            <HeroSection />
+            <OurApproach />
             <Footer />
         </div>
     )

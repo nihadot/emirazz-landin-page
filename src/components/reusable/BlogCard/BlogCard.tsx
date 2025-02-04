@@ -1,4 +1,3 @@
-// import Image from '../Image/Image'
 import Paragraph from '../Paragraph/Paragraph'
 import HeaderFour from '../Titles/MainHeading/HeaderFour'
 import { IconButton } from '../Buttons'

@@ -159,44 +159,82 @@ function Footer({ }: Props) {
               src={facebook}
               alt='facebook'
             /> */}
+
+<Link  target='_blank' to={'https://www.linkedin.com/company/emiraazgroup/'} >
+            <div className="bg-white rounded-full w-7 h-7 p-1.5">
             <Image
-            className=''
-              src={linkedin}
-              alt='linkedin'
+            className='object-cover'
+            src={linkedin}
+            alt='linkedin'
             />
+            </div>
+            </Link>
+
+
+<Link  target='_blank' to={'https://x.com/ashiqemiraaz'} >
+            <div className="bg-white rounded-full w-7 h-7 p-1.5">
             <Image
-            className=''
-
-              src={x}
-              alt='x platform'
+            className='object-cover'
+            src={x}
+            alt='twitter'
             />
+            </div>
+            </Link>
+
+
+            <Link  target='_blank' to={'/'} >
+
+            <div className="bg-white rounded-full w-7 h-7 p-1.5">
             <Image
-            className=''
-
-              src={thread}
-              alt='thread'
+            className='object-cover'
+            src={thread}
+            alt='thread'
             />
+            </div>
+            </Link>
+
+
+            <Link  target='_blank' to={'/'} >
+
+            <div className="bg-white rounded-full w-7 h-7 p-1.5">
             <Image
-            className=''
-              src={youtube}
-              alt='youtube'
+            className='object-cover'
+            src={youtube}
+            alt='youtube'
             />
+            </div>
+           </Link>
 
 
-<Image
-            className='w-[25px] mt-[2px] h-[25px]'
-              src={facebook}
-              alt='facebook'
+
+           <Link  target='_blank' to={'https://www.instagram.com/emiraazdubai?igsh=YzljYTk1ODg3Zg=='} >
+
+            <div className="bg-white rounded-full w-7 h-7 p-1.5">
+            <Image
+            className='object-cover'
+            src={instagram}
+            alt='instagram'
             />
+            </div>
+            </Link>
 
 
 
-<Image
-            className='w-8 h-8'
-              src={instagram}
-              alt='instagram'
+            <Link target='_blank' to={'https://m.facebook.com/emiraazdubai/'} >
+
+
+
+            <div className="bg-white rounded-full w-7 h-7 p-[9px] items-center flex justify-center">
+            <Image
+            className='object-cover'
+            src={facebook}
+            alt='facebook'
             />
+            </div>
+            </Link>
 
+
+    
 
             {/*  */}
           </div>

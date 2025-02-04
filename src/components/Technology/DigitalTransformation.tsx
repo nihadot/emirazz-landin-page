@@ -14,14 +14,14 @@ function DigitalTransformation({ }: Props) {
         <>
             <section className='px-4 relative items-center flex-col-reverse md:flex-row flex md:px-10 lg:px-20 pt-28'>
 
-            <div className="">
+                <div className="">
 
                     <Image
                         alt='Digital Transformation in Real Estate'
                         className=' relative rounded-2xl sm:h-[440px] max-w-[526px] w-full h-[390px] object-cover'
                         src={image4}
-                        />
-                        </div>
+                    />
+                </div>
 
                 <div className={` flex-1 ${language === 'ar' ? 'md:pt-20' : ''} md:px-16 px-0 justify-center flex flex-col h-full items-center md:items-center w-full `}>
                     <H2
@@ -44,11 +44,11 @@ function DigitalTransformation({ }: Props) {
 
 
             <section className='px-4   items-center relative flex-col-reverse md:flex-row flex md:px-10 lg:px-20 pb-0 pt-10 md:pt-28'>
-                    <Image
-                        alt='Cybersecurity & Data Protection'
-                        className='max-w-[526px] w-full relative mt-3 md:mt-0 rounded-2xl sm:h-[440px] h-[390px] object-cover'
-                        src={image5}
-                    />
+                <Image
+                    alt='Cybersecurity & Data Protection'
+                    className='max-w-[526px] w-full relative mt-3 md:mt-0 rounded-2xl sm:h-[440px] h-[390px] object-cover'
+                    src={image5}
+                />
 
                 <div className={`flex-1 ${language === 'ar' ? 'md:pt-20' : ''} md:px-16 px-0 justify-center flex flex-col h-full  items-center md:items-center w-full `}>
                     <H2

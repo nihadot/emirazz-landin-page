@@ -37,7 +37,7 @@ function ModernTechnology({ }: Props) {
 
 
 
-            <section className='px-4 md:mt-40 mt-16 md:px-10 lg:px-20 w-full h-[700px] '>
+            <section className='px-4 md:mt-6 mt-0 md:px-10 lg:px-20 w-full h-[700px] '>
             <div  className="relative w-full h-full rounded-[20px]">
                 <Image
                     alt={language === 'en' ? 'Cloud-Driven Solutions:' : 'الحلول السحابية:'}

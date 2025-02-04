@@ -82,7 +82,7 @@ function WhatsNewAtEmiraaz({ }: Props) {
                         <ArrowIconButton
                             className=''
 
-                            link='/'
+                            link='/newsall'
                             text={language === 'en' ? 'Know More' : 'يتعلم أكثر'}
                             type='type2'
                         />

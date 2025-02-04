@@ -13,7 +13,7 @@ function HeroSection({}: Props) {
 
 
   return (
-    <section className='px-4 md:mt-40 mt-24 md:px-10 lg:px-20 w-full h-[700px]'>
+    <section className='px-4 md:mt20 mt-24 md:px-10 lg:px-20 w-full h-[700px]'>
     <div className="relative w-full h-full">
       <Image
         alt={language === 'en' ? 'Empowering Innovation Through Strategic Investments' : 'قم بتوسيع نطاق أعمالك مع Emiraaz'}

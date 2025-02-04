@@ -37,7 +37,7 @@ function ExploreWorldOfArt({ }: Props) {
                         <ArrowIconButton
                             className=''
 
-                            link='/'
+                            link='/art'
                             text={language === 'en' ? 'Know More' : 'يتعلم أكثر'}
                             type='type2'
                         />

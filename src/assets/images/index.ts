@@ -89,6 +89,7 @@ import blackIcon from "./black-arrow.png";
 import emirazzRealEstateTransformin from "./emira-real-estate-transforming.webp";
 import user from "./user.svg";
 import founder from "./founder.jpeg";
+import arabicLogoDeepsea from "./arabic-logo-deepsea.png"
 export {
     logo,
     image1,
@@ -160,8 +161,23 @@ ourApproachToInvention,
 deepSea,
 deepSeaIcon,
 deepSea2Icon,
-treeOne,treeTwo,treeThree,treeFour,theDepthOfExploration,
-innovationFromAbyss,bundlessPotential,ANewFrontier,diveDeepUs,
-technologyRealEstateInvention,whereInnovation,scaleupYOurBusinessWith,exploreTheWorld,
-emirazzTechnologyLeadingWith,blackIcon,emirazzRealEstateTransformin,user,founder
+treeOne,
+treeTwo,
+treeThree,
+treeFour,
+theDepthOfExploration,
+innovationFromAbyss,
+bundlessPotential,
+ANewFrontier,
+diveDeepUs,
+technologyRealEstateInvention,
+whereInnovation,
+scaleupYOurBusinessWith,
+exploreTheWorld,
+emirazzTechnologyLeadingWith,
+blackIcon,
+emirazzRealEstateTransformin,
+user,
+founder,
+arabicLogoDeepsea
 }

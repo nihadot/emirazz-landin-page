@@ -1,4 +1,4 @@
-import {  businessImage5 } from '../../../assets/images'
+import { businessImage5 } from '../../../assets/images'
 import Image from '../../reusable/Image/Image'
 import { RootState } from '../../../store'
 import { useSelector } from 'react-redux'
@@ -12,16 +12,16 @@ function StartupSupport({ }: Props) {
     const language = useSelector((state: RootState) => state.language.language);
 
     return (
-        <section className="mt-0 md:mt-40 flex  flex-col md:flex-row items-center relative w-full">
+        <section className="mt-0 md:mt-20 flex  flex-col md:flex-row items-center relative w-full">
 
 
-        <div className="bg-black px-0 mt-2 md:px-12 flex-col justify-center flex max-w-[600px] w-full h-[290px] md:absolute right-0 md:right-10 rounded-[15px]">
+            <div className="bg-black px-0 mt-2 md:px-12 flex-col justify-center pb-4 flex max-w-[600px] w-full md:h-[290px] md:absolute right-0 md:right-10 rounded-[15px]">
                 <H2
                     text={language === 'en' ? 'Startup Support' : 'دعم بدء التشغيل'}
                     type='type1'
-                    className='pb-4'
+                    className='py-4'
                 />
-        
+
                 <Description
                     type='type2'
                     className=''
@@ -33,8 +33,8 @@ function StartupSupport({ }: Props) {
                 className='w-full max-w-[780px] rounded-[15px] h-[400px] object-cover'
                 src={businessImage5}
             />
-        
-           
+
+
         </section>
     )
 }

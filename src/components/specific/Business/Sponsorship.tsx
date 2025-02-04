@@ -12,10 +12,10 @@ function Sponsorship({}: Props) {
     const language = useSelector((state: RootState) => state.language.language);
 
   return (
-    <section className="mt-0 md:mt-0 flex  flex-col md:flex-row items-center relative w-full">
+    <section className="mt-6 md:mt-0 flex  flex-col md:flex-row items-center relative w-full">
 
 
-<div className="bg-black  px-0 md:px-12 flex-col justify-center flex max-w-[600px] w-full h-[290px] md:absolute right-0 md:right-10 rounded-[15px]">
+<div className="bg-black  px-0 md:px-12 flex-col justify-center flex max-w-[600px] w-full md:h-[290px] md:absolute right-0 md:right-10 rounded-[15px]">
         <H2
             text={language === 'en' ? 'Sponsorship' : 'الرعاية'}
             type='type1'
@@ -30,7 +30,7 @@ function Sponsorship({}: Props) {
     </div>
     <Image
         alt={language === 'en' ? 'Technology. Real Estate. Invention.' : 'تكنولوجيا, العقارات, اختراع '}
-        className='w-full max-w-[780px] rounded-[15px] h-[400px] object-cover'
+        className='w-full max-w-[780px] rounded-[15px] mt-4 md:mt-0 h-[400px] object-cover'
         src={businessImage3}
     />
 

@@ -14,7 +14,7 @@ function Sponsorship({ }: Props) {
   return (
     <main className="m-auto max-w-[1680px] ">
       <Header />
-      <div className="mt-12">
+      <div className="mt-24">
         <HeroSection />
         <Footer />
       </div>

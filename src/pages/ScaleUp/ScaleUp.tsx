@@ -1,10 +1,7 @@
 import { Header } from '../../components/reusable/Headers'
 import Footer from '../../components/reusable/Footer/Footer'
-import SectionOne from '../../components/specific/ScaleUp/SectionOne'
-import SectionTwo from "../../components/specific/ScaleUp/SectionTwo"
-import SectionFour from "../../components/specific/ScaleUp/SectionFour"
-import SectionThree from "../../components/specific/ScaleUp/SectionThree"
 import { useEffect } from 'react'
+import { HeroSection, OurMission, WhatWeOffer, StartedToday } from '../../components/ScaleUp'
 type Props = {}
 
 function ScaleUp({ }: Props) {
@@ -17,15 +14,14 @@ function ScaleUp({ }: Props) {
 
       <Header />
 
-      <div className="pt-16">
+      <div className="">
 
-        <SectionOne />
-        <div dir='ltr' className="">
-
-          <SectionTwo />
+        <HeroSection />
+        <div dir='ltr' className="px-4 md:px-10 lg:px-20">
+          <OurMission />
         </div>
-        <SectionThree />
-        <SectionFour />
+        <WhatWeOffer />
+        <StartedToday />
         <Footer />
       </div>
     </div>

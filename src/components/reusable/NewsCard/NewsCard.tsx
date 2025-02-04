@@ -2,6 +2,7 @@ import Image from '../Image/Image'
 import HeaderFour from '../Titles/MainHeading/HeaderFour'
 import { IconButton } from '../Buttons'
 import { rightArrow } from '../../../assets/svg'
+import Paragraph from '../Paragraph/Paragraph';
 
 
 
@@ -45,9 +46,14 @@ function NewsCard({item}: Props) {
          className='h-[285px]  w-full rounded-[15px] object-cover'
         />
         <HeaderFour
-        className='mt-4 !text-sm !font-normal'
+        className='mt-4 !text-xl capitalize'
         content={item?.newsTitle}
 
+        />
+
+<Paragraph
+        className='line-clamp-2 text-ellipsis'
+        content={item?.newsDescription}
         />
 
         <IconButton

@@ -11,7 +11,7 @@ const H1 = ({ children }: Props) => {
   const language = useSelector((state: RootState) => state?.language?.language);
 
   return (
-    <h1 className={`${language === 'en' ? 'font-montserrat' : 'font-almaraiLight'} md:text-[85px] text-[#FFFFFF] md:leading-[103.62px]  uppercase max-w-[650px] w-full  break-words font-bold text-[50px] leading-[60.95px]`}>
+    <h1 className={`${language === 'en' ? 'font-montserrat' : 'font-almaraiLight'} md:text-[85px] text-[#FFFFFF] md:leading-[103.62px]  uppercase max-w-[650px] w-full  break-words font-bold text-[45px] leading-[60.95px]`}>
       {children}
     </h1>
   );

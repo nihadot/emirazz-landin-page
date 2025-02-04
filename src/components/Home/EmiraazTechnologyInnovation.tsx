@@ -29,7 +29,7 @@ function EmiraazTechnologyInnovation({ }: Props) {
                     />
 
                     <H3
-                        className='py-2 text-center !text-white md:text-black'
+                        className='py-2 text-center !text-white md:!text-black'
                         text={language === 'en' ? 'Always Ahead in the New Tech Landscape' : 'دائما في المقدمة في المشهد التكنولوجي الجديد'}
                         type='type1'
                     />
@@ -47,7 +47,7 @@ function EmiraazTechnologyInnovation({ }: Props) {
                             <ArrowIconButton
                                 className='md:!text-black'
                                 black
-                                link='/'
+                                link='/technology'
                                 text={language === 'en' ? 'Know More' : 'يتعلم أكثر'}
                                 type='type2'
                             />
@@ -57,7 +57,7 @@ function EmiraazTechnologyInnovation({ }: Props) {
                         <div className="md:hidden block">
                             <ArrowIconButton
                                 className='md:!text-black'
-                                link='/'
+                                link='/technology'
                                 text={language === 'en' ? 'Know More' : 'يتعلم أكثر'}
                                 type='type2'
                             />

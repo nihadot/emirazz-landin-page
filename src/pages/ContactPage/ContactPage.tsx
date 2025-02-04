@@ -1,6 +1,6 @@
 import { Header } from '../../components/reusable/Headers'
-import SectionOne from '../../components/specific/ContactUs/SectionOne'
 import Footer from '../../components/reusable/Footer/Footer'
+import HeroSection from '../../components/ContactUs/HeroSection'
 
 type Props = {}
 
@@ -10,11 +10,7 @@ function ContactPage({ }: Props) {
       <Header />
 
       <div className="mt-12">
-
-        <SectionOne />
-
-
-
+        <HeroSection />
         <Footer />
       </div>
     </div>

@@ -16,7 +16,7 @@ function InspiringInnovation({ }: Props) {
     <>
 
 
-      <section className='  flex md:flex-row pt-0 md:py-20 gap-8 relative h-full px-4 md:px-10 lg:px-20  bg-black flex-col'>
+      <section className='pt-16  flex md:flex-row md"pt-0 md:py-20 gap-8 relative h-full px-4 md:px-10 lg:px-20  bg-black flex-col'>
 
         <div className="flex-1 items-center justify-center flex flex-col">
 

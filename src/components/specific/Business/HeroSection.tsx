@@ -12,7 +12,7 @@ function HeroSection({ }: Props) {
     const language = useSelector((state: RootState) => state.language.language);
 
     return (
-        <section className="mt-20 relative w-full h-[700px]">
+        <section className="mt-0 md:mt-20 mb-0 md:mb-32 relative w-full h-[700px]">
 
             <Image
                 alt={language === 'en' ? 'Business at Emiraaz: Empowering Opportunities for Growth' : 'تكنولوجيا, العقارات, اختراع '}
@@ -25,7 +25,7 @@ function HeroSection({ }: Props) {
                 {language === 'en' && <H1>Business at Emiraaz: Empowering Opportunities for Growth</H1>}
                 {language === 'ar' &&
                     <H1>
-                            الأعمال في أميراز: تمكين فرص النمو
+                        الأعمال في أميراز: تمكين فرص النمو
                     </H1>
                 }
 

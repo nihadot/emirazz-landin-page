@@ -58,7 +58,7 @@ function VisualChronicles({ }: Props) {
                     <ArrowIconButton
                         className=''
 
-                        link='/'
+                        link='/gallery'
                         text={language === 'en' ? 'View All' : 'عرض الكل'}
                         type='type2'
                     />

@@ -1,13 +1,13 @@
-import  { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Header } from '../../components/reusable/Headers'
 import Footer from '../../components/reusable/Footer/Footer'
 import BlogCard from "../../components/reusable/BlogCard/BlogCard"
 import Image from '../../components/reusable/Image/Image'
-import HeadingTwo from '../../components/reusable/Titles/MainHeading/HeadingTwo'
-import Paragraph from '../../components/reusable/Paragraph/Paragraph'
 import { useLocation, useParams } from 'react-router'
 import { useGetBlogQuery, useGetBlogsQuery } from '../../features/blog/blogApi'
 import { formatToDayMonthYear } from '../News/News'
+import H3 from './components/H3'
+import Description from './components/Description'
 type Props = {}
 
 
@@ -32,11 +32,11 @@ interface BlogFormValues {
   seoKeywords: string;
   seoKeywordsAr: string;
   imageLink: IImageLink;
-  slugNameEn:string;
+  slugNameEn: string;
 }
 
 
-function BlogDetails({}: Props) {
+function BlogDetails({ }: Props) {
 
 
   const { slug } = useParams() as any;
@@ -48,7 +48,7 @@ function BlogDetails({}: Props) {
   const [page] = useState(1);
 
 
-  const { data: blogAllData } = useGetBlogsQuery<{data:any}>({page, limit: 10});
+  const { data: blogAllData } = useGetBlogsQuery<{ data: any }>({ page, limit: 10 });
 
   const [data, setData] = useState<any>();
   const [allNews, setAllBlogs] = useState<BlogFormValues[]>([]);
@@ -60,51 +60,51 @@ function BlogDetails({}: Props) {
   }, [])
 
   useEffect(() => {
-        
+
     if (newsData) {
       setData(newsData?.data);
     }
-   
+
 
 
 
   }, [newsData]);
 
-useEffect(()=>{
-  if (blogAllData) {
-    if (blogAllData.data.length !== 0 && data) {
-      const filtered = blogAllData?.data?.filter((item:any)=> item._id !== data._id )
+  useEffect(() => {
+    if (blogAllData) {
+      if (blogAllData.data.length !== 0 && data) {
+        const filtered = blogAllData?.data?.filter((item: any) => item._id !== data._id)
         setAllBlogs(filtered); // Append new blogs
+      }
     }
-}
-},[blogAllData,data])
+  }, [blogAllData, data])
 
 
   return (
-    <div className="m-auto max-w-[1440px]">
+    <section className="m-auto max-w-[1440px]">
 
 
-    <Header/>
+      <Header />
 
-<div className="px-4 pt-24 md:flex-row flex-col gap-20 flex md:px-10 relative lg:px-20 bg-black">
+      <div className="px-4 pt-24 md:flex-row flex-col gap-20 flex md:px-10 relative lg:px-20 bg-black">
 
-    <BlogBody item={data}/>
-    <div className="flex gap-6 flex-1 flex-col">
+        <BlogBody item={data} />
+        <div className="flex gap-6 flex-1 flex-col">
 
-   
-    {
-                    allNews.length > 0 && allNews.map((item: BlogFormValues,index:number) => {
-                        return (
-                          <BlogCard key={index} item={item} />
 
-                        )
-                    })
-                }
-         
-    </div>
-</div>
-    <Footer/>
-    </div>
+          {
+            allNews.length > 0 && allNews.map((item: BlogFormValues, index: number) => {
+              return (
+                <BlogCard key={index} item={item} />
+
+              )
+            })
+          }
+
+        </div>
+      </div>
+      <Footer />
+    </section>
   )
 }
 
@@ -114,9 +114,9 @@ export default BlogDetails
 function BlogBody({ item }: { item: BlogFormValues | undefined }) {
   return (
     <div className='max-w-[772px] w-full'>
-      
-      { item?.imageLink?.secure_url && <Image
-      alt=''
+
+      {item?.imageLink?.secure_url && <Image
+        alt=''
         src={item?.imageLink?.secure_url}
         className='w-full rounded-[20px] h-[300px] md:h-[512px]'
       />}
@@ -124,19 +124,22 @@ function BlogBody({ item }: { item: BlogFormValues | undefined }) {
       {!item?.imageLink && <div className='rounded-[20px] h-[512px] w-full bg-slate-950'></div>}
 
 
-      <HeadingTwo
-      className='pt-4'
-      content={item?.blogTitle}
+      <H3
+        className='pt-4'
+        type='type1'
+        text={item?.blogTitle ? item.blogTitle : ''}
       />
 
-      <Paragraph
-      className='!text-sm'
-            content={formatToDayMonthYear(item?.blogDate ?? '')}
+      <Description
+        type='type11'
+        className='py-1'
+        text={formatToDayMonthYear(item?.blogDate ?? '')}
       />
 
-      <Paragraph
-      className='!text-base pt-4'
-      content={item?.blogDescription}  />
+      <Description
+        type='type2'
+        className='py-1'
+        text={item?.blogDescription ?? ''} />
     </div>
   )
 }

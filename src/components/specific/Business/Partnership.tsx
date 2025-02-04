@@ -12,7 +12,7 @@ function Partnership({ }: Props) {
     const language = useSelector((state: RootState) => state.language.language);
 
     return (
-        <section className="mt-20 md:mt-40 flex justify-end flex-col-reverse md:flex-row items-center relative w-full">
+        <section className="mt-20 md:my-20 flex justify-end flex-col-reverse md:flex-row  md:items-center relative w-full">
 
             <Image
                 alt={language === 'en' ? 'Technology. Real Estate. Invention.' : 'تكنولوجيا, العقارات, اختراع '}
@@ -20,7 +20,7 @@ function Partnership({ }: Props) {
                 src={businessImage2}
             />
 
-            <div className="bg-black pe-4 flex-col justify-center flex max-w-[650px] w-full h-[290px] md:absolute left-0 md:left-0 rounded-[15px]">
+            <div className="bg-black justify-end mb-3 md:mb-0 pe-4 flex-col md:justify-center flex max-w-[650px] w-full md:h-[290px] md:absolute left-0 md:left-0 rounded-[15px]">
                 <H2
                     text={language === 'en' ? 'Partnership' : 'شراكة'}
                     type='type1'

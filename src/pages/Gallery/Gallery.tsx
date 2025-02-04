@@ -1,8 +1,7 @@
 import  { useEffect } from 'react'
 import { Header } from '../../components/reusable/Headers'
 import Footer from '../../components/reusable/Footer/Footer'
-import SectionOne from "../../components/specific/Gallery/SectionOne"
-import SectionTwo from "../../components/specific/Gallery/SectionTwo"
+import { VisualChronicles } from '../../components/specific/Gallery'
 type Props = {}
 
 function Gallery({}: Props) {
@@ -18,8 +17,7 @@ function Gallery({}: Props) {
 
 <div className="mt-24   ">
 
-   <SectionOne />
-     <SectionTwo/>
+   <VisualChronicles />
     <Footer />
 </div>
 </div>

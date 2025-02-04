@@ -1,13 +1,11 @@
-import  { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Card from '../../reusable/Card/Card'
-import { IconButton } from '../../reusable/Buttons'
-import { rightArrow } from '../../../assets/svg'
 import { RootState } from '../../../store'
 import { useSelector } from 'react-redux'
 import { useGetAllPartnersQuery } from '../../../features/partners/partnersApi'
-import { Link } from 'react-router'
 import H2 from './components/H2'
 import Description from './components/Description'
+import ArrowIconButton from './components/ArrowIconButton'
 
 
 
@@ -35,24 +33,24 @@ function OurProductPartners({ }: Props) {
     const language = useSelector((state: RootState) => state.language.language);
 
 
-          const [page] = useState(1);
-                const { data: partnersData } = useGetAllPartnersQuery({ page, limit: 8 });
-        
-                const [data, setData] = useState([]);
-        
-                useEffect(() => {
-                        if (partnersData) {
-                                setData(partnersData?.data);
-                        }
-        
-                }, [partnersData]);
-        
+    const [page] = useState(1);
+    const { data: partnersData } = useGetAllPartnersQuery({ page, limit: 8 });
+
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        if (partnersData) {
+            setData(partnersData?.data);
+        }
+
+    }, [partnersData]);
+
 
     return (
 
         <>
 
-<section className="flex px-4  md:px-10 lg:px-20  relative pb-4 justify-center items-center pt-20 sm:pt-60">
+            <section className="flex px-4  md:px-10 lg:px-20  relative pb-4 justify-center items-center pt-20 sm:pt-32">
                 {/*  */}
 
                 <div className="relative text-center justify-center items-center flex-1 pe-4 flex flex-col ">
@@ -75,36 +73,36 @@ function OurProductPartners({ }: Props) {
             <div className="flex flex-col relative justify-center items-center pt-40">
                 {/*  */}
 
+
+
+
+                <div className="grid grid-cols-2 sm:grid-cols-4 mt-8 w-full gap-5 py-8">
+
+                    {
+                        data?.length > 0 && data?.map((item: PartnersFormValues, index: number) => {
+                            return (
+
+                                <Card imageClassName='' alt={item.name} imageUrl={item?.imageLink?.secure_url} key={index} />
+
+
+
+                            )
+                        })
+                    }
+                </div>
              
 
+                <div className="flex w-full pt-3 justify-center ">
 
-<div className="grid grid-cols-2 sm:grid-cols-4 mt-8 w-full gap-5 py-8">
+<ArrowIconButton
+    className=''
 
-{
-                                        data?.length > 0 && data?.map((item: PartnersFormValues, index: number) => {
-                                                return (
-
-                                                    <Card imageClassName='' alt={item.name} imageUrl={item?.imageLink?.secure_url} key={index} />
-
-
-
-                                                )
-                                        })
-                                }
-                                </div>
-<Link to={'/our/partners'}>
-<div className="pb-8">
-
-<IconButton
-iconUrl={rightArrow}
-content={language === "en" ? 'View All' : 'عرض المزيد'}
-
+    link='/our/partners'
+    text={language === 'en' ? 'View All' : 'يتعلم أكثر'}
+    type='type2'
 />
-
 </div>
-</Link>
-                
-                
+
 
 
             </div>

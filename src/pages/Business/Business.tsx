@@ -24,7 +24,6 @@ function Business({ }: Props) {
         <OurProductPartners />
 
       </div>
-      {/* <SectionNine/> */}
       <Footer />
     </div>
   )

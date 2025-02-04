@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { Header } from '../../components/reusable/Headers'
 import Footer from '../../components/reusable/Footer/Footer'
-import {HeroSection} from '../../components/Startup'
+import { HeroSection } from '../../components/Startup'
 
 type Props = {}
 
@@ -16,8 +16,6 @@ function Startup({ }: Props) {
 
   return (
     <main className="m-auto max-w-[1680px]">
-
-
       <Header />
       <div className="mt-24">
         <HeroSection />

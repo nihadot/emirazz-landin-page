@@ -14,7 +14,7 @@ function EmiraazTowards({ }: Props) {
 
         <>
 
-            <section className='overflow-hidden  flex md:flex-row pt-20 md:pt-40 relative h-full px-4 md:px-10 lg:px-20  bg-black flex-col'>
+            <section className='overflow-hidden  flex md:flex-row pt-20 md:pt-40 relative h-full pb-20 md:pb-10 px-4 md:px-10 lg:px-20  bg-black flex-col'>
 
 
                 <div className="flex-[60%] md:pe-28">

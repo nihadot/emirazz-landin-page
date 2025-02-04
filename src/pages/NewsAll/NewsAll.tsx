@@ -1,8 +1,8 @@
 import  { useEffect } from 'react'
 import Footer from '../../components/reusable/Footer/Footer';
 import { Header } from '../../components/reusable/Headers';
-import SectionOne from "../../components/specific/NewsAll/SectionOne";
-import SectionTwo from "../../components/specific/NewsAll/SectionTwo"
+import WhatsNews from '../../components/specific/NewsAll/WhatsNews';
+import AllNews from '../../components/specific/NewsAll/AllNews';
 type Props = {}
 
 function NewsAll({ }: Props) {
@@ -20,8 +20,8 @@ function NewsAll({ }: Props) {
             <Header />
             <div className="mt-20">
 
-            <SectionOne />
-            <SectionTwo />
+            <WhatsNews />
+            <AllNews />
             <Footer />
 </div>
 

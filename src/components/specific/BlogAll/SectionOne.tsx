@@ -1,8 +1,7 @@
-import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne'
-import Paragraph from '../../reusable/Paragraph/Paragraph'
 import { RootState } from '../../../store'
 import { useSelector } from 'react-redux'
-import BlogJSON from "../../../data/blogs.json"
+import H2 from './components/H2'
+import H3 from './components/Button'
 
 type Props = {}
 
@@ -13,20 +12,33 @@ function SectionOne({}: Props) {
 
 
   return (
-    <div className="flex flex-col relative justify-center items-center pt-8 px-4 md:px-10 bg-black lg:px-20">
-    {/*  */}
+    <section className="px-4 md:px-10 lg:px-20 pt-0 pb-0 overflow-hidden md:pt-10 md:mb-0  bg-black">
 
-    <Paragraph
-    className='!text-center '
-    content={BlogJSON.section1[language as 'en' | 'ar'].h1}
-    />
+    <div className="relative text-center justify-center items-center flex-1 pe-4 flex flex-col ">
 
-    <HeadingOne
-    className='!text-center max-w-[400]'
-    content={BlogJSON.section1[language as 'en' | 'ar'].p}
-    />
 
-</div>
+<H3
+type='type2'
+text={language === 'en' ? 'Our Blogs' : 'مدوناتنا'}
+/>
+        <H2
+            type='type2'
+            className='mb-3 max-w-[600px]'
+            text={language === 'en' ? 'Unveiling Innovation and Industry Trends' : 'الكشف عن اتجاهات الابتكار والصناعة'}
+        />
+
+        {/* <Description
+            type='type2'
+            className='max-w-[1015px] pb-4 md:pb-0 w-full'
+            text={language === 'en' ? 'Explore Dubai’s finest properties, from luxurious apartments to spacious villas. Find your perfect home in prime locations today.' : 'اكتشف أرقى العقارات في دبي، بدءًا من الشقق الفاخرة وحتى الفيلات الفسيحة. ابحث عن منزلك المثالي في المواقع الرئيسية اليوم.'}
+        /> */}
+    </div>
+
+
+
+
+
+</section>
   )
 }
 

@@ -1,3 +1,5 @@
+import { useSelector } from "react-redux";
+import { RootState } from "../../../../store";
 
 type Props = {
     id?:string,
@@ -6,8 +8,10 @@ type Props = {
 }
 
 function HeadingThree({className,id,content}: Props) {
+  const language = useSelector((state: RootState) => state?.language?.language);
+
   return (
-   <h3 className={`max-w-[600px] leading-tight md:text-[45px] text-3xl font-semibold text-white md:font-bold font-poppins ${className}`} id={id}  >{content}</h3>
+   <h3 className={`${language === 'en' ? 'font-poppins' : 'font-almaraiLight'}  max-w-[600px] leading-tight md:text-[45px] text-3xl font-semibold text-white md:font-bold ${className}`} id={id}  >{content}</h3>
   )
 }
 

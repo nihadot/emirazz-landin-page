@@ -89,7 +89,7 @@ function ExploreLatestBlogPosts({ }) {
                 <ArrowIconButton
                     className=''
 
-                    link='/'
+                    link='/blogall'
                     text={language === 'en' ? 'Know More' : 'يتعلم أكثر'}
                     type='type2'
                 />

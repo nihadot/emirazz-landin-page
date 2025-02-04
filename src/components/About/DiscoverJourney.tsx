@@ -20,9 +20,9 @@ function DiscoverJourney({ }: Props) {
                 <div className={` flex-1 ${language === 'ar' ? 'md:pt-20' : ''} md:px-16 px-0 justify-center flex flex-col h-full items-center md:items-center w-full `}>
 
                     <H3
-                        className='pb-3'
+                        className='pb-0'
                         type='type1'
-                        text={ language === 'en' ? 'About Us' : 'معلومات عنا'}
+                        text={language === 'en' ? 'About Us' : 'معلومات عنا'}
                     />
                     <H2
                         text={language === 'en' ? 'Discover Our Journey, Values, and Commitment to Excellence' : 'اكتشف رحلتنا وقيمنا والتزامنا بالتميز'}
@@ -33,7 +33,7 @@ function DiscoverJourney({ }: Props) {
             </section>
 
 
-            <section className='px-4 mt-10 md:px-10 lg:px-20 w-full h-[550px] '>
+            <section className='px-4 mt-6 md:px-10 lg:px-20 w-full h-[550px] '>
                 <div className="relative w-full h-full rounded-[20px]">
                     <Image
                         alt={language === 'en' ? 'Explore the World of Art at Emiraaz' : 'اكتشف عالم الفن في أميراز'}

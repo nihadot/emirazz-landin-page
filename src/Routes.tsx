@@ -39,7 +39,6 @@ function Routes({ }: Props) {
       <Route path="invention" element={<Invention />} />
       <Route path="deepsea" element={<DeepSea />} />
       <Route path="about-founder" element={<AboutFounder />} />
-      
       <Route path="our/partners" element={<OurPartnersPage />} />
       <Route path="our/products" element={<OurProductsPage />} />
       <Route path="business" element={<Business />} />
@@ -48,7 +47,7 @@ function Routes({ }: Props) {
       <Route path="startup" element={<Startup />} />
       <Route path="investment" element={<Investment />} />
       <Route path="sponsorship" element={<Sponsorship />} />
-      <Route index element={<Home />} /> 
+      <Route index element={<Home />} />
     </RootRouter>
 
   )

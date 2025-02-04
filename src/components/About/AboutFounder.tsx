@@ -1,5 +1,5 @@
 import { RootState } from "../../store"
-import { aboutImage5 } from "../../assets/images"
+import {  founder } from "../../assets/images"
 import Image from "../reusable/Image/Image"
 import { useSelector } from "react-redux"
 import Description from "./components/Description"
@@ -16,9 +16,11 @@ function AboutFounder({ }: Props) {
 
       <section className='  flex md:flex-row pt-00 md:py-20 gap-8 relative h-full px-4 md:px-10 lg:px-20  bg-black flex-col'>
 
-        <Image alt={language === 'en' ? 'About Founder' : 'عن المؤسس'} src={aboutImage5} className='w-[374px]  rounded-[15px] h-[460px] object-cover' />
 
+      <div className="hidden md:block">
 
+<Image alt={language === 'en' ? 'About Founder' : 'عن المؤسس'} src={founder} className='w-[374px]  rounded-[15px] h-[400px] md:h-[460px] object-cover' />
+</div>
 
         <div className="flex-1 items-center justify-center flex flex-col">
 
@@ -64,6 +66,12 @@ function AboutFounder({ }: Props) {
 
 
         </div>
+
+
+       <div className="block md:hidden">
+
+        <Image alt={language === 'en' ? 'About Founder' : 'عن المؤسس'} src={founder} className='w-[374px]  rounded-[15px] h-[400px] md:h-[460px] object-cover' />
+       </div>
 
 
       </section>

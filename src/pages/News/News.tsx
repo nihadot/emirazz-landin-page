@@ -2,11 +2,12 @@ import { useEffect, useState } from 'react'
 import { Header } from '../../components/reusable/Headers'
 import Footer from '../../components/reusable/Footer/Footer'
 import Image from '../../components/reusable/Image/Image'
-import HeadingTwo from '../../components/reusable/Titles/MainHeading/HeadingTwo'
-import Paragraph from '../../components/reusable/Paragraph/Paragraph'
 import { useGetAllNewsQuery, useGetNewsQuery } from '../../features/news/newsApi'
 import { useLocation, useParams } from 'react-router'
-import BlogCard from '../../components/reusable/BlogCard/BlogCard'
+// import BlogCard from '../../components/reusable/BlogCard/BlogCard'
+import H3 from './components/H3'
+import Description from './components/Description'
+import NewsCard from '../../components/reusable/NewsCard/NewsCard'
 
 type Props = {}
 
@@ -21,7 +22,7 @@ export interface IImageLink {
 
 interface NewsFormValues {
   newsTitle: string;
-  _id:string;
+  _id: string;
   newsTitleAr: string;
   newsDescription: string;
   newsDescriptionAr: string;
@@ -51,7 +52,7 @@ function News({ }: Props) {
   const [page] = useState(1);
 
 
-  const { data: newsAllData } = useGetAllNewsQuery({page, limit: 10});
+  const { data: newsAllData } = useGetAllNewsQuery({ page, limit: 10 });
 
   const [data, setData] = useState<NewsFormValues>();
   const [allNews, setAllNews] = useState<NewsFormValues[]>([]);
@@ -63,11 +64,11 @@ function News({ }: Props) {
   }, [])
 
   useEffect(() => {
-        
+
     if (newsData) {
       setData(newsData?.data);
     }
-    if(state){
+    if (state) {
       setData(state)
     }
 
@@ -75,14 +76,14 @@ function News({ }: Props) {
 
   }, [newsData]);
 
-useEffect(()=>{
-  if (newsAllData) {
-    if (newsAllData.data.length !== 0 && data) {
-      const filtered = newsAllData?.data?.filter((item:NewsFormValues)=> item._id !== data._id )
+  useEffect(() => {
+    if (newsAllData) {
+      if (newsAllData.data.length !== 0 && data) {
+        const filtered = newsAllData?.data?.filter((item: NewsFormValues) => item._id !== data._id)
         setAllNews(filtered); // Append new blogs
+      }
     }
-}
-},[newsAllData,data])
+  }, [newsAllData, data])
 
   return (
     <div className="m-auto max-w-[1440px]">
@@ -95,17 +96,17 @@ useEffect(()=>{
         <BlogBody item={data} />
         <div className="flex gap-6 flex-1 flex-col">
 
-        
 
-         {
-                    allNews.length > 0 && allNews.map((item: any,index:number) => {
-                        return (
-                          <BlogCard  item={item} key={index} />
 
-                        )
-                    })
-                }
-         
+          {
+            allNews.length > 0 && allNews.map((item: any, index: number) => {
+              return (
+                <NewsCard item={item} key={index} />
+
+              )
+            })
+          }
+
         </div>
       </div>
 
@@ -141,27 +142,32 @@ function BlogBody({ item }: { item: NewsFormValues | undefined }) {
   return (
     <div className='max-w-[772px] w-full'>
 
-    { item?.imageLink?.secure_url && <Image
-    alt={item?.newsTitle}
+      {item?.imageLink?.secure_url && <Image
+        alt={item?.newsTitle}
         src={item?.imageLink?.secure_url}
         className='w-full rounded-[20px] h-[300px] md:h-[512px]'
       />}
 
       {!item?.imageLink && <div className='rounded-[20px] h-[512px] w-full bg-slate-950'></div>}
 
-      <HeadingTwo
-        className='pt-4 !max-w-full !text-4xl'
-        content={item?.newsTitle}
+   
+
+<H3
+        className='pt-4'
+        type='type1'
+        text={item?.newsTitle ? item?.newsTitle : ''}
       />
 
-      <Paragraph
-        className='!text-sm'
-        content={formatToDayMonthYear(item?.newsDate ?? '')}
+      <Description
+        type='type11'
+        className='py-1'
+        text={formatToDayMonthYear(item?.newsDate ?? '')}
       />
 
-      <Paragraph
-        className='!text-base pt-4'
-        content={item?.newsDescription} />
+      <Description
+        type='type2'
+        className='py-1'
+        text={item?.newsDescription ?? ''} />
     </div>
   )
 }

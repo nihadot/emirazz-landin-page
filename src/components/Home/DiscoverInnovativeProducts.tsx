@@ -92,7 +92,7 @@ function DiscoverInnovativeProducts() {
 <ArrowIconButton
     className=''
 
-    link='/'
+    link='/our/products'
     text={language === 'en' ? 'Learn More' : 'يتعلم أكثر'}
     type='type2'
 />

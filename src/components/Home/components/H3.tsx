@@ -17,6 +17,8 @@ function H3({ text, type, className }: Props) {
 
   const getClassNames = (type: HeadingType): string => {
     switch (type) {
+      case "type1":
+        return `${language === 'en' ? 'font-montserrat md:font-sfmedium' : 'font-almaraiLight'} md:text-[18px] md:leading-[25.02px] font-light italic text-[#414141] text-[15px] leading-[20.85px] font-normal`; /////
       case "type2":
         return `${language === 'en' ? 'font-montserrat' : 'font-almaraiLight'} md:text-[25px] md:leading-[30.48px] font-bold text-white text-[25px] leading-[30.48px]`; /////
       case "type3":

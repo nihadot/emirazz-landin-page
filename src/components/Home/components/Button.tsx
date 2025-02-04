@@ -1,6 +1,8 @@
+import { useSelector } from "react-redux";
+import { RootState } from "../../../store";
 
 // Define the type for the `type` prop
-export type HeadingType = 'type1' | 'type2' | 'type3' | 'type4' | 'type5' | 'type6' | 'type7' | 'type8' | 'type9' | 'type10';
+export type HeadingType = 'type1' | 'type2';
 
 // Define the Props interface
 interface Props {
@@ -11,12 +13,15 @@ interface Props {
 
 function H3({ text, type,className }: Props) {
   // Function to get class names based on the type
+
+  const language = useSelector((state: RootState) => state?.language?.language);
+
   const getClassNames = (type: HeadingType): string => {
     switch (type) {
       case "type1":
-        return 'text-[15px] leading-[18.29px] font-bold font-montserrat text-white';
+        return `${language === 'en' ? 'font-montserrat' : 'font-almaraiLight'}  text-[15px] leading-[18.29px] font-bold text-white`;
       case "type2":
-        return 'text-[17px] font-sfbold font-bold leading-[24px] text-white';
+        return `${language === 'en' ? 'font-sfbold' : 'font-almaraiLight'}  text-[17px]  font-bold leading-[24px] text-white`;
       default:
         return '';
     }

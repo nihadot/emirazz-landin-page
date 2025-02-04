@@ -46,7 +46,7 @@ function EmiraazRealEstate() {
                 <div className="flex w-full pb-4 justify-start ">
 
                     <ArrowIconButton
-                        link='/'
+                        link='/realestate'
                         text={language === 'en' ? 'Learn More' : 'يتعلم أكثر'}
                         type='type2'
                     />
