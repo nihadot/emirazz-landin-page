@@ -14,7 +14,7 @@ function TechnologyRealEstateInvention({ }: Props) {
         <section className="mt-20 relative w-full h-[700px]">
 
             <Image
-                alt={language === 'en' ? 'Technology. Real Estate. Invention.' : 'تكنولوجيا, العقارات, اختراع '}
+                alt={language === 'en' ? `Technology. Real Estate. Invention.` : 'تكنولوجيا, العقارات, اختراع '}
                 className='w-full h-full object-cover'
                 src={images.technology_real_estateWebP}
             />
