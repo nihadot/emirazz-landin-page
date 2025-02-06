@@ -11,7 +11,7 @@ function TechnologyRealEstateInvention({ }: Props) {
     const language = useSelector((state: RootState) => state?.language?.language) as Language;
 
     return (
-        <section className="mt-20 relative w-full h-[700px]">
+        <section className="mt-20 relative w-full h-[calc(100vh-80px)] md:h-[700px]">
 
             <Image
                 alt={language === 'en' ? `Technology. Real Estate. Invention.` : 'تكنولوجيا, العقارات, اختراع '}

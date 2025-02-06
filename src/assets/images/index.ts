@@ -88,7 +88,7 @@ import emirazzTechnologyLeadingWith from "./emiraz-technology-leading-with.webp"
 import blackIcon from "./black-arrow.png";
 import emirazzRealEstateTransformin from "./emira-real-estate-transforming.webp";
 import user from "./user.svg";
-import founder from "./founder.jpeg";
+import founder from "./founder.jpg";
 import arabicLogoDeepsea from "./arabic-logo-deepsea.png"
 export {
     logo,

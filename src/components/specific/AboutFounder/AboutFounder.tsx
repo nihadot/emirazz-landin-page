@@ -46,6 +46,26 @@ function AboutFounder({ }: Props) {
 
           <H2 type='type1' className='mb-4 w-full text-start md:mb-4  self-start max-w-[600px]' text={language === 'en' ? 'Visionary Leadership from the Start' : 'القيادة الرؤيوية منذ البداية'} />
 
+          <div className="block md:hidden">
+
+          <Image alt={language === 'en' ? 'About Founder' : 'عن المؤسس'} src={founder} className='w-[374px]  rounded-[15px] h-[400px] md:h-[460px] object-cover' />
+          <div className="py-4">
+
+<H2
+  text={'Ashiq Emiraaz'}
+  type='type6'
+  className='text-center'
+/>
+
+<H2
+  text={'Founder & CEO'}
+  type='type2'
+  className='text-center'
+/>
+</div>
+        </div>
+
+
           <div className={`flex flex-col md:flex-col ${language === 'ar' && '!flex-col'}`}>
 
             {language === 'en' && <Description
@@ -82,25 +102,7 @@ function AboutFounder({ }: Props) {
         </div>
 
 
-        <div className="block md:hidden">
-
-          <Image alt={language === 'en' ? 'About Founder' : 'عن المؤسس'} src={founder} className='w-[374px]  rounded-[15px] h-[400px] md:h-[460px] object-cover' />
-          <div className="py-4">
-
-<H2
-  text={'Ashiq Emiraaz'}
-  type='type6'
-  className='text-center'
-/>
-
-<H2
-  text={'Founder & CEO'}
-  type='type2'
-  className='text-center'
-/>
-</div>
-        </div>
-
+    
 
       </section>
     </>
