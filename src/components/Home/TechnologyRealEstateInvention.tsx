@@ -11,7 +11,7 @@ function TechnologyRealEstateInvention({ }: Props) {
     const language = useSelector((state: RootState) => state?.language?.language) as Language;
 
     return (
-        <section className="mt-20 relative w-full h-[calc(100vh-80px)] md:h-[700px]">
+        <section className="mt-20 relative w-full h-[calc(100vh-130px)] md:h-[700px]">
 
             <Image
                 alt={language === 'en' ? `Technology. Real Estate. Invention.` : 'تكنولوجيا, العقارات, اختراع '}
@@ -19,7 +19,7 @@ function TechnologyRealEstateInvention({ }: Props) {
                 src={images.technology_real_estateWebP}
             />
 
-            <div className=" px-4  md:px-10 lg:px-20 flex justify-start items-center z-30 absolute top-0 left-0 w-full h-full">
+            <div className=" px-4  md:px-10 lg:px-20 flex justify-start -top-10 items-center z-30 absolute left-0 w-full h-full">
                 {language === 'en' && <H1>Technology. Real Estate. Invention.</H1>}
                 {language === 'ar' &&
                     <H1>
