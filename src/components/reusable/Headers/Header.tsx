@@ -1,12 +1,12 @@
-import { useEffect, useState } from 'react'
+import { JSXElementConstructor, Key, ReactElement, ReactNode, ReactPortal, useEffect, useState } from 'react'
 import Image from '../Image/Image'
 // import { logo } from '../../../assets/images'
 import { header_navlink } from '../../../data'
-import { Link, useNavigate } from 'react-router'
+import { Link, To, useNavigate } from 'react-router'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleLanguage } from '../../../languageSlice'
 import { RootState } from '../../../store'
-import { closeIcon, logo, emirazzArLogo, greaterthan, menuIcon, emiraazArabicLogo } from '../../../assets/svg'
+import { closeIcon, logo, greaterthan, menuIcon, emiraazArabicLogo } from '../../../assets/svg'
 import { motion, AnimatePresence } from "framer-motion";
 
 function Header() {
@@ -228,10 +228,10 @@ function ExploreEmiraaz() {
         ]
     };
     
-    const MenuList = ({ items }) => {
+    const MenuList = ({ items }:{items:any}) => {
         return (
             <ul className={`text-[16px] w-full font-medium flex flex-col gap-4 ${language === 'en' ? 'font-sfbold' : 'font-almaraiLight'}`}>
-                {items.map((item, index) => (
+                {items.map((item: { path: To; label: { [x: string]: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | null | undefined } }, index: Key | null | undefined) => (
                     <li key={index} className="flex gap-6 items-center justify-between">
                         <Link to={item.path}>{item.label[language]}</Link>
                     </li>
