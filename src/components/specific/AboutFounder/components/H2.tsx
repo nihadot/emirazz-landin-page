@@ -19,7 +19,7 @@ function H2({ text, type, className }: Props) {
   const getClassNames = (type: HeadingType): string => {
     switch (type) {
       case "type1":
-        return `${language === 'en' ? 'font-montserrat' : 'font-almaraiLight'} md:text-[45px] md:leading-[54.86px] font-bold font-montserrat text-white text-[26px] leading-[31.69px]`;
+        return `${language === 'en' ? 'font-montserrat' : 'font-almaraiLight'} md:text-[45px] md:leading-[54.86px] font-bold text-white text-[26px] leading-[31.69px]`;
       case "type6":
         return `${language === 'en' ? 'font-montserrat' : 'font-almaraiLight'} leading-tight text-2xl w-full sm:text-4xl font-semibold text-white font-bold`;
       

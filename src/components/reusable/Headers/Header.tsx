@@ -6,7 +6,7 @@ import { Link, useNavigate } from 'react-router'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleLanguage } from '../../../languageSlice'
 import { RootState } from '../../../store'
-import { closeIcon, logo, emirazzArLogo, greaterthan, menuIcon } from '../../../assets/svg'
+import { closeIcon, logo, emirazzArLogo, greaterthan, menuIcon, emiraazArabicLogo } from '../../../assets/svg'
 import { motion, AnimatePresence } from "framer-motion";
 
 function Header() {
@@ -19,8 +19,8 @@ function Header() {
 
                 <Link to={'/'}>
                     <Image
-                        src={language === 'en' ? logo : emirazzArLogo}
-                        className={` ${language === 'en' ? 'w-[130px] h-full ' : 'w-[130px] h-[35px] '} object-contain `}
+                        src={language === 'en' ? logo : emiraazArabicLogo}
+                        className={` ${language === 'en' ? 'w-[130px] h-full ' : 'w-[150px] h-[50px] '} object-contain `}
                         alt='logo'
                     />
                 </Link>
@@ -64,7 +64,7 @@ function NavLinks({ }) {
 
                         return (
                             <li onClick={() => item.url && navigateHandler(item.url)} key={index} className='group'>
-                                <button className={`${language === 'en' ?  'font-montserrat': 'font-almaraiLight'} h-full w-full font-light font-poppins cursor-default text-base`} key={item.id}>
+                                <button className={`${language === 'en' ?  'font-montserrat': 'font-almaraiLight'} h-full w-full font-light  cursor-default text-base`} key={item.id}>
                                     {language === 'en' ? item.nameEn : item.nameAr}
                                 </button>
                                 <label className='w-full group-hover:opacity-100 opacity-0 invisible group-hover:visible bg-white rounded-full h-[2px] flex mt-1'></label>
@@ -87,7 +87,7 @@ function NavLinks({ }) {
                 }
 
                 <button onClick={() => dispatch(toggleLanguage())}>
-                    <label className='font-light rounded-[6px] border border-white px-3 py-1.5 font-poppins text-base ' >{language === "en" ? 'العربية' : 'English'}</label>
+                    <label className={`font-light rounded-[6px] border border-white px-3 py-1.5 text-base ${language === 'en' ?  'font-poppins': 'font-almaraiLight'} `} >{language === "en" ? 'العربية' : 'English'}</label>
 
                 </button>
             </ul>
@@ -134,7 +134,7 @@ function NavLinks({ }) {
                                     <li key={index} className="group relative">
                                         <button
                                             onClick={() => (item.url && navigateHandler(item.url) || setActiveDropdown(item.id))}
-                                            className={`block ${language === 'en' ?  'font-montserrat': 'font-almaraiLight'} w-full py-1 text-start md:ps-0 font-light font-poppins cursor-pointer text-base`}
+                                            className={`block ${language === 'en' ?  'font-poppins': 'font-almaraiLight'} w-full py-1 text-start md:ps-0 font-light  cursor-pointer text-base`}
                                         >
                                             {language === "en" ? item.nameEn : item.nameAr}
                                         </button>
@@ -184,8 +184,7 @@ function NavLinks({ }) {
                             {/* Language Toggle */}
                             <div className="flex justify-start">
 
-                                <button className="font-light rounded-[6px] border border-white px-3 py-1.5 font-poppins text-base pt-1" onClick={() => dispatch(toggleLanguage())}>
-
+                                <button className={`font-light ${language === 'en' ?  'font-montserrat': 'font-almaraiLight'} rounded-[6px] border border-white px-3 py-1.5 text-base pt-1`} onClick={() => dispatch(toggleLanguage())}>
                                     {language === "en" ? "العربية" : "English"}
                                 </button>
                             </div>
@@ -203,34 +202,49 @@ function NavLinks({ }) {
 
 
 function ExploreEmiraaz() {
+    const language = useSelector((state: RootState) => state.language.language);
 
     const [activePage, setActivePage] = useState<number>(1);
 
-    const aboutEmiraaz = <ul className='text-[16px] w-full  font-medium flex flex-col gap-4 font-sfbold'>
-        <li className='flex gap-6 items-center justify-between'> <Link to="/">Story</Link>  </li>
-        <li className='flex gap-6 items-center justify-between'> <Link to="/">Leadership</Link>  </li>
-        <li className='flex gap-6 items-center justify-between'> <Link to="about-founder">About Founder</Link>  </li>
-        <li className='flex gap-6 items-center justify-between'> <Link to="/">Inspire</Link>  </li>
-        <li className='flex gap-6 items-center justify-between'> <Link to="/art">Culture & Values</Link>  </li>
-        <li className='flex gap-6 items-center justify-between'> <Link to="/deepsea">Sustainablility</Link>  </li>
-        <li className='flex gap-6 items-center justify-between'> <Link to="/invention">Procurement</Link>  </li>
-    </ul>
+   
+    const menuData = {
+        aboutEmiraaz: [
+            { path: "/", label: { en: "Story", ar: "القصة" } },
+            { path: "/", label: { en: "Leadership", ar: "القيادة" } },
+            { path: "/about-founder", label: { en: "About Founder", ar: "عن المؤسس" } },
+            { path: "/", label: { en: "Inspire", ar: "إلهام" } },
+            { path: "/art", label: { en: "Culture & Values", ar: "الثقافة والقيم" } },
+            { path: "/deepsea", label: { en: "Sustainability", ar: "الاستدامة" } },
+            { path: "/invention", label: { en: "Procurement", ar: "المشتريات" } }
+        ],
+        business: [
+            { path: "/our/partners", label: { en: "Partners", ar: "الشركاء" } },
+            { path: "/sponsorship", label: { en: "Sponsorship", ar: "الرعاية" } },
+            { path: "/investment", label: { en: "Investment", ar: "الاستثمار" } },
+            { path: "/startup", label: { en: "Startup", ar: "الشركات الناشئة" } }
+        ],
+        ourProducts: [
+            { path: "/our/products", label: { en: "Explore our products", ar: "استكشاف منتجاتنا" } }
+        ]
+    };
+    
+    const MenuList = ({ items }) => {
+        return (
+            <ul className={`text-[16px] w-full font-medium flex flex-col gap-4 ${language === 'en' ? 'font-sfbold' : 'font-almaraiLight'}`}>
+                {items.map((item, index) => (
+                    <li key={index} className="flex gap-6 items-center justify-between">
+                        <Link to={item.path}>{item.label[language]}</Link>
+                    </li>
+                ))}
+            </ul>
+        );
+    };
+    
+    const aboutEmiraaz = <MenuList items={menuData.aboutEmiraaz} />;
+    const business = <MenuList items={menuData.business} />;
+    const ourProducts = <MenuList items={menuData.ourProducts} />;
 
-
-    const business = <ul className='text-[16px] w-full  font-medium flex flex-col gap-4 font-sfbold'>
-        <li className='flex gap-6 items-center justify-between'> <Link to="/our/partners">Partners</Link>  </li>
-        <li className='flex gap-6 items-center justify-between'> <Link to="/sponsorship">Sponsorship</Link>  </li>
-        <li className='flex gap-6 items-center justify-between'> <Link to="/investment">Investment</Link>  </li>
-        <li className='flex gap-6 items-center justify-between'> <Link to="/startup">Startup</Link>  </li>
-    </ul>
-
-
-
-    const ourProducts = <ul className='text-[16px] w-full  font-medium flex flex-col gap-4 font-sfbold'>
-        <li className='flex gap-6 items-center justify-between'> <Link to="/our/products">Explore our products</Link>  </li>
-        {/* <li className='flex gap-6 items-center justify-between'> <Link to="/business">Product 1</Link>  </li> */}
-    </ul>
-
+    
     const handleThePage = (number: number) => setActivePage(number);
     const navigate = useNavigate();
     return (
@@ -238,14 +252,35 @@ function ExploreEmiraaz() {
             <div className=" flex pt-4 w-full max-h-[340px] h-full">
                 <div className="pt-8 max-w-[280px] w-full border-r pe-6 border-white/60">
 
-                    <ul className='text-[18px] w-full px-6 font-medium flex flex-col gap-4 font-sfbold'>
-                        <li onClick={() => handleThePage(1)} className='flex gap-6 items-center justify-between'> <label htmlFor="">About Emiraaz</label> <img src={greaterthan} alt="more options" className='w-[10px] h-[15px] object-cover' /> </li>
-                        <li onClick={() => handleThePage(2)} className='flex gap-6 items-center justify-between'> <label htmlFor="">Business</label> <img src={greaterthan} alt="more options" className='w-[10px] h-[15px] object-cover' /> </li>
-                        <li onClick={() => handleThePage(3)} className='flex gap-6 items-center justify-between'> <label htmlFor="">Our Products</label> <img src={greaterthan} alt="more options" className='w-[10px] h-[15px] object-cover' /> </li>
-                        <li className='flex gap-6 items-center justify-between'> <label htmlFor="">Scale Up By Emiraaz</label>  </li>
-                        <li onClick={() => navigate('/art')} className='flex gap-6 items-center justify-between'> <label htmlFor="">Art</label>  </li>
-                        <li onClick={() => navigate('/deepsea')} className='flex gap-6 items-center justify-between'> <label htmlFor="">Deep Sea</label>  </li>
-                    </ul>
+                <ul className={`${language === 'en' ? 'font-sfbold' : 'font-almaraiLight'} text-[18px] w-full px-6 font-medium flex flex-col gap-4 `}>
+    <li onClick={() => handleThePage(1)} className='flex gap-6 items-center justify-between'>
+        <label htmlFor="">{language === 'en' ? 'About Emiraaz' : 'عن إميراز'}</label>
+        <img src={greaterthan} alt="more options" className='w-[10px] h-[15px] object-cover' />
+    </li>
+
+    <li onClick={() => handleThePage(2)} className='flex gap-6 items-center justify-between'>
+        <label htmlFor="">{language === 'en' ? 'Business' : 'الأعمال'}</label>
+        <img src={greaterthan} alt="more options" className='w-[10px] h-[15px] object-cover' />
+    </li>
+
+    <li onClick={() => handleThePage(3)} className='flex gap-6 items-center justify-between'>
+        <label htmlFor="">{language === 'en' ? 'Our Products' : 'منتجاتنا'}</label>
+        <img src={greaterthan} alt="more options" className='w-[10px] h-[15px] object-cover' />
+    </li>
+
+    <li className='flex gap-6 items-center justify-between'>
+        <label htmlFor="">{language === 'en' ? 'Scale Up By Emiraaz' : 'التوسع بواسطة إميراز'}</label>
+    </li>
+
+    <li onClick={() => navigate('/art')} className='flex gap-6 items-center justify-between'>
+        <label htmlFor="">{language === 'en' ? 'Art' : 'الفن'}</label>
+    </li>
+
+    <li onClick={() => navigate('/deepsea')} className='flex gap-6 items-center justify-between'>
+        <label htmlFor="">{language === 'en' ? 'Deep Sea' : 'البحر العميق'}</label>
+    </li>
+</ul>
+
                 </div>
                 <div className="flex-1 ps-6 pt-8">
 
@@ -264,18 +299,35 @@ function Media() {
 
 
     const navigate = useNavigate()
+    const language = useSelector((state: RootState) => state.language.language);
 
     const navigateHandler = (url: string) => navigate(url);
 
     return (
-        <div className="left-0 px-4 md:px-10 lg:px-20 top-[80px] absolute w-screen h-[500px] bg-black">
+        <div className={`left-0 px-4 md:px-10 lg:px-20 top-[80px] absolute w-screen h-[500px] bg-black ${language === 'en' ? 'font-montserrat' : 'font-almaraiLight'} `}>
             <div className=" flex pt-4 w-full max-h-[340px] h-full">
                 <div className="pt-8 max-w-[280px] w-full border-r pe-6 border-white/60">
 
-                    <ul className='text-[18px] px-6 w-full  font-medium flex flex-col gap-4 font-sfbold'>
-                        <li className='flex gap-6 items-center justify-between'> <label onClick={() => navigateHandler('/newsall')}>News</label> </li>
-                        <li className='flex gap-6 items-center justify-between'> <label onClick={() => navigateHandler('/gallery')}>Gallery</label> </li>
-                        <li className='flex gap-6 items-center justify-between'> <label onClick={() => navigateHandler('/blogall')}>Blog</label> </li> </ul>
+                <ul className='text-[18px] px-6 w-full font-medium flex flex-col gap-4'>
+    <li className='flex gap-6 items-center justify-between'>
+        <label onClick={() => navigateHandler('/newsall')}>
+            {language === 'en' ? 'News' : 'الأخبار'}
+        </label>
+    </li>
+
+    <li className='flex gap-6 items-center justify-between'>
+        <label onClick={() => navigateHandler('/gallery')}>
+            {language === 'en' ? 'Gallery' : 'المعرض'}
+        </label>
+    </li>
+
+    <li className='flex gap-6 items-center justify-between'>
+        <label onClick={() => navigateHandler('/blogall')}>
+            {language === 'en' ? 'Blog' : 'المدونة'}
+        </label>
+    </li>
+</ul>
+
                 </div>
                 <div className="flex-1 ps-6 pt-8">
 
@@ -288,53 +340,137 @@ function Media() {
 
 function ExploreEmiraazMobile({ activePage, setActivePage }: { activePage: any, setActivePage: any }) {
 
+    const language = useSelector((state: RootState) => state.language.language);
+
     const navigate = useNavigate();
 
-    const aboutEmiraaz = <ul className=' w-full py-0 -mt-10  text-start font-light bg-black font-poppins cursor-pointer text-base text-[16px]   flex flex-col gap-4'>
-        <li className='flex gap-6 items-center justify-between'> <label className='font-bold' onClick={() => setActivePage(0)}>Back to Previous</label>  </li>
-        <li className='flex gap-6 items-center justify-between'> <Link to="/">Story</Link>  </li>
-        <li className='flex gap-6 items-center justify-between'> <Link to="/">Leadership</Link>  </li>
-        <li className='flex gap-6 items-center justify-between'> <Link to="about-founder">About Founder</Link>  </li>
-        <li className='flex gap-6 items-center justify-between'> <Link to="/">Inspire</Link>  </li>
-        <li className='flex gap-6 items-center justify-between'> <Link to="/art">Culture & Values</Link>  </li>
-        <li className='flex gap-6 items-center justify-between'> <Link to="/deepsea">Sustainablility</Link>  </li>
-        <li className='flex gap-6 items-center justify-between'> <Link to="/invention">Procurement</Link>  </li>
+    const aboutEmiraaz = (
+        <ul className={`w-full ${language === 'en' ? 'font-montserrat' : 'font-almaraiLight'} py-0 -mt-10 text-start font-light bg-black cursor-pointer text-base text-[16px] flex flex-col gap-4`}>
+          
+          <li className='flex gap-6 items-center justify-between'>
+            <label className='font-bold' onClick={() => setActivePage(0)}>
+              {language === 'en' ? 'Back to Previous' : 'العودة إلى السابق'}
+            </label>  
+          </li>
+      
+          <li className='flex gap-6 items-center justify-between'> 
+            <Link to="/">{language === 'en' ? 'Story' : 'القصة'}</Link>  
+          </li>
+      
+          <li className='flex gap-6 items-center justify-between'> 
+            <Link to="/">{language === 'en' ? 'Leadership' : 'القيادة'}</Link>  
+          </li>
+      
+          <li className='flex gap-6 items-center justify-between'> 
+            <Link to="/about-founder">{language === 'en' ? 'About Founder' : 'عن المؤسس'}</Link>  
+          </li>
+      
+          <li className='flex gap-6 items-center justify-between'> 
+            <Link to="/">{language === 'en' ? 'Inspire' : 'إلهام'}</Link>  
+          </li>
+      
+          <li className='flex gap-6 items-center justify-between'> 
+            <Link to="/art">{language === 'en' ? 'Culture & Values' : 'الثقافة والقيم'}</Link>  
+          </li>
+      
+          <li className='flex gap-6 items-center justify-between'> 
+            <Link to="/deepsea">{language === 'en' ? 'Sustainability' : 'الاستدامة'}</Link>  
+          </li>
+      
+          <li className='flex gap-6 items-center justify-between'> 
+            <Link to="/invention">{language === 'en' ? 'Procurement' : 'المشتريات'}</Link>  
+          </li>
+      
+        </ul>
+      );
+      
+
+
+const business = (
+    <ul className={` ${language === 'en' ? 'font-montserrat' : 'font-almaraiLight'} w-full py-0 -mt-10 text-start font-light bg-black cursor-pointer text-base text-[16px] flex flex-col gap-4`}>
+      
+      <li className='flex gap-6 items-center justify-between'>
+        <label className='font-bold' onClick={() => setActivePage(0)}>
+          {language === 'en' ? 'Back to Previous' : 'العودة إلى السابق'}
+        </label>  
+      </li>
+  
+      <li className='flex gap-6 items-center justify-between'> 
+        <Link to="/our/partners">{language === 'en' ? 'Partners' : 'الشركاء'}</Link>  
+      </li>
+  
+      <li className='flex gap-6 items-center justify-between'> 
+        <Link to="/sponsorship">{language === 'en' ? 'Sponsorship' : 'الرعاية'}</Link>  
+      </li>
+  
+      <li className='flex gap-6 items-center justify-between'> 
+        <Link to="/investment">{language === 'en' ? 'Investment' : 'الاستثمار'}</Link>  
+      </li>
+  
+      <li className='flex gap-6 items-center justify-between'> 
+        <Link to="/startup">{language === 'en' ? 'Startup' : 'الشركات الناشئة'}</Link>  
+      </li>
+  
     </ul>
+  );
+  
 
 
-    const business = <ul className='w-full py-0 -mt-10  text-start font-light bg-black font-poppins cursor-pointer text-base text-[16px]   flex flex-col gap-4'>
-        <li className='flex gap-6 items-center justify-between'> <label className='font-bold' onClick={() => setActivePage(0)}>Back to Previous</label>  </li>
 
-        <li className='flex gap-6 items-center justify-between'> <Link to="/our/partners">Partners</Link>  </li>
-        <li className='flex gap-6 items-center justify-between'> <Link to="/sponsorship">Sponsorship</Link>  </li>
-        <li className='flex gap-6 items-center justify-between'> <Link to="/investment">Investment</Link>  </li>
-        <li className='flex gap-6 items-center justify-between'> <Link to="/startup">Startup</Link>  </li>
+  const ourProducts = (
+    <ul className={`w-full py-0 -mt-10 text-start font-light bg-black font-poppins cursor-pointer text-base text-[16px] flex flex-col gap-4 ${language === 'ar' ? 'text-right' : 'text-left'}`}>
+        <li className='flex gap-6 items-center justify-between'> 
+            <label className='font-bold' onClick={() => setActivePage(0)}>
+                {language === 'ar' ? 'العودة إلى السابق' : 'Back to Previous'}
+            </label>  
+        </li>
+
+        <li className='flex gap-6 items-center justify-between'> 
+            <Link to="/our/products">
+                {language === 'ar' ? 'استكشاف منتجاتنا' : 'Explore our products'}
+            </Link>  
+        </li>
     </ul>
-
-
-
-    const ourProducts = <ul className='w-full py-0 -mt-10  text-start font-light bg-black font-poppins cursor-pointer text-base text-[16px]   flex flex-col gap-4'>
-        <li className='flex gap-6 items-center justify-between'> <label className='font-bold' onClick={() => setActivePage(0)}>Back to Previous</label>  </li>
-
-        <li className='flex gap-6 items-center justify-between'> <Link to="/our/products">Explore our products</Link>  </li>
-        {/* <li className='flex gap-6 items-center justify-between'> <Link to="/business">Product 1</Link>  </li> */}
-    </ul>
+);
 
     const handleThePage = (number: number) => setActivePage(number);
 
     return (
         <div className="left-0 px-4 top-10 absolute w-screen ">
-            <div className=" flex pt-2 w-full max-h-[340px] h-full">
-                {activePage === 0 && <div className="pt-0 max-w-[280px] w-full  pe-6 border-white/60">
+            <div className=" flex ps-6 md:ps-0 pt-2  w-full max-h-[340px] h-full">
+                {activePage === 0 && <div className="pt-0 w-full md:max-w-[280px] pe-0 md:pe-6 border-white/60">
 
-                    <ul className='w-full py-0 text-start font-light font-poppins cursor-pointer text-base text-[18px] flex flex-col gap-4'>
-                        <li onClick={() => handleThePage(1)} className='flex gap-6 items-center justify-between'> <label htmlFor="">About Emiraaz</label> <img src={greaterthan} alt="more options" className='w-[10px] h-[15px] object-cover' /> </li>
-                        <li onClick={() => handleThePage(2)} className='flex gap-6 items-center justify-between'> <label htmlFor="">Business</label> <img src={greaterthan} alt="more options" className='w-[10px] h-[15px] object-cover' /> </li>
-                        <li onClick={() => handleThePage(3)} className='flex gap-6 items-center justify-between'> <label htmlFor="">Our Products</label> <img src={greaterthan} alt="more options" className='w-[10px] h-[15px] object-cover' /> </li>
-                        <li className='flex gap-6 items-center justify-between'> <label htmlFor="">Scale Up By Emiraaz</label>  </li>
-                        <li onClick={() => navigate('/art')} className='flex gap-6 items-center justify-between'> <label htmlFor="">Art</label>  </li>
-                        <li onClick={() => navigate('/deepsea')} className='flex gap-6 items-center justify-between'> <label htmlFor="">Deep Sea</label>  </li>
-                    </ul>
+                    <ul className={`w-full py-0 text-start font-light cursor-pointer text-base text-[18px] flex flex-col gap-4  ${language === 'en' ? 'font-montserrat' : 'font-almaraiLight'}`}>
+
+<li onClick={() => handleThePage(1)} className='flex gap-6 items-center justify-between'>
+    <label htmlFor="">{language === 'en' ? 'About Emiraaz' : 'عن إميراز'}</label> 
+    <img src={greaterthan} alt="more options" className='w-[10px] h-[15px] object-cover' />
+</li>
+
+<li onClick={() => handleThePage(2)} className='flex gap-6 items-center justify-between'>
+    <label htmlFor="">{language === 'en' ? 'Business' : 'الأعمال'}</label> 
+    <img src={greaterthan} alt="more options" className='w-[10px] h-[15px] object-cover' />
+</li>
+
+<li onClick={() => handleThePage(3)} className='flex gap-6 items-center justify-between'>
+    <label htmlFor="">{language === 'en' ? 'Our Products' : 'منتجاتنا'}</label> 
+    <img src={greaterthan} alt="more options" className='w-[10px] h-[15px] object-cover' />
+</li>
+
+<li className='flex gap-6 items-center justify-between'>
+    <label htmlFor="">{language === 'en' ? 'Scale Up By Emiraaz' : 'التوسع بواسطة إميراز'}</label>  
+</li>
+
+<li onClick={() => navigate('/art')} className='flex gap-6 items-center justify-between'>
+    <label htmlFor="">{language === 'en' ? 'Art' : 'فن'}</label>  
+</li>
+
+<li onClick={() => navigate('/deepsea')} className='flex gap-6 items-center justify-between'>
+    <label htmlFor="">{language === 'en' ? 'Deep Sea' : 'أعماق البحر'}</label>  
+</li>
+
+</ul>
+
                 </div>}
                 <div className="  flex-1 pt-0">
 
@@ -353,6 +489,7 @@ function ExploreEmiraazMobile({ activePage, setActivePage }: { activePage: any, 
 
 function MediaMobile({ setActiveDropdown }: { setActiveDropdown: any }) {
 
+    const language = useSelector((state: RootState) => state.language.language);
 
     const navigate = useNavigate()
 
@@ -366,10 +503,10 @@ function MediaMobile({ setActiveDropdown }: { setActiveDropdown: any }) {
                     <ul className='w-full py-0 text-start font-light font-poppins cursor-pointer text-base text-[18px] flex flex-col gap-4'>
                         <label htmlFor="" className='font-bold' onClick={() => {
                             setActiveDropdown(null)
-                        }}>Back to menu </label>
-                        <li className='flex gap-6 items-center justify-between'> <label onClick={() => navigateHandler('/newsall')}>News</label> </li>
-                        <li className='flex gap-6 items-center justify-between'> <label onClick={() => navigateHandler('/gallery')}>Gallery</label> </li>
-                        <li className='flex gap-6 items-center justify-between'> <label onClick={() => navigateHandler('/blogall')}>Blog</label> </li> </ul>
+                        }}>    {language === 'en' ? 'العودة إلى القائمة' : 'Back to menu'} </label>
+                        <li className={`${language === 'en' ? 'font-montserrat' : 'font-almaraiLight'} flex gap-6 items-center justify-between`}> <label onClick={() => navigateHandler('/newsall')}>{language === 'en' ? 'News' : 'أخبار'}</label> </li>
+                        <li className={`${language === 'en' ? 'font-montserrat' : 'font-almaraiLight'} flex gap-6 items-center justify-between`}> <label onClick={() => navigateHandler('/gallery')}>{language === 'en' ? 'Gallery' : 'معرض'}</label> </li>
+                        <li className={`${language === 'en' ? 'font-montserrat' : 'font-almaraiLight'} flex gap-6 items-center justify-between`}> <label onClick={() => navigateHandler('/blogall')}>{language === 'en' ? 'Blog' : 'مدونة'}</label> </li> </ul>
 
 
                 </div>

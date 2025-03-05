@@ -11,6 +11,7 @@ import closeIcon from "./close.svg";
 import instagram from "./instagram.png"
 import facebook from "./facebook.png";
 import logo from "./emiraaz white (1) 1.png"
+import emiraazArabicLogo from "./arabic-logo.webp"
 export {
     linkedin,
     x,
@@ -24,5 +25,6 @@ export {
     closeIcon,
     instagram,
     logo,
-facebook
+facebook,
+emiraazArabicLogo
 }

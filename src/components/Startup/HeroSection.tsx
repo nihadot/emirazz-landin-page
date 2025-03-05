@@ -22,6 +22,7 @@ function HeroSection({ }: Props) {
         />
         <div className="px-4 md:px-36 flex flex-col h-full  items-start justify-center w-full absolute left-0 top-0 z-30">
           <H1
+          
             children={language === 'en' ? 'Fueling Tomorrow’s Innovations' : 'تمكين الرؤى من خلال الرعاية'}
           />
 

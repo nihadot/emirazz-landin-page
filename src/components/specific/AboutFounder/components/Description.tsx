@@ -18,16 +18,14 @@ function Description({ text, type, className }: Props) {
     const getClassNames = (type: DescriptionType): string => {
         switch (type) {
             case 'type1':
-                return `${language === 'en' ? 'font-montserrat' : 'font-almaraiLight'} md:text-[18px]  md:leading-[27.80px] text-[#C1C1C1] font-montserrat font-light text-[15px] leading-[20.85px]`; ////
+                return `${language === 'en' ? 'font-montserrat' : 'font-almaraiLight'} md:text-[18px]  md:leading-[27.80px] text-[#C1C1C1] font-light text-[15px] leading-[20.85px]`; ////
             case 'type4':
-                return `${language === 'en' ? 'font-montserrat' : 'font-almaraiLight'} md:text-[18px] md:leading-[25.02px] text-[#FFFFFF] font-normal font-montserrat text-[15px] leading-[20.85px]`;
+                return `${language === 'en' ? 'font-montserrat' : 'font-almaraiLight'} md:text-[18px] md:leading-[25.02px] text-[#FFFFFF] font-normal text-[15px] leading-[20.85px]`;
             default:
                 return '';
         }
     };
 
-    // font-normal - 400
-    // font-medium - 500
     return (
         <p className={` ${getClassNames(type)} ${className}`}>
             {text}

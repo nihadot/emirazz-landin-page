@@ -9,7 +9,6 @@
 @tailwind utilities;
 
 
-
 /* custom fonts */
 @font-face {
   font-family: "SF-PRO-DISPLAY-NORMAL";
@@ -30,6 +29,33 @@
   src: url("../src/assets/fonts/SFPRODISPLAYBOLD.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
+}
+
+
+/* Almarai */
+@font-face {
+  font-family: 'Almarai';
+  src: url('./assets/fonts/almarai/Almarai-Light.woff2') format('woff2');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Almarai';
+  src: url('./assets/fonts/almarai/Almarai-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Almarai';
+  src: url('./assets/fonts/almarai/Almarai-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: 'Almarai';
+  src: url('./assets/fonts/almarai/Almarai-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
 }
 
 .almarai-light {
