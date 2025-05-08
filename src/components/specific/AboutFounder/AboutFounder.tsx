@@ -1,5 +1,5 @@
 import Image from '../../reusable/Image/Image'
-import { founder } from '../../../assets/images'
+import { user } from '../../../assets/images'
 import { RootState } from '../../../store'
 import { useSelector } from 'react-redux'
 import Description from './components/Description'
@@ -19,7 +19,7 @@ function AboutFounder({ }: Props) {
 
         <div className="hidden md:block">
 
-          <Image alt={language === 'en' ? 'About Founder' : 'عن المؤسس'} src={founder} className='w-[374px] md:mt-16 rounded-[15px] h-[400px] md:h-[460px] object-cover' />
+          <Image alt={language === 'en' ? 'About Founder' : 'عن المؤسس'} src={user} className='sm:w-[374px] border w-full rounded-2xl h-[420px] p-28 object-contain' />
           <div className="py-4">
 
             <H2
@@ -48,7 +48,7 @@ function AboutFounder({ }: Props) {
 
           <div className="block md:hidden">
 
-          <Image alt={language === 'en' ? 'About Founder' : 'عن المؤسس'} src={founder} className='w-[374px]  rounded-[15px] h-[400px] md:h-[460px] object-cover' />
+          <Image alt={language === 'en' ? 'About Founder' : 'عن المؤسس'} src={user} className='sm:w-[374px] border w-full rounded-2xl h-[420px] p-28 object-contain' />
           <div className="py-4">
 
 <H2
