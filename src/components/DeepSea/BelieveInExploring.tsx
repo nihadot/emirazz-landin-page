@@ -2,7 +2,7 @@ import Image from '../reusable/Image/Image'
 import { deepSea2Icon, treeFour } from '../../assets/images'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../store'
-import DeepSeaJSON from "../../data/deepSea.json"
+import DeepSeaJSON from "../../../public/data/deepSea.json"
 import Description from './components/Description'
 
 type Props = {}

@@ -56,51 +56,50 @@ type FooterLink = {
     url?: string;
     link?:string;
 }
-
 export const footer_navlink_about: FooterLink[] = [
-    {
-      id: 1,
-      nameEn: 'Story',
-      nameAr: 'القصة',
-      link: '/',
-    },
-    {
-      id: 2,
-      nameEn: 'Leadership',
-      link:'/',
-      nameAr: 'القيادة',
-    },
-    {
-      id: 3,
-      nameEn: 'Inspire',
-      link:'/',
-      nameAr: 'إلهام',
-    },
-    {
-      id: 4,
-      nameEn: 'Culture & Values',
-      link:'/',
-      nameAr: 'الثقافة والقيم',
-    },
-    {
-      id: 5,
-      nameEn: 'Sustainability',
-      link:'/',
-      nameAr: 'الاستدامة',
-    },
-    {
-      id: 6,
-      nameEn: 'Procurement',
-      link:'/',
-      nameAr: 'المشتريات',
-    },
-    {
-      id: 7,
-      nameEn: 'Deep Sea',
-      link:'/deepsea',
-      nameAr: 'البحر العميق',
-    },
-  ];
+  {
+    id: 1,
+    nameEn: 'Story',
+    nameAr: 'القصة',
+    link: '/about#story',
+  },
+  {
+    id: 2,
+    nameEn: 'Leadership',
+    link: '/about#leadership',
+    nameAr: 'القيادة',
+  },
+  {
+    id: 3,
+    nameEn: 'Inspire',
+    link: '/about#inspire',
+    nameAr: 'إلهام',
+  },
+  {
+    id: 4,
+    nameEn: 'Culture & Values',
+    link: '/about#culture',
+    nameAr: 'الثقافة والقيم',
+  },
+  {
+    id: 5,
+    nameEn: 'Sustainability',
+    link: '/about#sustainability',
+    nameAr: 'الاستدامة',
+  },
+  {
+    id: 6,
+    nameEn: 'Procurement',
+    link: '/about#procurement',
+    nameAr: 'المشتريات',
+  },
+  {
+    id: 7,
+    nameEn: 'Deep Sea',
+    link: '/deepsea',
+    nameAr: 'البحر العميق',
+  },
+];
 
   export const footer_navlink_business: FooterLink[] = [
     {
@@ -130,24 +129,17 @@ export const footer_navlink_about: FooterLink[] = [
   ];
   
   export const footer_navlink_our_products: FooterLink[] = [
+   
     {
-      id: 1,
-      nameEn: 'Explore our Products',
-      nameAr: 'استكشف منتجاتنا',
-    },
-    {
+       link:'/product/propertyseller',
       id: 2,
-      nameEn: 'Product 1',
-      nameAr: 'المنتج 1',
+      nameEn: 'Property Seller',
+      nameAr: 'بروبرتي سيلر',
     },
     {
       id: 3,
-      nameEn: 'Product 2',
-      nameAr: 'المنتج 2',
+      nameEn: 'Coming Soon',
+      nameAr: 'قريباً',
     },
-    {
-      id: 4,
-      nameEn: 'Product 4',
-      nameAr: 'المنتج 4',
-    },
+    
   ];

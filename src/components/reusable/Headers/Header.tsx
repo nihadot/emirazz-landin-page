@@ -1,7 +1,7 @@
 import { JSXElementConstructor, Key, ReactElement, ReactNode, ReactPortal, useEffect, useState } from 'react'
 import Image from '../Image/Image'
 // import { logo } from '../../../assets/images'
-import { header_navlink } from '../../../data'
+import { header_navlink } from '../../../../public/data'
 import { Link, To, useNavigate } from 'react-router'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleLanguage } from '../../../languageSlice'
@@ -97,24 +97,23 @@ function NavLinks({ }) {
                 {/* Menu Toggle Button */}
                 <div className="w-full flex justify-end items-center ">
 
-                    <button
-                        className="text-white text-2xl  focus:outline-none"
-                        onClick={() => setIsOpen(!isOpen)}
-                    >
+                 <button
+  className="text-white text-2xl focus:outline-none"
+  onClick={() => setIsOpen(!isOpen)}
+>
+  {isOpen ? (
+    // Close (X)
+    <span className="text-white text-3xl">&times;</span>
+  ) : (
+    // Hamburger menu icon (thin lines)
+    <div className="flex flex-col justify-center items-center space-y-1">
+      <span className="block w-6 h-[2px] bg-white rounded"></span>
+      <span className="block w-6 h-[2px] bg-white rounded"></span>
+      <span className="block w-6 h-[2px] bg-white rounded"></span>
+    </div>
+  )}
+</button>
 
-
-                        {isOpen ? <Image
-                            src={closeIcon}
-                            alt='close'
-                            className='w-11 h-11 object-cover'
-                        /> :
-                            <Image
-                                src={menuIcon}
-                                alt='menu'
-                                className='w-10 h-10 object-cover'
-                            />}
-
-                    </button>
 
 
                 </div>
@@ -209,14 +208,14 @@ function ExploreEmiraaz() {
    
     const menuData = {
         aboutEmiraaz: [
-            { path: "/", label: { en: "Story", ar: "القصة" } },
-            { path: "/", label: { en: "Leadership", ar: "القيادة" } },
-            { path: "/about-founder", label: { en: "About Founder", ar: "عن المؤسس" } },
-            { path: "/", label: { en: "Inspire", ar: "إلهام" } },
-            { path: "/art", label: { en: "Culture & Values", ar: "الثقافة والقيم" } },
-            { path: "/deepsea", label: { en: "Sustainability", ar: "الاستدامة" } },
-            { path: "/invention", label: { en: "Procurement", ar: "المشتريات" } }
-        ],
+    { path: "/about#story", label: { en: "Story", ar: "القصة" } },
+    { path: "/about#leadership", label: { en: "Leadership", ar: "القيادة" } },
+    { path: "/about#about-founder", label: { en: "About Founder", ar: "عن المؤسس" } },
+    { path: "/about#inspire", label: { en: "Inspire", ar: "إلهام" } },
+    { path: "/about#culture", label: { en: "Culture & Values", ar: "الثقافة والقيم" } },
+    { path: "/about#sustainability", label: { en: "Sustainability", ar: "الاستدامة" } },
+    { path: "/about#procurement", label: { en: "Procurement", ar: "المشتريات" } }
+  ],
         business: [
             { path: "/our/partners", label: { en: "Partners", ar: "الشركاء" } },
             { path: "/sponsorship", label: { en: "Sponsorship", ar: "الرعاية" } },
@@ -252,34 +251,69 @@ function ExploreEmiraaz() {
             <div className=" flex pt-4 w-full max-h-[340px] h-full">
                 <div className="pt-8 max-w-[280px] w-full border-r pe-6 border-white/60">
 
-                <ul className={`${language === 'en' ? 'font-sfbold' : 'font-almaraiLight'} text-[18px] w-full px-6 font-medium flex flex-col gap-4 `}>
-    <li onClick={() => handleThePage(1)} className='flex gap-6 items-center justify-between'>
-        <label htmlFor="">{language === 'en' ? 'About Emiraaz' : 'عن إميراز'}</label>
-        <img src={greaterthan} alt="more options" className='w-[10px] h-[15px] object-cover' />
-    </li>
+             <ul
+  className={`${
+    language === "en" ? "font-sfbold" : "font-almaraiLight"
+  } text-[18px] w-full px-6 font-medium flex flex-col gap-4 `}
+>
+  <li
+    onClick={() => handleThePage(1)}
+    className="flex gap-6 items-center justify-between cursor-pointer"
+  >
+    <label>{language === "en" ? "About Emiraaz" : "عن إميراز"}</label>
+    <img
+      src={greaterthan}
+      alt="more options"
+      className="w-[10px] h-[15px] object-cover"
+    />
+  </li>
 
-    <li onClick={() => handleThePage(2)} className='flex gap-6 items-center justify-between'>
-        <label htmlFor="">{language === 'en' ? 'Business' : 'الأعمال'}</label>
-        <img src={greaterthan} alt="more options" className='w-[10px] h-[15px] object-cover' />
-    </li>
+  <li
+    onClick={() => handleThePage(2)}
+    className="flex gap-6 items-center justify-between cursor-pointer"
+  >
+    <label>{language === "en" ? "Business" : "الأعمال"}</label>
+    <img
+      src={greaterthan}
+      alt="more options"
+      className="w-[10px] h-[15px] object-cover"
+    />
+  </li>
 
-    <li onClick={() => handleThePage(3)} className='flex gap-6 items-center justify-between'>
-        <label htmlFor="">{language === 'en' ? 'Our Products' : 'منتجاتنا'}</label>
-        <img src={greaterthan} alt="more options" className='w-[10px] h-[15px] object-cover' />
-    </li>
+  <li
+    onClick={() => handleThePage(3)}
+    className="flex gap-6 items-center justify-between cursor-pointer"
+  >
+    <label>{language === "en" ? "Our Products" : "منتجاتنا"}</label>
+    <img
+      src={greaterthan}
+      alt="more options"
+      className="w-[10px] h-[15px] object-cover"
+    />
+  </li>
 
-    <li className='flex gap-6 items-center justify-between'>
-        <label htmlFor="">{language === 'en' ? 'Scale Up By Emiraaz' : 'التوسع بواسطة إميراز'}</label>
-    </li>
+  <li
+    onClick={() => navigate("/scaleup")}
+    className="flex gap-6 items-center justify-between cursor-pointer"
+  >
+    <label>{language === "en" ? "Scale Up By Emiraaz" : "التوسع بواسطة إميراز"}</label>
+  </li>
 
-    <li onClick={() => navigate('/art')} className='flex gap-6 items-center justify-between'>
-        <label htmlFor="">{language === 'en' ? 'Art' : 'الفن'}</label>
-    </li>
+  <li
+    onClick={() => navigate("/art")}
+    className="flex gap-6 items-center justify-between cursor-pointer"
+  >
+    <label>{language === "en" ? "Art" : "الفن"}</label>
+  </li>
 
-    <li onClick={() => navigate('/deepsea')} className='flex gap-6 items-center justify-between'>
-        <label htmlFor="">{language === 'en' ? 'Deep Sea' : 'البحر العميق'}</label>
-    </li>
+  <li
+    onClick={() => navigate("/deepsea")}
+    className="flex gap-6 items-center justify-between cursor-pointer"
+  >
+    <label>{language === "en" ? "Deep Sea" : "البحر العميق"}</label>
+  </li>
 </ul>
+
 
                 </div>
                 <div className="flex-1 ps-6 pt-8">
@@ -344,46 +378,59 @@ function ExploreEmiraazMobile({ activePage, setActivePage }: { activePage: any, 
 
     const navigate = useNavigate();
 
-    const aboutEmiraaz = (
-        <ul className={`w-full ${language === 'en' ? 'font-montserrat' : 'font-almaraiLight'} py-0 -mt-10 text-start font-light bg-black cursor-pointer text-base text-[16px] flex flex-col gap-4`}>
-          
-          <li className='flex gap-6 items-center justify-between'>
-            <label className='font-bold' onClick={() => setActivePage(0)}>
-              {language === 'en' ? 'Back to Previous' : 'العودة إلى السابق'}
-            </label>  
-          </li>
-      
-          <li className='flex gap-6 items-center justify-between'> 
-            <Link to="/">{language === 'en' ? 'Story' : 'القصة'}</Link>  
-          </li>
-      
-          <li className='flex gap-6 items-center justify-between'> 
-            <Link to="/">{language === 'en' ? 'Leadership' : 'القيادة'}</Link>  
-          </li>
-      
-          <li className='flex gap-6 items-center justify-between'> 
-            <Link to="/about-founder">{language === 'en' ? 'About Founder' : 'عن المؤسس'}</Link>  
-          </li>
-      
-          <li className='flex gap-6 items-center justify-between'> 
-            <Link to="/">{language === 'en' ? 'Inspire' : 'إلهام'}</Link>  
-          </li>
-      
-          <li className='flex gap-6 items-center justify-between'> 
-            <Link to="/art">{language === 'en' ? 'Culture & Values' : 'الثقافة والقيم'}</Link>  
-          </li>
-      
-          <li className='flex gap-6 items-center justify-between'> 
-            <Link to="/deepsea">{language === 'en' ? 'Sustainability' : 'الاستدامة'}</Link>  
-          </li>
-      
-          <li className='flex gap-6 items-center justify-between'> 
-            <Link to="/invention">{language === 'en' ? 'Procurement' : 'المشتريات'}</Link>  
-          </li>
-      
-        </ul>
-      );
-      
+const aboutEmiraaz = (
+  <ul
+    className={`w-full ${
+      language === "en" ? "font-montserrat" : "font-almaraiLight"
+    } py-0 -mt-10 text-start font-light bg-black cursor-pointer text-base text-[16px] flex flex-col gap-4`}
+  >
+    <li className="flex gap-6 items-center justify-between">
+      <label className="font-bold" onClick={() => setActivePage(0)}>
+        {language === "en" ? "Back to Previous" : "العودة إلى السابق"}
+      </label>
+    </li>
+
+    <li className="flex gap-6 items-center justify-between">
+      <Link to="/about#story">{language === "en" ? "Story" : "القصة"}</Link>
+    </li>
+
+    <li className="flex gap-6 items-center justify-between">
+      <Link to="/about#leadership">
+        {language === "en" ? "Leadership" : "القيادة"}
+      </Link>
+    </li>
+
+    <li className="flex gap-6 items-center justify-between">
+      <Link to="/about#about-founder">
+        {language === "en" ? "About Founder" : "عن المؤسس"}
+      </Link>
+    </li>
+
+    <li className="flex gap-6 items-center justify-between">
+      <Link to="/about#inspire">
+        {language === "en" ? "Inspire" : "إلهام"}
+      </Link>
+    </li>
+
+    <li className="flex gap-6 items-center justify-between">
+      <Link to="/about#culture">
+        {language === "en" ? "Culture & Values" : "الثقافة والقيم"}
+      </Link>
+    </li>
+
+    <li className="flex gap-6 items-center justify-between">
+      <Link to="/about#sustainability">
+        {language === "en" ? "Sustainability" : "الاستدامة"}
+      </Link>
+    </li>
+
+    <li className="flex gap-6 items-center justify-between">
+      <Link to="/about#procurement">
+        {language === "en" ? "Procurement" : "المشتريات"}
+      </Link>
+    </li>
+  </ul>
+);
 
 
 const business = (
@@ -457,7 +504,7 @@ const business = (
     <img src={greaterthan} alt="more options" className='w-[10px] h-[15px] object-cover' />
 </li>
 
-<li className='flex gap-6 items-center justify-between'>
+<li onClick={() => navigate('/scaleup')}className='flex gap-6 items-center justify-between'>
     <label htmlFor="">{language === 'en' ? 'Scale Up By Emiraaz' : 'التوسع بواسطة إميراز'}</label>  
 </li>
 

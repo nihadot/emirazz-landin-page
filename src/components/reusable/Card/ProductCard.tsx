@@ -6,9 +6,6 @@ import { IconButton } from '../Buttons'
 import { rightArrow } from '../../../assets/svg'
 import { Link } from 'react-router'
 
-
-
-
 interface ImageLink {
   public_id: string;
   secure_url: string;
@@ -19,54 +16,54 @@ interface ImageLink {
 
 interface ProductFormValues {
   productTitle: string;
-  productTitleAr: string;
   productDescription: string;
-  productDescriptionAr: string;
-  seoTitle: string;
-  seoTitleAr: string;
-  seoDescription: string;
-  seoDescriptionAr: string;
-  seoKeywords: string;
-  seoKeywordsAr: string;
   imageLink: ImageLink;
-  slugNameEn:string;
-
+  slugNameEn: string;
+  isComingSoon?: boolean;
 }
 
-// Define the props type for the Card component
 interface CardProps {
   item: ProductFormValues;
 }
 
-
 const ProductCard: React.FC<CardProps> = ({ item }) => {
+  const comingSoon = item?.isComingSoon;
+
   return (
-    
-    <div className=" p-4 sm:p-6 hover:border hover:border-white/15 rounded-xl">
-        <Card
+    <div className="p-4 hover:border hover:border-white/15 rounded-xl w-[360px] h-[280px] bg-black text-white mx-auto flex flex-col">
+      
+      {/* Image */}
+      <Card
         alt={item?.productTitle}
         imageUrl={item?.imageLink?.secure_url}
-        imageClassName='w-full h-full object-cover'
-        />
+        imageClassName="w-full h-full object-cover"
+        containerClassName="w-full h-[160px] rounded-lg"
+      />
 
-        <HeadingThree
-                        className='!text-[20px] capitalize pt-4 md:pt-2 !font-medium max-w-max mb-4'
-        content={item?.productTitle}
-        />
+      {/* Title */}
+      <HeadingThree
+        className="!text-lg font-semibold pt-3 truncate"
+        content={comingSoon ? "Coming Soon" : item?.productTitle}
+      />
 
-        <Paragraph
-                        className='!font-light line-clamp-4 !text-lg pb-0'
-        content={item?.productDescription}
+      {/* Description */}
+      <Paragraph
+        className="!font-light line-clamp-2 text-sm flex-grow"
+        content={comingSoon ? "Coming soon" : item?.productDescription}
+      />
 
-
-        />
-
-<Link to={`/product/${item?.slugNameEn}`} state={item} className='pt-3 block'>
-        <IconButton
-        content='View All'
-        iconUrl={rightArrow}
-        />
-        </Link>
+      {/* CTA */}
+      <div className="pt-2">
+        {comingSoon ? (
+          <button className="flex items-center gap-2 text-sm font-medium text-white/80 hover:text-white">
+            Know More
+          </button>
+        ) : (
+          <Link to={`/product/${item?.slugNameEn}`} state={item}>
+            <IconButton content="Know More" iconUrl={rightArrow} />
+          </Link>
+        )}
+      </div>
     </div>
   )
 }
