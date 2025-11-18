@@ -30,7 +30,7 @@ const ProductCard: React.FC<CardProps> = ({ item }) => {
   const comingSoon = item?.isComingSoon;
 
   return (
-    <div className="p-4 hover:border hover:border-white/15 rounded-xl w-[360px] h-[280px] bg-black text-white mx-auto flex flex-col">
+    <div className="p-4 hover:border hover:border-white/15 rounded-xl w-[360px] h-[310px] bg-black text-white mx-auto flex flex-col">
       
       {/* Image */}
       <Card

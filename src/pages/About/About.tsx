@@ -11,7 +11,7 @@ import {
   Sustainability,
   StrategicProcurement
 } from '../../components/About'
-import { useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router'
 
 function About() {
   const { hash } = useLocation()

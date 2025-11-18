@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Banner from '../../reusable/Banner/Banner';
 import HeadingOne from '../../reusable/Titles/MainHeading/HeadingOne';
 import Paragraph from '../../reusable/Paragraph/Paragraph';
-import { useLocation, useParams } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router';
 
 interface ImageLink {
   public_id: string;
