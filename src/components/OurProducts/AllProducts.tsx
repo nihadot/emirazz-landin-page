@@ -41,7 +41,7 @@ interface ProductsData {
 }
 
 function AllProducts() {
-  const [page, setPage] = useState(1);
+  const [_page, setPage] = useState(1);
   const [allProducts, setAllProducts] = useState<ProductFormValues[]>([]);
   const [loading, setLoading] = useState(true);
   const [hasMore, setHasMore] = useState(true);

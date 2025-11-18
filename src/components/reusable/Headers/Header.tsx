@@ -6,7 +6,7 @@ import { Link, To, useNavigate } from 'react-router'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleLanguage } from '../../../languageSlice'
 import { RootState } from '../../../store'
-import { closeIcon, logo, greaterthan, menuIcon, emiraazArabicLogo } from '../../../assets/svg'
+import {  logo, greaterthan, emiraazArabicLogo } from '../../../assets/svg'
 import { motion, AnimatePresence } from "framer-motion";
 
 function Header() {
