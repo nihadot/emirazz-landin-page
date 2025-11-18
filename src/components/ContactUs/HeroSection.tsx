@@ -2,7 +2,7 @@ import { empoweringInnovation } from '../../assets/images'
 import Image from '../reusable/Image/Image'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../store'
-import ContactJSON from "../../data/contactUs.json"
+import ContactJSON from "../../../public/data/contactUs.json"
 import { useState } from 'react'
 import axios, { AxiosError } from 'axios'
 import { baseUrl } from '../../api'

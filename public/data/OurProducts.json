@@ -1,0 +1,83 @@
+{
+  "section1": {
+    "en": {
+      "h1": "Explore Our Products",
+      "p": "At Emiraaz, our products embody the perfect blend of innovation, quality, and craftsmanship. From cutting-edge technology solutions to groundbreaking real estate developments, each product is designed to meet the highest standards and fulfill your needs. Explore our diverse range of offerings and experience the excellence that defines Emiraaz."
+    },
+    "ar": {
+      "h1": "اكتشف منتجاتنا",
+      "p": "في أميراز، تجسد منتجاتنا المزيج المثالي من الابتكار والجودة والحرفية. بدءًا من الحلول التقنية المتطورة وحتى التطوير العقاري الرائد، تم تصميم كل منتج لتلبية أعلى المعايير وتلبية احتياجاتك. استكشف مجموعتنا المتنوعة من العروض واستمتع بتجربة التميز الذي يميز أميراز."
+    }
+  },
+  "products": [
+    {
+      "productTitle": "PropertySeller",
+      "productTitleAr": "بروبرتي سيلر",
+      "productDescription": "Transform your living space with our cutting-edge SmartHome technology, offering seamless automation, energy efficiency, and enhanced security. Control your home from anywhere with a simple touch.",
+      "productDescriptionAr": "حوّل مساحة معيشتك بتقنية المنزل الذكي المتطورة، التي توفر الأتمتة السلسة وكفاءة الطاقة والأمان المحسن. تحكم في منزلك من أي مكان بلمسة بسيطة.",
+      "seoTitle": "PropertySeller - Smart Real Estate Platform",
+      "seoTitleAr": "بروبرتي سيلر - منصة عقارية ذكية",
+      "seoDescription": "Revolutionary real estate platform with smart technology",
+      "seoDescriptionAr": "منصة عقارية ثورية بتقنية ذكية",
+       "productDetails": "1. Convenience at your Fingertips\nControl every aspect of your home from your smartphone or tablet. Whether it's adjusting the lighting, controlling appliances, or monitoring security, the Emiraaz SmartHome System puts the power in your hands.\n\n2. Energy Efficiency\nOur system optimizes energy usage with automated schedules and smart sensors, ensuring your home operates efficiently and sustainably.\n\n3. Advanced Monitoring\nStay connected to your home wherever you are. The SmartHome System features cutting-edge security technology, including cameras, alarm systems, and motion sensors, giving you access to real-time video feeds.\n\n4. Customizable Solutions\nEvery home is different, and our system is designed to be adaptable. Whether you're living in an apartment, a house, or managing a larger estate, Emiraaz SmartHome can be tailored to fit your needs.",
+      "productDetailsAr": "1. الراحة في متناول يديك\nتحكم في كل جانب من جوانب منزلك من هاتفك الذكي أو الجهاز اللوحي.\n\n2. كفاءة الطاقة\nيُحسِّن نظامنا من استخدام الطاقة بجداول زمنية آلية وأجهزة استشعار ذكية.\n\n3. مراقبة متقدمة\nابق متصلاً بمنزلك أينما كنت.\n\n4. حلول قابلة للتخصيص\nكل منزل مختلف، ونظامنا مصمم ليكون قابلاً للتكيف.",
+      "seoKeywords": "real estate, property, smart, platform",
+      "seoKeywordsAr": "عقارات، ملكية، ذكي، منصة",
+      "imageLink": {
+    "public_id": "propertyseller",
+    "secure_url": "/propertySeller.jpeg",
+    "url": "/propertySeller.jpeg",
+    "width": 1260,
+    "height": 750
+  },
+      "slugNameEn": "propertyseller",
+      "isComingSoon": false,
+      "isActive": true
+    },
+    {
+      "productTitle": "Coming soon",
+      "productTitleAr": "قريباً",
+      "productDescription": "Coming soon",
+      "productDescriptionAr": "قريباً",
+      "seoTitle": "Coming Soon",
+      "seoTitleAr": "قريباً",
+      "seoDescription": "New product coming soon",
+      "seoDescriptionAr": "منتج جديد قريباً",
+      "seoKeywords": "coming soon",
+      "seoKeywordsAr": "قريباً",
+      "imageLink": {
+    "public_id": "coming-soon-2",
+    "secure_url": "/comingSoon.jpg",
+    "url": "/comingSoon.jpg",
+    "width": 1260,
+    "height": 750
+  },
+      "slugNameEn": "coming-soon-1",
+      "isComingSoon": true,
+      "isActive": false
+    },
+    {
+      "productTitle": "Coming soon",
+      "productTitleAr": "قريباً",
+      "productDescription": "Coming soon",
+      "productDescriptionAr": "قريباً",
+      "seoTitle": "Coming Soon",
+      "seoTitleAr": "قريباً",
+      "seoDescription": "New product coming soon",
+      "seoDescriptionAr": "منتج جديد قريباً",
+      "seoKeywords": "coming soon",
+      "seoKeywordsAr": "قريباً",
+        "imageLink": {
+    "public_id": "coming-soon-3",
+    "secure_url": "/comingSoon.jpg",
+    "url": "/comingSoon.jpg",
+    "width": 1260,
+    "height": 750
+  },
+      "slugNameEn": "coming-soon-2",
+      "isComingSoon": true,
+      "isActive": false
+    }
+    
+  ]
+}

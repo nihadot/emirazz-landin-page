@@ -1,8 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useGetAllProductsQuery } from '../../features/product/productsApi';
 import ProductCard from '../reusable/Card/ProductCard';
-
-type Props = {}
 
 interface ImageLink {
   public_id: string;
@@ -25,33 +22,61 @@ interface ProductFormValues {
   seoKeywordsAr: string;
   imageLink: ImageLink;
   slugNameEn: string;
+  isComingSoon?: boolean;
+  isActive?: boolean;
 }
 
-function AllProducts({ }: Props) {
+interface ProductsData {
+  section1: {
+    en: {
+      h1: string;
+      p: string;
+    };
+    ar: {
+      h1: string;
+      p: string;
+    };
+  };
+  products: ProductFormValues[];
+}
+
+function AllProducts() {
   const [page, setPage] = useState(1);
-  const [allBlogs, setAllProducts] = useState<any[]>([]); // State to hold all allBlogs
-  const [loading, setLoading] = useState(true); // Track loading state
-  const [hasMore, setHasMore] = useState(true); // Track if there are more blogs to load
-  const { data } = useGetAllProductsQuery({ page, limit: 10 }, { skip: false });
+  const [allProducts, setAllProducts] = useState<ProductFormValues[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [hasMore, setHasMore] = useState(true);
+  const [productsData, setProductsData] = useState<ProductsData | null>(null);
 
-
-
-  // Effect to fetch data when `data` is available or refetch is triggered
-  useEffect(() => {
-    if (data) {
-      if (data.data.length === 0) {
-        setHasMore(false);
-      } else {
-        setAllProducts((prev) => [...prev, ...data.data]); // Append new blogs
+useEffect(() => {
+  const loadProductsData = async () => {
+    try {
+      const response = await fetch('/data/OurProducts.json');
+      console.log("📡 Fetch status:", response.status, response.ok);
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
       }
-      setLoading(false); // Stop loading when data is received
-    }
 
-    console.log('loading...', loading)
-
-    return () => {
+      const data: ProductsData = await response.json();
+      console.log("✅ Parsed Products Data:", data);
+      setProductsData(data);
+    } catch (error) {
+      console.error('❌ Error loading products data:', error);
+      setLoading(false);
     }
-  }, [data]);
+  };
+
+  loadProductsData();
+}, []);
+
+
+useEffect(() => {
+  if (productsData) {
+    setAllProducts(productsData.products); 
+    setLoading(false);
+    setHasMore(false); // stop pagination since all are loaded
+  }
+}, [productsData]);
 
 
   // Effect to detect when the user reaches the bottom of the page
@@ -59,36 +84,34 @@ function AllProducts({ }: Props) {
     const handleScroll = () => {
       if (
         window.innerHeight + document.documentElement.scrollTop >=
-        document.documentElement.offsetHeight - 200 && // 200px before bottom
+        document.documentElement.offsetHeight - 200 &&
         !loading &&
         hasMore
       ) {
-        setLoading(true); // Start loading more blogs
-        setPage((prevPage) => prevPage + 1); // Increment page number
+        setLoading(true);
+        setPage((prevPage) => prevPage + 1);
       }
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => {
-      window.removeEventListener("scroll", handleScroll); // Cleanup event listener
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [loading, hasMore]);
 
-
   return (
-    <div className="sm:pt-4 gap-y-8 md:gap-y-16 px-4 md:px-10 lg:px-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-10 items-center flex-col sm:flex-row relative justify-end">
-
-      {
-        allBlogs.length > 0 && allBlogs.map((item: ProductFormValues, index: number) => {
-          return (
-            <ProductCard key={index} item={item} />
-
-          )
-        })
-      }
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      {allProducts.length > 0 && allProducts.map((item: ProductFormValues, index: number) => (
+        <ProductCard key={`${item.slugNameEn}-${index}`} item={item} />
+      ))}
+      
+      {loading && (
+        <div className="col-span-full flex justify-center py-8">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-white"></div>
+        </div>
+      )}
     </div>
-  )
+  );
 }
 
-export default AllProducts
+export default AllProducts;

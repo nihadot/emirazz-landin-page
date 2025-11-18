@@ -1,0 +1,125 @@
+{
+  "section1": {
+    "en": {
+      "h1": "Our Proud Partners",
+      "p": "At Emiraaz, we build strategic partnerships that drive mutual growth and success. By collaborating with organizations across industries, we create new opportunities and enhance our collective impact. Partner with us to shape a brighter, more innovative future."
+    },
+    "ar": {
+      "h1": "شركاؤنا الفخورون",
+      "p": "في أميراز، نقوم ببناء شراكات استراتيجية تدفع النمو والنجاح المتبادل. ومن خلال التعاون مع المنظمات عبر الصناعات، فإننا نخلق فرصًا جديدة ونعزز تأثيرنا الجماعي. كن شريكًا معنا لتشكيل مستقبل أكثر إشراقًا وابتكارًا."
+    }
+  },
+  
+  "partners": [
+    {
+      "name": "Galaxy Realty",
+      "slug": "galaxy-realty",
+      "imageLink": {
+        "secure_url": "/images/partners/galaxy.webp",
+        "public_id": "",
+        "url": "",
+        "width": 200,
+        "height": 200
+      }
+    },
+    {
+      "name": "DAMAC Properties",
+      "slug": "damac-properties",
+      "imageLink": {
+        "secure_url": "/images/partners/damac.webp",
+        "public_id": "",
+        "url": "",
+        "width": 200,
+        "height": 200
+      }
+    },
+    {
+      "name": "Al Sondos Holding",
+      "slug": "al-sondos-holding",
+      "imageLink": {
+        "secure_url": "/images/partners/sondos.webp",
+        "public_id": "",
+        "url": "",
+        "width": 200,
+        "height": 200
+      }
+    },
+    {
+      "name": "Taraf Properties",
+      "slug": "taraf-properties",
+      "imageLink": {
+        "secure_url": "/images/partners/taraf.webp",
+        "public_id": "",
+        "url": "",
+        "width": 200,
+        "height": 200
+      }
+    },
+    {
+      "name": "JHK Developments",
+      "slug": "jhk-developments",
+      "imageLink": {
+        "secure_url": "/images/partners/jhk.webp",
+        "public_id": "",
+        "url": "",
+        "width": 200,
+        "height": 200
+      }
+    },
+    {
+      "name": "Vakson Development",
+      "slug": "vakson-development",
+      "imageLink": {
+        "secure_url": "/images/partners/vakson.webp",
+        "public_id": "",
+        "url": "",
+        "width": 200,
+        "height": 200
+      }
+    },
+    {
+      "name": "Solanki Realty",
+      "slug": "solanki-realty",
+      "imageLink": {
+        "secure_url": "/images/partners/solanki.webp",
+        "public_id": "",
+        "url": "",
+        "width": 200,
+        "height": 200
+      }
+    },
+    {
+      "name": "Al Hamra Development",
+      "slug": "al-hamra-development",
+      "imageLink": {
+        "secure_url": "/images/partners/alhamra.webp",
+        "public_id": "",
+        "url": "",
+        "width": 200,
+        "height": 200
+      }
+    },
+    {
+      "name": "Al Ghurair Development",
+      "slug": "al-ghurair-development",
+      "imageLink": {
+        "secure_url": "/images/partners/alghurair.webp",
+        "public_id": "",
+        "url": "",
+        "width": 200,
+        "height": 200
+      }
+    },
+    {
+      "name": "Well Concept Development",
+      "slug": "well-concept-development",
+      "imageLink": {
+        "secure_url": "/images/partners/well.webp",
+        "public_id": "",
+        "url": "",
+        "width": 200,
+        "height": 200
+      }
+    }
+  ]
+}

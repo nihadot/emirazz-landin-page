@@ -11,25 +11,60 @@ import {
   Sustainability,
   StrategicProcurement
 } from '../../components/About'
+import { useLocation } from 'react-router'
 
 function About() {
+  const { hash } = useLocation()
 
-     useEffect(() => {
-        window.scrollTo(0, 0)
-      }, [])
+  useEffect(() => {
+    if (!hash) {
+      window.scrollTo(0, 0)
+    } else {
+      const section = document.querySelector(hash)
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  }, [hash])
+
 
   return (
     <div className="m-auto max-w-[1440px]">
-        <Header/>
-        <DiscoverJourney/>
-        <VisionReality/>
-        <EmiraazTowards/>
-        <AboutFounder/>
-        <InspiringInnovation/>
-        <CultureIntegrity/>
-        <Sustainability/>
-        <StrategicProcurement/>
-        <Footer/>
+      <Header />
+
+      <section id="story">
+        <DiscoverJourney />
+      </section>
+
+      <section id="leadership">
+        <VisionReality />
+      </section>
+
+      <section id="emiraaz-towards">
+        <EmiraazTowards />
+      </section>
+
+      <section id="about-founder">
+        <AboutFounder />
+      </section>
+
+      <section id="inspire">
+        <InspiringInnovation />
+      </section>
+
+      <section id="culture">
+        <CultureIntegrity />
+      </section>
+
+      <section id="sustainability">
+        <Sustainability />
+      </section>
+
+      <section id="procurement">
+        <StrategicProcurement />
+      </section>
+
+      <Footer />
     </div>
   )
 }

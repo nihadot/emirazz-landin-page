@@ -20,13 +20,16 @@ function HeroSection({ }: Props) {
 
               
                 <H1>
-                    {language === 'en' ? 'Our Proud Partners' : 'اكتشف منتجاتنا'}
-                </H1>
+ {language === 'en' ? 'Explore Our Products' : 'اكتشف منتجاتنا'}
+                 </H1>
 
                 <Description
                     type='type2'
                     className='max-w-[1015px] w-full'
-                    text={language === 'en' ? 'At Emiraaz, we build strategic partnerships that drive mutual growth and success. By collaborating with organizations across industries, we create new opportunities and enhance our collective impact. Partner with us to shape a brighter, more innovative future.' : 'في أميراز، تجسد منتجاتنا المزيج المثالي من الابتكار والجودة والحرفية. بدءًا من الحلول التقنية المتطورة وحتى التطوير العقاري الرائد، تم تصميم كل منتج لتلبية أعلى المعايير وتلبية احتياجاتك. استكشف مجموعتنا المتنوعة من العروض واستمتع بتجربة التميز الذي يميز أميراز.'}
+                    text={language === 'en' 
+            ? 'At Emiraaz, our products embody the perfect blend of innovation, quality, and craftsmanship. From cutting-edge technology solutions to groundbreaking real estate developments, each product is designed to meet the highest standards and fulfill your needs.'
+            : 'في أميراز، تجسد منتجاتنا المزيج المثالي من الابتكار والجودة والحرفية. بدءًا من الحلول التقنية المتطورة وحتى التطوير العقاري الرائد، تم تصميم كل منتج لتلبية أعلى المعايير وتلبية احتياجاتك.'
+          }
                 />
             </div>
 
