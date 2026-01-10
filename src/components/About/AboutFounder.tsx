@@ -1,5 +1,5 @@
 import { RootState } from "../../store"
-import {  founder } from "../../assets/images"
+import {  founder, user } from "../../assets/images"
 import Image from "../reusable/Image/Image"
 import { useSelector } from "react-redux"
 import Description from "./components/Description"
@@ -19,7 +19,7 @@ function AboutFounder({ }: Props) {
 
       <div className="hidden md:block">
 
-<Image alt={language === 'en' ? 'About Founder' : 'عن المؤسس'} src={founder} className='w-[374px]  rounded-[15px] h-[400px] md:h-[460px] object-cover' />
+<Image alt={language === 'en' ? 'About Founder' : 'عن المؤسس'} src={user} className='sm:w-[374px] border w-full rounded-2xl h-[420px] p-28 object-contain' />
 </div>
 
         <div className="flex-1 items-center justify-center flex flex-col">
