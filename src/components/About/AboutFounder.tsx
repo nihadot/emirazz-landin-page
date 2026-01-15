@@ -70,7 +70,7 @@ function AboutFounder({ }: Props) {
 
        <div className="block md:hidden">
 
-        <Image alt={language === 'en' ? 'About Founder' : 'عن المؤسس'} src={founder} className='w-[374px]  rounded-[15px] h-[400px] md:h-[460px] object-cover' />
+<Image alt={language === 'en' ? 'About Founder' : 'عن المؤسس'} src={user} className='sm:w-[374px] border w-full rounded-2xl h-[300px] p-20 object-contain' />
        </div>
 
 
