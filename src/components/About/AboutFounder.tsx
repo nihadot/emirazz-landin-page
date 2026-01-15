@@ -1,5 +1,5 @@
 import { RootState } from "../../store"
-import {  founder, user } from "../../assets/images"
+import {   user } from "../../assets/images"
 import Image from "../reusable/Image/Image"
 import { useSelector } from "react-redux"
 import Description from "./components/Description"
